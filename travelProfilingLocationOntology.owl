@@ -22,664 +22,667 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Accomodation"/>
+        <Class IRI="#Accomodation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AcheologyTour"/>
+        <Class IRI="#AcheologyTour"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ActivityQualifier"/>
+        <Class IRI="#ActivityQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
+        <Class IRI="#Adventure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AgeQualifier"/>
+        <Class IRI="#AgeQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Airport"/>
+        <Class IRI="#Airport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AmbienceQualifier"/>
+        <Class IRI="#AmbienceQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Americas"/>
+        <Class IRI="#Americas"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AmusementPark"/>
+        <Class IRI="#AmusementPark"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Aquarium"/>
+        <Class IRI="#Aquarium"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ArchitecturalArtifact"/>
+        <Class IRI="#ArchitecturalArtifact"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Artifact"/>
+        <Class IRI="#Artifact"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Asia"/>
+        <Class IRI="#Asia"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AudienceQualifier"/>
+        <Class IRI="#AudienceQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Beach"/>
+        <Class IRI="#Beach"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#BirdWatching"/>
+        <Class IRI="#BirdWatching"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#BotanicalGarden"/>
+        <Class IRI="#BotanicalGarden"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Budget"/>
+        <Class IRI="#Budget"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Business"/>
+        <Class IRI="#Business"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#BusinessCenter"/>
+        <Class IRI="#BusinessCenter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#BusinessDistrict"/>
+        <Class IRI="#BusinessDistrict"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CalmAmbience"/>
+        <Class IRI="#CalmAmbience"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CamelRaceCourse"/>
+        <Class IRI="#CamelRaceCourse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CamelRacing"/>
+        <Class IRI="#CamelRacing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Casino"/>
+        <Class IRI="#Casino"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CentralAmerica"/>
+        <Class IRI="#CentralAmerica"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Children"/>
+        <Class IRI="#Children"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ChildrenFrom0To3"/>
+        <Class IRI="#ChildrenFrom0To3"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ChildrenFrom4To6"/>
+        <Class IRI="#ChildrenFrom4To6"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ChildrenFrom7To9"/>
+        <Class IRI="#ChildrenFrom7To9"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ChildrenFrom9To12"/>
+        <Class IRI="#ChildrenFrom9To12"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Cinema"/>
+        <Class IRI="#Cinema"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#City"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CityInSouthernHemisphere"/>
+        <Class IRI="#CityInSouthernHemisphere"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CityTour"/>
+        <Class IRI="#CityTour"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ClimaticRegion"/>
+        <Class IRI="#ClimaticRegion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ClimbingWall"/>
+        <Class IRI="#ClimbingWall"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToBusinessDistrict"/>
+        <Class IRI="#CloseToBusinessDistrict"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToCamelRaceCourse"/>
+        <Class IRI="#CloseToCamelRaceCourse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToDesert"/>
+        <Class IRI="#CloseToDesert"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToDivingSea"/>
+        <Class IRI="#CloseToDivingSea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToGolfCourse"/>
+        <Class IRI="#CloseToGolfCourse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToMountain"/>
+        <Class IRI="#CloseToMountain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToMuseum"/>
+        <Class IRI="#CloseToMuseum"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToNationalPark"/>
+        <Class IRI="#CloseToNationalPark"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToNightClub"/>
+        <Class IRI="#CloseToNightClub"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToSkiingFacility"/>
+        <Class IRI="#CloseToSkiingFacility"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToTrail"/>
+        <Class IRI="#CloseToTrail"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToWaterPark"/>
+        <Class IRI="#CloseToWaterPark"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToZoologicalGarden"/>
+        <Class IRI="#CloseToZoologicalGarden"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Conference"/>
+        <Class IRI="#Conference"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Continent"/>
+        <Class IRI="#Continent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+        <Class IRI="#Country"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Couples"/>
+        <Class IRI="#Couples"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Creek"/>
+        <Class IRI="#Creek"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalArea"/>
+        <Class IRI="#CulturalArea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalFacility"/>
+        <Class IRI="#CulturalFacility"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Description"/>
+        <Class IRI="#Description"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Desert"/>
+        <Class IRI="#Desert"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesertRegion"/>
+        <Class IRI="#DesertRegion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesertReserve"/>
+        <Class IRI="#DesertReserve"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesertSafari"/>
+        <Class IRI="#DesertSafari"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesignatedArea"/>
+        <Class IRI="#DesignatedArea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#District"/>
+        <Class IRI="#District"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Diving"/>
+        <Class IRI="#Diving"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DivingSea"/>
+        <Class IRI="#DivingSea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DynamicAmbience"/>
+        <Class IRI="#DynamicAmbience"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#EuropeanCity"/>
+        <Class IRI="#EuropeanCity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Excursion"/>
+        <Class IRI="#Excursion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Facility"/>
+        <Class IRI="#Facility"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Family"/>
+        <Class IRI="#Family"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#FarAway"/>
+        <Class IRI="#FarAway"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#FarEastAsia"/>
+        <Class IRI="#FarEastAsia"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Feature"/>
+        <Class IRI="#Feature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#FinancialArea"/>
+        <Class IRI="#FinancialArea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ForestReserve"/>
+        <Class IRI="#ForestReserve"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Fountain"/>
+        <Class IRI="#Fountain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Function"/>
+        <Class IRI="#Function"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GardenTour"/>
+        <Class IRI="#GardenTour"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GeoPoliticalQualifier"/>
+        <Class IRI="#GeoPoliticalQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GeographicalQualifier"/>
+        <Class IRI="#GeographicalQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GetAway"/>
+        <Class IRI="#GetAway"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GlobalRegion"/>
+        <Class IRI="#GlobalRegion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GolfCourse"/>
+        <Class IRI="#GolfCourse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotBeach"/>
+        <Class IRI="#GotBeach"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotBusinessCenter"/>
+        <Class IRI="#GotBusinessCenter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotClimbingWall"/>
+        <Class IRI="#GotClimbingWall"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotDivingSea"/>
+        <Class IRI="#GotDivingSea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotFacility"/>
+        <Class IRI="#GotFacility"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotGym"/>
+        <Class IRI="#GotGym"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotLake"/>
+        <Class IRI="#GotLake"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotMountain"/>
+        <Class IRI="#GotMountain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotNaturalFeature"/>
+        <Class IRI="#GotNaturalFeature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotPool"/>
+        <Class IRI="#GotPool"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotReceptionHall"/>
+        <Class IRI="#GotReceptionHall"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotSandyShoreline"/>
+        <Class IRI="#GotSandyShoreline"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotService"/>
+        <Class IRI="#GotService"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotSpa"/>
+        <Class IRI="#GotSpa"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotWaterfall"/>
+        <Class IRI="#GotWaterfall"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Gym"/>
+        <Class IRI="#Gym"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Happening"/>
+        <Class IRI="#Happening"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hiking"/>
+        <Class IRI="#Hiking"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HikingTrail"/>
+        <Class IRI="#HikingTrail"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HistoricalArea"/>
+        <Class IRI="#HistoricalArea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HistoricalArtifact"/>
+        <Class IRI="#HistoricalArtifact"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+        <Class IRI="#Hotel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HotelFacility"/>
+        <Class IRI="#HotelFacility"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Island"/>
+        <Class IRI="#Island"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Lake"/>
+        <Class IRI="#Lake"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#LeasureActivity"/>
+        <Class IRI="#LeasureActivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Location"/>
+        <Class IRI="#Location"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Luxury"/>
+        <Class IRI="#Luxury"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Mall"/>
+        <Class IRI="#Mall"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#MarketQualifier"/>
+        <Class IRI="#MarketQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Monument"/>
+        <Class IRI="#Monument"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#MoodQualifier"/>
+        <Class IRI="#MoodQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Mosque"/>
+        <Class IRI="#Mosque"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Mountain"/>
+        <Class IRI="#Mountain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Museum"/>
+        <Class IRI="#Museum"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#MuseumTour"/>
+        <Class IRI="#MuseumTour"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NationalPark"/>
+        <Class IRI="#NationalPark"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalArea"/>
+        <Class IRI="#NaturalArea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalFeature"/>
+        <Class IRI="#NaturalFeature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NatureTrail"/>
+        <Class IRI="#NatureTrail"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NearALake"/>
+        <Class IRI="#NearALake"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NearAMonument"/>
+        <Class IRI="#NearAMonument"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NightClub"/>
+        <Class IRI="#NightClub"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NorthAmerica"/>
+        <Class IRI="#NorthAmerica"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Palace"/>
+        <Class IRI="#Palace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Park"/>
+        <Class IRI="#Park"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Party"/>
+        <Class IRI="#Party"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Place"/>
+        <Class IRI="#Place"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceOfWorship"/>
+        <Class IRI="#PlaceOfWorship"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlayGround"/>
+        <Class IRI="#PlayGround"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Pool"/>
+        <Class IRI="#Pool"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Qualifier"/>
+        <Class IRI="#Qualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RaceCourse"/>
+        <Class IRI="#RaceCourse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Racing"/>
+        <Class IRI="#Racing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ReceptionHall"/>
+        <Class IRI="#ReceptionHall"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#RecreationalFacility"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Reenactments"/>
+        <Class IRI="#Reenactments"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RegionQualifier"/>
+        <Class IRI="#RegionQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Reservoir"/>
+        <Class IRI="#Reservoir"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RockClimbing"/>
+        <Class IRI="#RockClimbing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Romantic"/>
+        <Class IRI="#Romantic"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Ruins"/>
+        <Class IRI="#Ruins"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SacredArea"/>
+        <Class IRI="#SacredArea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Safari"/>
+        <Class IRI="#Safari"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SandyShoreline"/>
+        <Class IRI="#SandyShoreline"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Scenic"/>
+        <Class IRI="#Scenic"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ScenicMountain"/>
+        <Class IRI="#ScenicMountain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ScenicNaturalFeature"/>
+        <Class IRI="#ScenicNaturalFeature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Secluded"/>
+        <Class IRI="#Secluded"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Seniors"/>
+        <Class IRI="#Seniors"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SiteSeeing"/>
+        <Class IRI="#SiteSeeing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SkiSlope"/>
+        <Class IRI="#SkiSlope"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Skiing"/>
+        <Class IRI="#Skiing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SkiingFacility"/>
+        <Class IRI="#SkiingFacility"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Skyscraper"/>
+        <Class IRI="#Skyscraper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Souq"/>
+        <Class IRI="#Souq"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SouthAmerica"/>
+        <Class IRI="#SouthAmerica"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SouthAsia"/>
+        <Class IRI="#SouthAsia"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SouthEastAsia"/>
+        <Class IRI="#SouthEastAsia"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Spa"/>
+        <Class IRI="#Spa"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SpecializedHotel"/>
+        <Class IRI="#SpecializedHotel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Sport"/>
+        <Class IRI="#Sport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SportsComplex"/>
+        <Class IRI="#SportsComplex"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SubUrb"/>
+        <Class IRI="#SubUrb"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SubjectiveQualifier"/>
+        <Class IRI="#SubjectiveQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForAudience"/>
+        <Class IRI="#SuitableForAudience"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildren"/>
+        <Class IRI="#SuitableForChildren"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildrenFrom0To3"/>
+        <Class IRI="#SuitableForChildrenFrom0To3"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildrenFrom4To6"/>
+        <Class IRI="#SuitableForChildrenFrom4To6"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildrenFrom7To9"/>
+        <Class IRI="#SuitableForChildrenFrom7To9"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildrenFrom9To12"/>
+        <Class IRI="#SuitableForChildrenFrom9To12"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForCouples"/>
+        <Class IRI="#SuitableForCouples"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForTeenagers"/>
+        <Class IRI="#SuitableForTeenagers"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuportsLeasureActivity"/>
+        <Class IRI="#SuportsLeasureActivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportDesertSafari"/>
+        <Class IRI="#SupportDesertSafari"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportWaterActivity"/>
+        <Class IRI="#SupportWaterActivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportZoologicalGradenTour"/>
+        <Class IRI="#SupportZoologicalGradenTour"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsActivity"/>
+        <Class IRI="#SupportsActivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsAdventure"/>
+        <Class IRI="#SupportsAdventure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsBusiness"/>
+        <Class IRI="#SupportsBusiness"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsCamelRacing"/>
+        <Class IRI="#SupportsCamelRacing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsClubbing"/>
+        <Class IRI="#SupportsClubbing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsDiving"/>
+        <Class IRI="#SupportsDiving"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsGolf"/>
+        <Class IRI="#SupportsGolf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsHiking"/>
+        <Class IRI="#SupportsHiking"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsMuseumTour"/>
+        <Class IRI="#SupportsMuseumTour"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsPoolSwimming"/>
+        <Class IRI="#SupportsPoolSwimming"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsRockClimbing"/>
+        <Class IRI="#SupportsRockClimbing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSafari"/>
+        <Class IRI="#SupportsSafari"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSeaSwimming"/>
+        <Class IRI="#SupportsSeaSwimming"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsShopping"/>
+        <Class IRI="#SupportsShopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSkiing"/>
+        <Class IRI="#SupportsSkiing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSport"/>
+        <Class IRI="#SupportsSport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSwimming"/>
+        <Class IRI="#SupportsSwimming"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsTrekking"/>
+        <Class IRI="#SupportsTrekking"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsWedding"/>
+        <Class IRI="#SupportsWedding"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsWhiteWaterRafting"/>
+        <Class IRI="#SupportsWhiteWaterRafting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Swimming"/>
+        <Class IRI="#Swimming"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#TargetQualifier"/>
+        <Class IRI="#TargetQualifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Teenager"/>
+        <Class IRI="#Teenager"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Temple"/>
+        <Class IRI="#Temple"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Theatre"/>
+        <Class IRI="#Theatre"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ThemePark"/>
+        <Class IRI="#ThemePark"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Town"/>
+        <Class IRI="#Town"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Trail"/>
+        <Class IRI="#Trail"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Trekking"/>
+        <Class IRI="#Trekking"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#TropicalRegion"/>
+        <Class IRI="#TropicalRegion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#WaterPark"/>
+        <Class IRI="#WaterPark"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Waterfall"/>
+        <Class IRI="#Waterfall"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Wedding"/>
+        <Class IRI="#Wedding"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#WetlandReserve"/>
+        <Class IRI="#WetlandReserve"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#WhiteWaterRafting"/>
+        <Class IRI="#WhiteWaterRafting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#WorldHeritageSite"/>
+        <Class IRI="#WorldHeritageSite"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ZoologicalGarden"/>
+        <Class IRI="#ZoologicalGarden"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ZoologicalGardenTour"/>
+        <Class IRI="#ZoologicalGardenTour"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActivity"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasCity"/>
@@ -697,16 +700,31 @@
         <ObjectProperty IRI="#isInCountry"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#tbxCode"/>
+        <DataProperty IRI="#tbxCode"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#wsLocationId"/>
+        <DataProperty IRI="#wsLocationId"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Africa_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antarctica_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asia_Continent"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Australia"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Australia_Continent"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europe_Continent"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Kandy"/>
@@ -718,10 +736,16 @@
         <NamedIndividual IRI="#MountLavinia"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#North_America_Continent"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#NurawaEliya"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Singapor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#South_America_Continent"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Sri_Lanka"/>
@@ -733,71 +757,71 @@
         <NamedIndividual IRI="#USA"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#City"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasPlace"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Place"/>
+            <Class IRI="#Place"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ClimaticRegion"/>
+        <Class IRI="#ClimaticRegion"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasCountry"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+            <Class IRI="#Country"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Continent"/>
+        <Class IRI="#Continent"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasCountry"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+            <Class IRI="#Country"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+        <Class IRI="#Country"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasCity"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+            <Class IRI="#City"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#District"/>
+        <Class IRI="#District"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasCity"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+            <Class IRI="#City"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GetAway"/>
+        <Class IRI="#GetAway"/>
         <ObjectUnionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CalmAmbience"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DynamicAmbience"/>
+            <Class IRI="#CalmAmbience"/>
+            <Class IRI="#DynamicAmbience"/>
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotBusinessCenter"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsBusiness"/>
+        <Class IRI="#GotBusinessCenter"/>
+        <Class IRI="#SupportsBusiness"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotClimbingWall"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsRockClimbing"/>
+        <Class IRI="#GotClimbingWall"/>
+        <Class IRI="#SupportsRockClimbing"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotReceptionHall"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsWedding"/>
+        <Class IRI="#GotReceptionHall"/>
+        <Class IRI="#SupportsWedding"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Place"/>
+        <Class IRI="#Place"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#isInCity"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+            <Class IRI="#City"/>
         </ObjectAllValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Romantic"/>
+        <Class IRI="#Romantic"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#FarAway"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Scenic"/>
+            <Class IRI="#FarAway"/>
+            <Class IRI="#Scenic"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -809,105 +833,105 @@
             <AnnotationProperty IRI="http://www.codegen.net/ontologies/savareeAnnot.owl#verbose"/>
             <Literal datatypeIRI="&rdf;PlainLiteral">true</Literal>
         </Annotation>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildrenFrom7To9"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSwimming"/>
+        <Class IRI="#SuitableForChildrenFrom7To9"/>
+        <Class IRI="#SupportsSwimming"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Annotation>
             <AnnotationProperty IRI="http://www.codegen.net/ontologies/savareeAnnot.owl#displayName"/>
             <Literal datatypeIRI="&rdf;PlainLiteral">A place that supports hiking or safari is suitable for teenagers.</Literal>
         </Annotation>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForTeenagers"/>
+        <Class IRI="#SuitableForTeenagers"/>
         <ObjectUnionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsHiking"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSafari"/>
+            <Class IRI="#SupportsHiking"/>
+            <Class IRI="#SupportsSafari"/>
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportDesertSafari"/>
+        <Class IRI="#SupportDesertSafari"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToDesert"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToDesert"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportWaterActivity"/>
+        <Class IRI="#SupportWaterActivity"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToWaterPark"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToWaterPark"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportZoologicalGradenTour"/>
+        <Class IRI="#SupportZoologicalGradenTour"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToZoologicalGarden"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToZoologicalGarden"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsCamelRacing"/>
+        <Class IRI="#SupportsCamelRacing"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToCamelRaceCourse"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToCamelRaceCourse"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsClubbing"/>
+        <Class IRI="#SupportsClubbing"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToNightClub"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToNightClub"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsDiving"/>
+        <Class IRI="#SupportsDiving"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToDivingSea"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToDivingSea"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsGolf"/>
+        <Class IRI="#SupportsGolf"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToGolfCourse"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToGolfCourse"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsHiking"/>
+        <Class IRI="#SupportsHiking"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#Hotel"/>
             <ObjectUnionOf>
-                <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToMountain"/>
-                <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToTrail"/>
+                <Class IRI="#CloseToMountain"/>
+                <Class IRI="#CloseToTrail"/>
             </ObjectUnionOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsMuseumTour"/>
+        <Class IRI="#SupportsMuseumTour"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToMuseum"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToMuseum"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsPoolSwimming"/>
+        <Class IRI="#SupportsPoolSwimming"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotPool"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#GotPool"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSafari"/>
+        <Class IRI="#SupportsSafari"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToNationalPark"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToNationalPark"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSeaSwimming"/>
+        <Class IRI="#SupportsSeaSwimming"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToDivingSea"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToDivingSea"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -915,944 +939,972 @@
             <AnnotationProperty IRI="http://www.codegen.net/ontologies/savareeAnnot.owl#displayName"/>
             <Literal datatypeIRI="&rdf;PlainLiteral">If a hotel is close to a business district it supports shopping.</Literal>
         </Annotation>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsShopping"/>
+        <Class IRI="#SupportsShopping"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToBusinessDistrict"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToBusinessDistrict"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSkiing"/>
+        <Class IRI="#SupportsSkiing"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToSkiingFacility"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToSkiingFacility"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsTrekking"/>
+        <Class IRI="#SupportsTrekking"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToTrail"/>
-            <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+            <Class IRI="#CloseToTrail"/>
+            <Class IRI="#Hotel"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Accomodation"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Place"/>
+        <Class IRI="#Accomodation"/>
+        <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AcheologyTour"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SiteSeeing"/>
+        <Class IRI="#AcheologyTour"/>
+        <Class IRI="#SiteSeeing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ActivityQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Qualifier"/>
+        <Class IRI="#ActivityQualifier"/>
+        <Class IRI="#Qualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ActivityQualifier"/>
+        <Class IRI="#Adventure"/>
+        <Class IRI="#ActivityQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AgeQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AudienceQualifier"/>
+        <Class IRI="#AgeQualifier"/>
+        <Class IRI="#AudienceQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Airport"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Facility"/>
+        <Class IRI="#Airport"/>
+        <Class IRI="#Facility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AmbienceQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SubjectiveQualifier"/>
+        <Class IRI="#AmbienceQualifier"/>
+        <Class IRI="#SubjectiveQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Americas"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RegionQualifier"/>
+        <Class IRI="#Americas"/>
+        <Class IRI="#RegionQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AmusementPark"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#AmusementPark"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Aquarium"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#Aquarium"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ArchitecturalArtifact"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Artifact"/>
+        <Class IRI="#ArchitecturalArtifact"/>
+        <Class IRI="#Artifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Artifact"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Feature"/>
+        <Class IRI="#Artifact"/>
+        <Class IRI="#Feature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Asia"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RegionQualifier"/>
+        <Class IRI="#Asia"/>
+        <Class IRI="#RegionQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AudienceQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#TargetQualifier"/>
+        <Class IRI="#AudienceQualifier"/>
+        <Class IRI="#TargetQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Beach"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalFeature"/>
+        <Class IRI="#Beach"/>
+        <Class IRI="#NaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#BirdWatching"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#LeasureActivity"/>
+        <Class IRI="#BirdWatching"/>
+        <Class IRI="#LeasureActivity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#BotanicalGarden"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#BotanicalGarden"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Budget"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#MarketQualifier"/>
+        <Class IRI="#Budget"/>
+        <Class IRI="#MarketQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Business"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ActivityQualifier"/>
+        <Class IRI="#Business"/>
+        <Class IRI="#ActivityQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#BusinessCenter"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HotelFacility"/>
+        <Class IRI="#BusinessCenter"/>
+        <Class IRI="#HotelFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#BusinessDistrict"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#FinancialArea"/>
+        <Class IRI="#BusinessDistrict"/>
+        <Class IRI="#FinancialArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CalmAmbience"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AmbienceQualifier"/>
+        <Class IRI="#CalmAmbience"/>
+        <Class IRI="#AmbienceQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CamelRaceCourse"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RaceCourse"/>
+        <Class IRI="#CamelRaceCourse"/>
+        <Class IRI="#RaceCourse"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CamelRacing"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Racing"/>
+        <Class IRI="#CamelRacing"/>
+        <Class IRI="#Racing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Casino"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#Casino"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CentralAmerica"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Americas"/>
+        <Class IRI="#CentralAmerica"/>
+        <Class IRI="#Americas"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Children"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AgeQualifier"/>
+        <Class IRI="#Children"/>
+        <Class IRI="#AgeQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ChildrenFrom0To3"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Children"/>
+        <Class IRI="#ChildrenFrom0To3"/>
+        <Class IRI="#Children"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ChildrenFrom4To6"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Children"/>
+        <Class IRI="#ChildrenFrom4To6"/>
+        <Class IRI="#Children"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ChildrenFrom7To9"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Children"/>
+        <Class IRI="#ChildrenFrom7To9"/>
+        <Class IRI="#Children"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ChildrenFrom9To12"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Children"/>
+        <Class IRI="#ChildrenFrom9To12"/>
+        <Class IRI="#Children"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Cinema"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#Cinema"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Location"/>
+        <Class IRI="#City"/>
+        <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CityInSouthernHemisphere"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#CityInSouthernHemisphere"/>
+        <Class IRI="#City"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CityTour"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SiteSeeing"/>
+        <Class IRI="#CityTour"/>
+        <Class IRI="#SiteSeeing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ClimaticRegion"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Location"/>
+        <Class IRI="#ClimaticRegion"/>
+        <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ClimbingWall"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HotelFacility"/>
+        <Class IRI="#ClimbingWall"/>
+        <Class IRI="#HotelFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToBusinessDistrict"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToBusinessDistrict"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToCamelRaceCourse"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToCamelRaceCourse"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToDesert"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToDesert"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToDivingSea"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToDivingSea"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToGolfCourse"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToGolfCourse"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToMountain"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToMountain"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToMuseum"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToMuseum"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToNationalPark"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToNationalPark"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToNightClub"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToNightClub"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToSkiingFacility"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToSkiingFacility"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToTrail"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToTrail"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToWaterPark"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToWaterPark"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToZoologicalGarden"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#CloseToZoologicalGarden"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Conference"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Function"/>
+        <Class IRI="#Conference"/>
+        <Class IRI="#Function"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Continent"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Location"/>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Location"/>
+        <Class IRI="#Country"/>
+        <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Couples"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AudienceQualifier"/>
+        <Class IRI="#Couples"/>
+        <Class IRI="#AudienceQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Creek"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ScenicNaturalFeature"/>
+        <Class IRI="#Creek"/>
+        <Class IRI="#ScenicNaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalArea"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesignatedArea"/>
+        <Class IRI="#CulturalArea"/>
+        <Class IRI="#DesignatedArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalFacility"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Facility"/>
+        <Class IRI="#CulturalFacility"/>
+        <Class IRI="#Facility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Desert"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalArea"/>
+        <Class IRI="#Desert"/>
+        <Class IRI="#NaturalArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesertRegion"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ClimaticRegion"/>
+        <Class IRI="#DesertRegion"/>
+        <Class IRI="#ClimaticRegion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesertReserve"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalArea"/>
+        <Class IRI="#DesertReserve"/>
+        <Class IRI="#NaturalArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesertSafari"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
+        <Class IRI="#DesertSafari"/>
+        <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesignatedArea"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Place"/>
+        <Class IRI="#DesignatedArea"/>
+        <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#District"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Location"/>
+        <Class IRI="#District"/>
+        <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Diving"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
+        <Class IRI="#Diving"/>
+        <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DivingSea"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Beach"/>
+        <Class IRI="#DivingSea"/>
+        <Class IRI="#Beach"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DynamicAmbience"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AmbienceQualifier"/>
+        <Class IRI="#DynamicAmbience"/>
+        <Class IRI="#AmbienceQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#EuropeanCity"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#EuropeanCity"/>
+        <Class IRI="#City"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Excursion"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ActivityQualifier"/>
+        <Class IRI="#Excursion"/>
+        <Class IRI="#ActivityQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Facility"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Artifact"/>
+        <Class IRI="#Facility"/>
+        <Class IRI="#Artifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Family"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AudienceQualifier"/>
+        <Class IRI="#Family"/>
+        <Class IRI="#AudienceQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#FarAway"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Secluded"/>
+        <Class IRI="#FarAway"/>
+        <Class IRI="#Secluded"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#FarEastAsia"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Asia"/>
+        <Class IRI="#FarEastAsia"/>
+        <Class IRI="#Asia"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Feature"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Place"/>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#FinancialArea"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesignatedArea"/>
+        <Class IRI="#FinancialArea"/>
+        <Class IRI="#DesignatedArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ForestReserve"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalArea"/>
+        <Class IRI="#ForestReserve"/>
+        <Class IRI="#NaturalArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Fountain"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ArchitecturalArtifact"/>
+        <Class IRI="#Fountain"/>
+        <Class IRI="#ArchitecturalArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Function"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ActivityQualifier"/>
+        <Class IRI="#Function"/>
+        <Class IRI="#ActivityQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GardenTour"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SiteSeeing"/>
+        <Class IRI="#GardenTour"/>
+        <Class IRI="#SiteSeeing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GeoPoliticalQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GeographicalQualifier"/>
+        <Class IRI="#GeoPoliticalQualifier"/>
+        <Class IRI="#GeographicalQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GeographicalQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Qualifier"/>
+        <Class IRI="#GeographicalQualifier"/>
+        <Class IRI="#Qualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GetAway"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#MoodQualifier"/>
+        <Class IRI="#GetAway"/>
+        <Class IRI="#MoodQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GlobalRegion"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Location"/>
+        <Class IRI="#GlobalRegion"/>
+        <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GolfCourse"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#GolfCourse"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotBeach"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotNaturalFeature"/>
+        <Class IRI="#GotBeach"/>
+        <Class IRI="#GotNaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotBusinessCenter"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotFacility"/>
+        <Class IRI="#GotBusinessCenter"/>
+        <Class IRI="#GotFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotClimbingWall"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotFacility"/>
+        <Class IRI="#GotClimbingWall"/>
+        <Class IRI="#GotFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotDivingSea"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotBeach"/>
+        <Class IRI="#GotDivingSea"/>
+        <Class IRI="#GotBeach"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotFacility"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SpecializedHotel"/>
+        <Class IRI="#GotFacility"/>
+        <Class IRI="#SpecializedHotel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotGym"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotFacility"/>
+        <Class IRI="#GotGym"/>
+        <Class IRI="#GotFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotLake"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotNaturalFeature"/>
+        <Class IRI="#GotLake"/>
+        <Class IRI="#GotNaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotMountain"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotNaturalFeature"/>
+        <Class IRI="#GotMountain"/>
+        <Class IRI="#GotNaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotNaturalFeature"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#GotNaturalFeature"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotPool"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotFacility"/>
+        <Class IRI="#GotPool"/>
+        <Class IRI="#GotFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotReceptionHall"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotFacility"/>
+        <Class IRI="#GotReceptionHall"/>
+        <Class IRI="#GotFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotSandyShoreline"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotBeach"/>
+        <Class IRI="#GotSandyShoreline"/>
+        <Class IRI="#GotBeach"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotService"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SpecializedHotel"/>
+        <Class IRI="#GotService"/>
+        <Class IRI="#SpecializedHotel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotSpa"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotService"/>
+        <Class IRI="#GotSpa"/>
+        <Class IRI="#GotService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotWaterfall"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GotNaturalFeature"/>
+        <Class IRI="#GotWaterfall"/>
+        <Class IRI="#GotNaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Gym"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HotelFacility"/>
+        <Class IRI="#Gym"/>
+        <Class IRI="#HotelFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Happening"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DynamicAmbience"/>
+        <Class IRI="#Happening"/>
+        <Class IRI="#DynamicAmbience"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hiking"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
+        <Class IRI="#Hiking"/>
+        <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HikingTrail"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Trail"/>
+        <Class IRI="#HikingTrail"/>
+        <Class IRI="#Trail"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HistoricalArea"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesignatedArea"/>
+        <Class IRI="#HistoricalArea"/>
+        <Class IRI="#DesignatedArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HistoricalArtifact"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Artifact"/>
+        <Class IRI="#HistoricalArtifact"/>
+        <Class IRI="#Artifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Accomodation"/>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Accomodation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HotelFacility"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Facility"/>
+        <Class IRI="#HotelFacility"/>
+        <Class IRI="#Facility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Island"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalArea"/>
+        <Class IRI="#Island"/>
+        <Class IRI="#NaturalArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Lake"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ScenicNaturalFeature"/>
+        <Class IRI="#Lake"/>
+        <Class IRI="#ScenicNaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#LeasureActivity"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Excursion"/>
+        <Class IRI="#LeasureActivity"/>
+        <Class IRI="#Excursion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Luxury"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#MarketQualifier"/>
+        <Class IRI="#Luxury"/>
+        <Class IRI="#MarketQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Mall"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#Mall"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#MarketQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#TargetQualifier"/>
+        <Class IRI="#MarketQualifier"/>
+        <Class IRI="#TargetQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Monument"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HistoricalArtifact"/>
+        <Class IRI="#Monument"/>
+        <Class IRI="#HistoricalArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#MoodQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SubjectiveQualifier"/>
+        <Class IRI="#MoodQualifier"/>
+        <Class IRI="#SubjectiveQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Mosque"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceOfWorship"/>
+        <Class IRI="#Mosque"/>
+        <Class IRI="#PlaceOfWorship"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Mountain"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalFeature"/>
+        <Class IRI="#Mountain"/>
+        <Class IRI="#NaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Museum"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalFacility"/>
+        <Class IRI="#Museum"/>
+        <Class IRI="#CulturalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Museum"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#Museum"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#MuseumTour"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SiteSeeing"/>
+        <Class IRI="#MuseumTour"/>
+        <Class IRI="#SiteSeeing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NationalPark"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalArea"/>
+        <Class IRI="#NationalPark"/>
+        <Class IRI="#NaturalArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalArea"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#DesignatedArea"/>
+        <Class IRI="#NaturalArea"/>
+        <Class IRI="#DesignatedArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalFeature"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Feature"/>
+        <Class IRI="#NaturalFeature"/>
+        <Class IRI="#Feature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NatureTrail"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Trail"/>
+        <Class IRI="#NatureTrail"/>
+        <Class IRI="#Trail"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NearALake"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#NearALake"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NearAMonument"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
+        <Class IRI="#NearAMonument"/>
+        <Class IRI="#PlaceCloseToPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NightClub"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#NightClub"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NorthAmerica"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Americas"/>
+        <Class IRI="#NorthAmerica"/>
+        <Class IRI="#Americas"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Palace"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalFacility"/>
+        <Class IRI="#Palace"/>
+        <Class IRI="#CulturalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Park"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#Park"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Party"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Function"/>
+        <Class IRI="#Party"/>
+        <Class IRI="#Function"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceCloseToPlace"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Description"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+        <Class IRI="#Description"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceOfWorship"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalFacility"/>
+        <Class IRI="#PlaceOfWorship"/>
+        <Class IRI="#CulturalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlayGround"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#PlayGround"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Pool"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HotelFacility"/>
+        <Class IRI="#Pool"/>
+        <Class IRI="#HotelFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RaceCourse"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#RaceCourse"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Racing"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
+        <Class IRI="#Racing"/>
+        <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ReceptionHall"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HotelFacility"/>
+        <Class IRI="#ReceptionHall"/>
+        <Class IRI="#HotelFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Facility"/>
+        <Class IRI="#RecreationalFacility"/>
+        <Class IRI="#Facility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Reenactments"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalFacility"/>
+        <Class IRI="#Reenactments"/>
+        <Class IRI="#CulturalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RegionQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#GeoPoliticalQualifier"/>
+        <Class IRI="#RegionQualifier"/>
+        <Class IRI="#GeoPoliticalQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Reservoir"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalFacility"/>
+        <Class IRI="#Reservoir"/>
+        <Class IRI="#CulturalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RockClimbing"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
+        <Class IRI="#RockClimbing"/>
+        <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Romantic"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#MoodQualifier"/>
+        <Class IRI="#Romantic"/>
+        <Class IRI="#MoodQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Ruins"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HistoricalArtifact"/>
+        <Class IRI="#Ruins"/>
+        <Class IRI="#HistoricalArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SacredArea"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalArea"/>
+        <Class IRI="#SacredArea"/>
+        <Class IRI="#CulturalArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Safari"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
+        <Class IRI="#Safari"/>
+        <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SandyShoreline"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Beach"/>
+        <Class IRI="#SandyShoreline"/>
+        <Class IRI="#Beach"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SandyShoreline"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ScenicNaturalFeature"/>
+        <Class IRI="#SandyShoreline"/>
+        <Class IRI="#ScenicNaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Scenic"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AmbienceQualifier"/>
+        <Class IRI="#Scenic"/>
+        <Class IRI="#AmbienceQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ScenicMountain"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Mountain"/>
+        <Class IRI="#ScenicMountain"/>
+        <Class IRI="#Mountain"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ScenicNaturalFeature"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalFeature"/>
+        <Class IRI="#ScenicNaturalFeature"/>
+        <Class IRI="#NaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Secluded"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AmbienceQualifier"/>
+        <Class IRI="#Secluded"/>
+        <Class IRI="#AmbienceQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Secluded"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CalmAmbience"/>
+        <Class IRI="#Secluded"/>
+        <Class IRI="#CalmAmbience"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Seniors"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AgeQualifier"/>
+        <Class IRI="#Seniors"/>
+        <Class IRI="#AgeQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SiteSeeing"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Excursion"/>
+        <Class IRI="#SiteSeeing"/>
+        <Class IRI="#Excursion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SkiSlope"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Mountain"/>
+        <Class IRI="#SkiSlope"/>
+        <Class IRI="#Mountain"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Skiing"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
+        <Class IRI="#Skiing"/>
+        <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SkiingFacility"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SportsComplex"/>
+        <Class IRI="#SkiingFacility"/>
+        <Class IRI="#SportsComplex"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Skyscraper"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ArchitecturalArtifact"/>
+        <Class IRI="#Skyscraper"/>
+        <Class IRI="#ArchitecturalArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Souq"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#FinancialArea"/>
+        <Class IRI="#Souq"/>
+        <Class IRI="#FinancialArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SouthAmerica"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Americas"/>
+        <Class IRI="#SouthAmerica"/>
+        <Class IRI="#Americas"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SouthAsia"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Asia"/>
+        <Class IRI="#SouthAsia"/>
+        <Class IRI="#Asia"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SouthEastAsia"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Asia"/>
+        <Class IRI="#SouthEastAsia"/>
+        <Class IRI="#Asia"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Spa"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#HotelFacility"/>
+        <Class IRI="#Spa"/>
+        <Class IRI="#HotelFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SpecializedHotel"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Hotel"/>
+        <Class IRI="#SpecializedHotel"/>
+        <Class IRI="#Hotel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Sport"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ActivityQualifier"/>
+        <Class IRI="#Sport"/>
+        <Class IRI="#ActivityQualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SportsComplex"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#SportsComplex"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SubUrb"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Location"/>
+        <Class IRI="#SubUrb"/>
+        <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SubjectiveQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Qualifier"/>
+        <Class IRI="#SubjectiveQualifier"/>
+        <Class IRI="#Qualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForAudience"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SpecializedHotel"/>
+        <Class IRI="#SuitableForAudience"/>
+        <Class IRI="#SpecializedHotel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildren"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForAudience"/>
+        <Class IRI="#SuitableForChildren"/>
+        <Class IRI="#SuitableForAudience"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildrenFrom0To3"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildren"/>
+        <Class IRI="#SuitableForChildrenFrom0To3"/>
+        <Class IRI="#SuitableForChildren"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildrenFrom4To6"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildren"/>
+        <Class IRI="#SuitableForChildrenFrom4To6"/>
+        <Class IRI="#SuitableForChildren"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildrenFrom7To9"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildren"/>
+        <Class IRI="#SuitableForChildrenFrom7To9"/>
+        <Class IRI="#SuitableForChildren"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildrenFrom9To12"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildren"/>
+        <Class IRI="#SuitableForChildrenFrom9To12"/>
+        <Class IRI="#SuitableForChildren"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForCouples"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForAudience"/>
+        <Class IRI="#SuitableForCouples"/>
+        <Class IRI="#SuitableForAudience"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForTeenagers"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuitableForChildren"/>
+        <Class IRI="#SuitableForTeenagers"/>
+        <Class IRI="#SuitableForChildren"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuportsLeasureActivity"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsActivity"/>
+        <Class IRI="#SuportsLeasureActivity"/>
+        <Class IRI="#SupportsActivity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportDesertSafari"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToDesert"/>
+        <Class IRI="#SupportDesertSafari"/>
+        <Class IRI="#CloseToDesert"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportWaterActivity"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToWaterPark"/>
+        <Class IRI="#SupportWaterActivity"/>
+        <Class IRI="#CloseToWaterPark"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportZoologicalGradenTour"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToZoologicalGarden"/>
+        <Class IRI="#SupportZoologicalGradenTour"/>
+        <Class IRI="#CloseToZoologicalGarden"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsActivity"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SpecializedHotel"/>
+        <Class IRI="#SupportsActivity"/>
+        <Class IRI="#SpecializedHotel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsAdventure"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsActivity"/>
+        <Class IRI="#SupportsAdventure"/>
+        <Class IRI="#SupportsActivity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsBusiness"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsActivity"/>
+        <Class IRI="#SupportsBusiness"/>
+        <Class IRI="#SupportsActivity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsCamelRacing"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToCamelRaceCourse"/>
+        <Class IRI="#SupportsCamelRacing"/>
+        <Class IRI="#CloseToCamelRaceCourse"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsClubbing"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SuportsLeasureActivity"/>
+        <Class IRI="#SupportsClubbing"/>
+        <Class IRI="#SuportsLeasureActivity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsDiving"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSport"/>
+        <Class IRI="#SupportsDiving"/>
+        <Class IRI="#SupportsSport"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsGolf"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSport"/>
+        <Class IRI="#SupportsGolf"/>
+        <Class IRI="#SupportsSport"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsHiking"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsAdventure"/>
+        <Class IRI="#SupportsHiking"/>
+        <Class IRI="#SupportsAdventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsMuseumTour"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToMuseum"/>
+        <Class IRI="#SupportsMuseumTour"/>
+        <Class IRI="#CloseToMuseum"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsPoolSwimming"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSwimming"/>
+        <Class IRI="#SupportsPoolSwimming"/>
+        <Class IRI="#SupportsSwimming"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsRockClimbing"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsAdventure"/>
+        <Class IRI="#SupportsRockClimbing"/>
+        <Class IRI="#SupportsAdventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSafari"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsAdventure"/>
+        <Class IRI="#SupportsSafari"/>
+        <Class IRI="#SupportsAdventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSeaSwimming"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSwimming"/>
+        <Class IRI="#SupportsSeaSwimming"/>
+        <Class IRI="#SupportsSwimming"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsShopping"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsActivity"/>
+        <Class IRI="#SupportsShopping"/>
+        <Class IRI="#SupportsActivity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSkiing"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CloseToSkiingFacility"/>
+        <Class IRI="#SupportsSkiing"/>
+        <Class IRI="#CloseToSkiingFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSport"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsActivity"/>
+        <Class IRI="#SupportsSport"/>
+        <Class IRI="#SupportsActivity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSwimming"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsSport"/>
+        <Class IRI="#SupportsSwimming"/>
+        <Class IRI="#SupportsSport"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsTrekking"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsAdventure"/>
+        <Class IRI="#SupportsTrekking"/>
+        <Class IRI="#SupportsAdventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsWedding"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsActivity"/>
+        <Class IRI="#SupportsWedding"/>
+        <Class IRI="#SupportsActivity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsWhiteWaterRafting"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SupportsAdventure"/>
+        <Class IRI="#SupportsWhiteWaterRafting"/>
+        <Class IRI="#SupportsAdventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Swimming"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Sport"/>
+        <Class IRI="#Swimming"/>
+        <Class IRI="#Sport"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#TargetQualifier"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Qualifier"/>
+        <Class IRI="#TargetQualifier"/>
+        <Class IRI="#Qualifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Teenager"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Children"/>
+        <Class IRI="#Teenager"/>
+        <Class IRI="#Children"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Temple"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#PlaceOfWorship"/>
+        <Class IRI="#Temple"/>
+        <Class IRI="#PlaceOfWorship"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Theatre"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#Theatre"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ThemePark"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AmusementPark"/>
+        <Class IRI="#ThemePark"/>
+        <Class IRI="#AmusementPark"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Town"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Location"/>
+        <Class IRI="#Town"/>
+        <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Trail"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalFeature"/>
+        <Class IRI="#Trail"/>
+        <Class IRI="#NaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Trekking"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
+        <Class IRI="#Trekking"/>
+        <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Trekking"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#LeasureActivity"/>
+        <Class IRI="#Trekking"/>
+        <Class IRI="#LeasureActivity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#TropicalRegion"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ClimaticRegion"/>
+        <Class IRI="#TropicalRegion"/>
+        <Class IRI="#ClimaticRegion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#WaterPark"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#AmusementPark"/>
+        <Class IRI="#WaterPark"/>
+        <Class IRI="#AmusementPark"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Waterfall"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ScenicNaturalFeature"/>
+        <Class IRI="#Waterfall"/>
+        <Class IRI="#ScenicNaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Wedding"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Function"/>
+        <Class IRI="#Wedding"/>
+        <Class IRI="#Function"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#WetlandReserve"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#NaturalArea"/>
+        <Class IRI="#WetlandReserve"/>
+        <Class IRI="#NaturalArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#WhiteWaterRafting"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Adventure"/>
+        <Class IRI="#WhiteWaterRafting"/>
+        <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#WorldHeritageSite"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#CulturalArea"/>
+        <Class IRI="#WorldHeritageSite"/>
+        <Class IRI="#CulturalArea"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ZoologicalGarden"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#RecreationalFacility"/>
+        <Class IRI="#ZoologicalGarden"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ZoologicalGardenTour"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#SiteSeeing"/>
+        <Class IRI="#ZoologicalGardenTour"/>
+        <Class IRI="#SiteSeeing"/>
     </SubClassOf>
     <ClassAssertion>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Africa_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Antarctica_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Asia_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
         <NamedIndividual IRI="#Australia"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Australia_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
         <NamedIndividual IRI="#England"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Europe_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
         <NamedIndividual IRI="#Kandy"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Beach"/>
+        <Class IRI="#Beach"/>
         <NamedIndividual IRI="#MTBeach"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#City"/>
         <NamedIndividual IRI="#MountLavinia"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#North_America_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
         <NamedIndividual IRI="#NurawaEliya"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+        <Class IRI="#Country"/>
         <NamedIndividual IRI="#Singapor"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#South_America_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
         <NamedIndividual IRI="#Sri_Lanka"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#City"/>
         <NamedIndividual IRI="#Trinco"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+        <Class IRI="#Country"/>
         <NamedIndividual IRI="#USA"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
@@ -1873,7 +1925,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCity"/>
         <NamedIndividual IRI="#Sri_Lanka"/>
-        <NamedIndividual IRI="#Kandy"/>
+        <NamedIndividual IRI="#NurawaEliya"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCity"/>
@@ -1883,7 +1935,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCity"/>
         <NamedIndividual IRI="#Sri_Lanka"/>
-        <NamedIndividual IRI="#NurawaEliya"/>
+        <NamedIndividual IRI="#Kandy"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCity"/>
@@ -1891,8 +1943,8 @@
         <NamedIndividual IRI="#MountLavinia"/>
     </ObjectPropertyAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isInCity"/>
         <ObjectProperty IRI="#hasPlace"/>
+        <ObjectProperty IRI="#isInCity"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#isInCity"/>
@@ -1901,53 +1953,61 @@
         <ObjectProperty IRI="#isInCountry"/>
     </FunctionalObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCity"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+        <Class IRI="#Country"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCountry"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ClimaticRegion"/>
+        <Class IRI="#ClimaticRegion"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPlace"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#City"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isInCity"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Place"/>
+        <Class IRI="#Place"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isInCountry"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#City"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#ActivityQualifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCity"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#City"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCountry"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+        <Class IRI="#Country"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPlace"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Place"/>
+        <Class IRI="#Place"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isInCity"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#City"/>
+        <Class IRI="#City"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isInCountry"/>
-        <Class IRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"/>
+        <Class IRI="#Country"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#ClimaticRegion</IRI>
+        <IRI>#ClimaticRegion</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This is regarding the part of world. Eventhough there are climate regions within an country we are only consider about the regions which countries are belonging to. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Description</IRI>
+        <IRI>#Description</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The classes of some &quot;description&quot; such as a place close to something, hotel suitable for something etc. The qualifiers will query these classes to find individuals that match their criteria.</Literal>
     </AnnotationAssertion>
 </Ontology>
