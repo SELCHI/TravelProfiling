@@ -8,9 +8,7 @@
 
 import static org.semanticweb.owlapi.vocab.OWLFacet.*;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -92,17 +90,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.reasoner.SimpleConfiguration;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasoner;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
-import org.semanticweb.owlapi.util.AutoIRIMapper;
-import org.semanticweb.owlapi.util.DefaultPrefixManager;
-import org.semanticweb.owlapi.util.InferredAxiomGenerator;
-import org.semanticweb.owlapi.util.InferredOntologyGenerator;
-import org.semanticweb.owlapi.util.InferredSubClassAxiomGenerator;
-import org.semanticweb.owlapi.util.OWLClassExpressionVisitorAdapter;
-import org.semanticweb.owlapi.util.OWLEntityRemover;
-import org.semanticweb.owlapi.util.OWLOntologyMerger;
-import org.semanticweb.owlapi.util.OWLOntologyWalker;
-import org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor;
-import org.semanticweb.owlapi.util.SimpleIRIMapper;
+import org.semanticweb.owlapi.util.*;
 import org.semanticweb.owlapi.vocab.OWL2Datatype;
 import org.semanticweb.owlapi.vocab.OWLFacet;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
@@ -114,10 +102,12 @@ import org.semanticweb.HermiT.Reasoner;
 
 public class Main {
 
+    public static OWLOntologyManager manager;
+    public static OWLReasoner reasoner;
 
-    public static void main(String[] args) throws OWLOntologyCreationException {
+    public static void main(String[] args) throws OWLOntologyCreationException, IOException {
 
-        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+        manager = OWLManager.createOWLOntologyManager();
 
         File file = new File("Ontology/travelProfilingLocationOntology.owl");
         OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
@@ -134,7 +124,7 @@ public class Main {
 
         OWLReasonerConfiguration config = new SimpleConfiguration(progressMonitor);
 
-        OWLReasoner reasoner = reasonerFactory.createReasoner(ontology,config);
+        reasoner = reasonerFactory.createReasoner(ontology,config);
 
         // Ask the reasoner to do all the necessary work now
         reasoner.precomputeInferences();
@@ -181,8 +171,43 @@ public class Main {
             System.out.println("    " + ind);
         }
 
+        dlQueryTest();
+
+    }
 
 
+    public static void dlQueryTest() throws IOException {
+
+        ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
+        DLQueryInstances dlQueryInstances = new DLQueryInstances(new DLQueryEngine(reasoner, shortFormProvider));
+
+        System.out
+                .println("Please type a class expression in Manchester Syntax and press Enter (or press x to exit):");
+        System.out.println("");
+        String classExpression = readInput();
+        // Check for exit condition
+        if (classExpression.equalsIgnoreCase("x")) {
+            return;
+        }
+
+        Set<OWLNamedIndividual> entities = dlQueryInstances.getInstances(classExpression.trim());
+
+        for(OWLEntity enti:entities)
+        {
+            System.out.println(shortFormProvider.getShortForm(enti));
+        }
+
+        System.out.println();
+        System.out.println();
+
+    }
+
+    private static String readInput() throws IOException {
+        InputStream is = System.in;
+        InputStreamReader reader;
+        reader = new InputStreamReader(is, "UTF-8");
+        BufferedReader br = new BufferedReader(reader);
+        return br.readLine();
     }
 
 }

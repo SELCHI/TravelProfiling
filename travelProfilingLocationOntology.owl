@@ -697,6 +697,9 @@
         <ObjectProperty IRI="#isInCity"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isInContinent"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isInCountry"/>
     </Declaration>
     <Declaration>
@@ -719,6 +722,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Australia_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chillaz"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#England"/>
@@ -783,6 +789,13 @@
             <ObjectProperty IRI="#hasCity"/>
             <Class IRI="#City"/>
         </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isInContinent"/>
+            <Class IRI="#Continent"/>
+        </ObjectAllValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#District"/>
@@ -1860,6 +1873,10 @@
         <NamedIndividual IRI="#Australia_Continent"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Spa"/>
+        <NamedIndividual IRI="#Chillaz"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Country"/>
         <NamedIndividual IRI="#England"/>
     </ClassAssertion>
@@ -1908,9 +1925,34 @@
         <NamedIndividual IRI="#USA"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Asia_Continent"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Asia_Continent"/>
+        <NamedIndividual IRI="#Singapor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInCity"/>
+        <NamedIndividual IRI="#Chillaz"/>
+        <NamedIndividual IRI="#MountLavinia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInContinent"/>
+        <NamedIndividual IRI="#Chillaz"/>
+        <NamedIndividual IRI="#Asia_Continent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isInCity"/>
         <NamedIndividual IRI="#MTBeach"/>
         <NamedIndividual IRI="#MountLavinia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInContinent"/>
+        <NamedIndividual IRI="#MTBeach"/>
+        <NamedIndividual IRI="#Asia_Continent"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPlace"/>
@@ -1921,6 +1963,11 @@
         <ObjectProperty IRI="#isInCountry"/>
         <NamedIndividual IRI="#MountLavinia"/>
         <NamedIndividual IRI="#Sri_Lanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInContinent"/>
+        <NamedIndividual IRI="#Singapor"/>
+        <NamedIndividual IRI="#Asia_Continent"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCity"/>
@@ -1942,6 +1989,10 @@
         <NamedIndividual IRI="#Sri_Lanka"/>
         <NamedIndividual IRI="#MountLavinia"/>
     </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isInContinent"/>
+        <ObjectProperty IRI="#hasCountry"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasPlace"/>
         <ObjectProperty IRI="#isInCity"/>
@@ -1973,6 +2024,10 @@
         <Class IRI="#Place"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInContinent"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isInCountry"/>
         <Class IRI="#City"/>
     </ObjectPropertyDomain>
@@ -1995,6 +2050,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isInCity"/>
         <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInContinent"/>
+        <Class IRI="#Continent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isInCountry"/>
