@@ -11,8 +11,7 @@ from nltk.corpus import stopwords
 from nltk import wordpunct_tokenize
 from sys import stdin
 from pymongo import Connection
-
-
+from sharedCleaner import Cleaner
 
 
 API_ENDPOINT_URL = 'https://stream.twitter.com/1.1/statuses/filter.json'
@@ -38,10 +37,9 @@ class TwitterStream:
         self.buffer = ''
         self.timeout = timeout
         self.setup_connection()
+        self.cleaner = Cleaner()
         
-               
         
-
     def setup_connection(self):
         """ Create persistant HTTP connection to Streaming API endpoint using cURL.
         """
@@ -132,14 +130,15 @@ class TwitterStream:
             elif get_language(message.get('text')) == "english":
             
                 tweet = {"user": message.get('user').get('name'),
-                        "text": message.get('text'),
+                        "text": self.cleaner.clean(message.get('text')),
                         "time": message.get('user').get('created_at'),
                         "lang": message.get('user').get('lang')}    
           
                 
                 tweets = tweetbase.tweets
+                print tweet
                 tweets.insert(tweet)  
-                print tweets.count()
+                #print tweets.count()
                 for tweet in tweets.find():
                           # print  tweet.get('lang')               
                            continue
