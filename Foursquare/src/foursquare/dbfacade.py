@@ -8,7 +8,6 @@ from pymongo.errors import ConnectionFailure
 import sys
 import datetime
 import pprint
-from psycopg2.tests.testconfig import dbname
 class DBFacade:
     '''
     Db Handler
