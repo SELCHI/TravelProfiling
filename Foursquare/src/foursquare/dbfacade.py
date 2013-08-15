@@ -13,13 +13,13 @@ class DBFacade:
     Db Handler
     '''
 
-    def __init__(self):
-        self.createConnection()
+    def __init__(self,host="samith", port=27017):
+        self.createConnection(host ,port)
     
     def createConnection(self ,host="samith", port=27017 ):
         """ Connect to MongoDB """
         try:
-            self.connection = MongoClient(host="samith", port=27017)
+            self.connection = MongoClient(host ,port)
             print "Connected successfully"
         except ConnectionFailure, e:
             sys.stderr.write("Could not connect to MongoDB: %s" % e)
@@ -43,7 +43,7 @@ class DBFacade:
     def countCollection(self,collectionName ,dbName = "foursquare"):
         dbHandler = self.setDB(dbName)
         collectionHandler = self.setCollection(dbHandler, collectionName)
-        print collectionHandler.count()
+        return collectionHandler.count()
         
     def getData(self,collectionName ,dbName = "foursquare" , criteria ={} , projection ={}):
         dbHandler = self.setDB(dbName)
