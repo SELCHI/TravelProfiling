@@ -113,7 +113,7 @@ class TwitterStream:
         if data.endswith('\r\n') and self.buffer.strip():
             # complete message received
             
-            connection = Connection('chiran-Vostro-1520', 27017)
+            connection = Connection('selchi', 27017)
             tweetbase = connection['test_tweetbase']  
             collection = tweetbase['tweet-collection']
                     
