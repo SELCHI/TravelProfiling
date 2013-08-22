@@ -29,22 +29,25 @@ class Foursquare_Adapter:
         except IOError as err:
             print("Error in File"+str(err))
         
+        print seedWords
         self.dbFacade.insertData(dbName =dbName , collectionData = seedWords , collectionName = "seed_words" )
+        count = self.dbFacade.countCollection(collectionName = "seed_words" ,dbName =dbName)
+        print "Inserted "+str(count)+" seed words to seed_words successfully"
         
-    def getTips(self ,dbName="test_foursquare"):        
+    def retrieveTips(self ,dbName="test_foursquare"):        
         
         cityLocArray = self.dbFacade.getData(dbName = dbName ,collectionName = "foursquare_locations" , 
                               projection = { "locations.location_id": True ,
                                             "geo_properties.name": True ,
                                           "locations.location_name": True ,"_id":False })
-        
+        print "Starting retrieve tips..."
         for locArray in cityLocArray:
             for location in locArray['locations']:                
                 result = self.client.venues.tips(VENUE_ID =location["location_id"])
                 tipsArray = result['tips']['items']
                 tipsDetails = []
-                print "**************"
-                print location["location_name"]
+                
+                print "Collecting tips for " +location["location_name"]
                 
                 for eachTip in tipsArray:
                     add = {
@@ -54,10 +57,10 @@ class Foursquare_Adapter:
                            'text':eachTip['text']
                            }
                     if add not in tipsDetails:
-                        tipsDetails.append(add)
-                pprint(tipsDetails)
+                        tipsDetails.append(add)               
                     
                 if tipsDetails:
+                    print tipsDetails
                     self.dbFacade.updateData(dbName =dbName,
                                              collectionName ="location_tips" ,
                                              query = {"location_id":location["location_id"]} ,
@@ -66,20 +69,21 @@ class Foursquare_Adapter:
                                                        "tips":tipsDetails})
         
         
-    def getVenues(self ,dbName="test_foursquare"):
+    def retrieveVenues(self ,dbName="test_foursquare"):
         seedArray = self.dbFacade.getData(dbName = dbName ,collectionName = "seed_words" , 
                               projection = { "word": True ,"_id":False })
         
         cityArray = self.dbFacade.getData(dbName = dbName ,collectionName = "geo_names" , 
                               projection = { "geonameid": True ,"name": True ,"country code":True,"_id":False })
-
+        
+        print "Starting retrieve venues..."
+        
         for city in cityArray:
+            print "Collecting locations in " + city["name"] + "..."
             location_info = []
             
             # find travel related locations inside the city
             for seedWord in seedArray:
-                print seedWord["word"]
-                print city["name"]+", "+city["country code"]
                 result = self.client.venues.search(params={'query':seedWord["word"] ,
                                                            'near':city["name"]+", "+city["country code"]})            
                 venues = result["venues"]
@@ -94,8 +98,10 @@ class Foursquare_Adapter:
                     
 
             if location_info:
+                print location_info
                 self.dbFacade.updateData(dbName =dbName,
                                          collectionName ="foursquare_locations" ,
                                          query = {"geo_properties":city} ,
                                          update = {"geo_properties":city , "locations":location_info})
+        print "Successfully saved"
         

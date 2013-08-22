@@ -29,7 +29,11 @@ class GeoDataHandler:
             return(None)
     
     def saveData(self ,geoDataList ,collectionName = "geo_names" ,dbName ="test_foursquare"):
+        for eachData in geoDataList:
+            print eachData
         self.dbFacade.insertData(geoDataList , collectionName = "geo_names" ,dbName =dbName)
+        count = self.dbFacade.countCollection(collectionName = "geo_names" ,dbName =dbName)
+        print "Inserted "+str(count)+" geo names to "+collectionName+" successfully"
  
 """       
 db = DBFacade()
