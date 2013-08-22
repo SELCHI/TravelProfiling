@@ -1,0 +1,936 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://raw.github.com/SELCHI/TravelProfiling/master/SelchiLocationOntology.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="https://raw.github.com/SELCHI/TravelProfiling/master/SelchiLocationOntology.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Adventure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArcheologyTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchitecturalArtifacct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artifacts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BirdWatching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creek"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesertReserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesertSafari"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesignatedArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#District"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DivingSea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Excursion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Facility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForestReserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GardenTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hiking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HikingTrail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HistoricalArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HistoricalArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Island"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeasureActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MuseumTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NatureTrail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Racing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecreationalFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#River_Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RockClimbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ruins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SacredArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Safari"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SandyShoreline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScenicMountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScenicNaturalFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SiteSeeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkiSloper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skiing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skyscraper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trekking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waterfall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WetlandReserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteWaterRafting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorldHeritageSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZoologicalGardenTour"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDistrict"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProvince"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasQualifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCountryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDistrictOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlaceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProvinceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRegionOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTrendValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Africa_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antarctica_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asia_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Central_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europe_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kandy_District"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#North_America_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Raassa_Ellla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rassalla_Diving"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#South_America_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wattegama"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Adventure"/>
+        <Class IRI="#Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArcheologyTour"/>
+        <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchitecturalArtifacct"/>
+        <Class IRI="#Artifacts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artifacts"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beach"/>
+        <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BirdWatching"/>
+        <Class IRI="#LeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPlace"/>
+            <Class IRI="#Place"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityTour"/>
+        <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCountry"/>
+            <Class IRI="#Country"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasProvince"/>
+            <Class IRI="#Province"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creek"/>
+        <Class IRI="#ScenicNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalArea"/>
+        <Class IRI="#DesignatedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalFacility"/>
+        <Class IRI="#Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desert"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesertReserve"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesertSafari"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesignatedArea"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#District"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#District"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCity"/>
+            <Class IRI="#City"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diving"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DivingSea"/>
+        <Class IRI="#Beach"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Excursion"/>
+        <Class IRI="#Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Facility"/>
+        <Class IRI="#Artifacts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinancialArea"/>
+        <Class IRI="#DesignatedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForestReserve"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fountain"/>
+        <Class IRI="#ArchitecturalArtifacct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GardenTour"/>
+        <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hiking"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HikingTrail"/>
+        <Class IRI="#Trail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HistoricalArea"/>
+        <Class IRI="#DesignatedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HistoricalArtifact"/>
+        <Class IRI="#Artifacts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotelFacility"/>
+        <Class IRI="#Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Island"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lake"/>
+        <Class IRI="#ScenicNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeasureActivity"/>
+        <Class IRI="#Excursion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monument"/>
+        <Class IRI="#HistoricalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mountain"/>
+        <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MuseumTour"/>
+        <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalPark"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalArea"/>
+        <Class IRI="#DesignatedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalFeature"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NatureTrail"/>
+        <Class IRI="#Trail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQualifier"/>
+            <Class IRI="#Qualifier"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasTrendValue"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Province"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Province"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDistrict"/>
+            <Class IRI="#District"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Racing"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecreationalFacility"/>
+        <Class IRI="#Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River_Part"/>
+        <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RockClimbing"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ruins"/>
+        <Class IRI="#HistoricalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SacredArea"/>
+        <Class IRI="#CulturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safari"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SandyShoreline"/>
+        <Class IRI="#Beach"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScenicMountain"/>
+        <Class IRI="#Mountain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScenicNaturalFeature"/>
+        <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SiteSeeing"/>
+        <Class IRI="#Excursion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkiSloper"/>
+        <Class IRI="#Mountain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skiing"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skyscraper"/>
+        <Class IRI="#ArchitecturalArtifacct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sport"/>
+        <Class IRI="#Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trail"/>
+        <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trekking"/>
+        <Class IRI="#LeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waterfall"/>
+        <Class IRI="#ScenicNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WetlandReserve"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteWaterRafting"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorldHeritageSite"/>
+        <Class IRI="#CulturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZoologicalGardenTour"/>
+        <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ArcheologyTour"/>
+        <Class IRI="#CityTour"/>
+        <Class IRI="#GardenTour"/>
+        <Class IRI="#MuseumTour"/>
+        <Class IRI="#ZoologicalGardenTour"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BirdWatching"/>
+        <Class IRI="#Trekking"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#City"/>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Country"/>
+        <Class IRI="#District"/>
+        <Class IRI="#Place"/>
+        <Class IRI="#Province"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LeasureActivity"/>
+        <Class IRI="#SiteSeeing"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Africa_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Antarctica_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Asia_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Australia_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Province"/>
+        <NamedIndividual IRI="#Central_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Europe_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#District"/>
+        <NamedIndividual IRI="#Kandy_District"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#North_America_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#River_Part"/>
+        <NamedIndividual IRI="#Raassa_Ellla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diving"/>
+        <NamedIndividual IRI="#Rassalla_Diving"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#South_America_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Wattegama"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Asia_Continent"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Asia_Continent"/>
+        <NamedIndividual IRI="#China"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDistrict"/>
+        <NamedIndividual IRI="#Central_Province"/>
+        <NamedIndividual IRI="#Kandy_District"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Kandy_District"/>
+        <NamedIndividual IRI="#Wattegama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQualifier"/>
+        <NamedIndividual IRI="#Raassa_Ellla"/>
+        <NamedIndividual IRI="#Rassalla_Diving"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProvince"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+        <NamedIndividual IRI="#Central_Province"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlace"/>
+        <NamedIndividual IRI="#Wattegama"/>
+        <NamedIndividual IRI="#Raassa_Ellla"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCity"/>
+        <ObjectProperty IRI="#hasRegion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCountry"/>
+        <ObjectProperty IRI="#hasRegion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDistrict"/>
+        <ObjectProperty IRI="#hasRegion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPlace"/>
+        <ObjectProperty IRI="#hasRegion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProvince"/>
+        <ObjectProperty IRI="#hasRegion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCityOf"/>
+        <ObjectProperty IRI="#isRegionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCountryOf"/>
+        <ObjectProperty IRI="#isRegionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDistrictOf"/>
+        <ObjectProperty IRI="#isRegionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPlaceOf"/>
+        <ObjectProperty IRI="#isRegionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProvinceOf"/>
+        <ObjectProperty IRI="#isRegionOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCity"/>
+        <ObjectProperty IRI="#isCityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCountry"/>
+        <ObjectProperty IRI="#isCountryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isDistrictOf"/>
+        <ObjectProperty IRI="#hasDistrict"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPlace"/>
+        <ObjectProperty IRI="#isPlaceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasProvince"/>
+        <ObjectProperty IRI="#isProvinceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRegion"/>
+        <ObjectProperty IRI="#isRegionOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isPlaceOf"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasRegion"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isRegionOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCity"/>
+        <Class IRI="#District"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#Continent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDistrict"/>
+        <Class IRI="#Province"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlace"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProvince"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasQualifier"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRegion"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCityOf"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCountryOf"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDistrictOf"/>
+        <Class IRI="#District"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlaceOf"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProvinceOf"/>
+        <Class IRI="#Province"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRegionOf"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDistrict"/>
+        <Class IRI="#District"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlace"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProvince"/>
+        <Class IRI="#Province"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasQualifier"/>
+        <Class IRI="#Qualifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRegion"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCityOf"/>
+        <Class IRI="#District"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCountryOf"/>
+        <Class IRI="#Continent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDistrictOf"/>
+        <Class IRI="#Province"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlaceOf"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProvinceOf"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRegionOf"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTrendValue"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTrendValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
