@@ -1990,8 +1990,8 @@
         <NamedIndividual IRI="#MountLavinia"/>
     </ObjectPropertyAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isInContinent"/>
         <ObjectProperty IRI="#hasCountry"/>
+        <ObjectProperty IRI="#isInContinent"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasPlace"/>
