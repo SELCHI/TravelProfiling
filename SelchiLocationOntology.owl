@@ -25,22 +25,67 @@
         <Class IRI="#Adventure"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Aerodium"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmusementPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aquarium"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ArcheologyTour"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ArchitecturalArtifacct"/>
+        <Class IRI="#ArchitecturalArtifact"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Artifacts"/>
+        <Class IRI="#Arena"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artifact"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Beach"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#BirdPark"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#BirdWatching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BotanicalGarden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CamelRacing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Campground"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Canion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Casino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChildrenPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Church"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cinema"/>
     </Declaration>
     <Declaration>
         <Class IRI="#City"/>
@@ -97,13 +142,40 @@
         <Class IRI="#FinancialArea"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Fishing"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ForestReserve"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Fountain"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Garden"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GardenTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoKarting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Golf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GolfCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ground"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Harbor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hiking"/>
@@ -118,10 +190,22 @@
         <Class IRI="#HistoricalArtifact"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#HorseRacing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HorseRiding"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HotelFacility"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Island"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kayaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kovil"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lake"/>
@@ -130,10 +214,25 @@
         <Class IRI="#LeasureActivity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Lighthouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mansion"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Monument"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Mosque"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Mountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Museum"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MuseumTour"/>
@@ -151,25 +250,73 @@
         <Class IRI="#NatureTrail"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NewYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NightClub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OstrichRacing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Palace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parachuting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Party"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceOfWorship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Port"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Province"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Pyramid"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Qualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Racecourse"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Racing"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Rafting"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RecreationalFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reenactments"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Region"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#River_Part"/>
+        <Class IRI="#Reserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiverPoint"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RockClimbing"/>
@@ -184,6 +331,9 @@
         <Class IRI="#Safari"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Sailing"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SandyShoreline"/>
     </Declaration>
     <Declaration>
@@ -193,7 +343,13 @@
         <Class IRI="#ScenicNaturalFeature"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Shrine"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SiteSeeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skating"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SkiSloper"/>
@@ -202,16 +358,52 @@
         <Class IRI="#Skiing"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SkiingFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skydiving"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Skyscraper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sport"/>
+        <Class IRI="#Snorkeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snowboarding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportsComplex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surfing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swimming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theatre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThemePark"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Trail"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Trekking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterPark"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Waterfall"/>
@@ -224,6 +416,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#WorldHeritageSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZoologicalGarden"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ZoologicalGardenTour"/>
@@ -317,19 +512,39 @@
         <Class IRI="#Qualifier"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Aerodium"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Airport"/>
-        <Class IRI="#Facility"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmusementPark"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalPark"/>
+        <Class IRI="#Park"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aquarium"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ArcheologyTour"/>
         <Class IRI="#SiteSeeing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ArchitecturalArtifacct"/>
-        <Class IRI="#Artifacts"/>
+        <Class IRI="#ArchitecturalArtifact"/>
+        <Class IRI="#Artifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Artifacts"/>
+        <Class IRI="#Arena"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artifact"/>
         <Class IRI="#Feature"/>
     </SubClassOf>
     <SubClassOf>
@@ -337,8 +552,48 @@
         <Class IRI="#NaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BirdPark"/>
+        <Class IRI="#Park"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BirdWatching"/>
         <Class IRI="#LeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BotanicalGarden"/>
+        <Class IRI="#Garden"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowling"/>
+        <Class IRI="#LeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CamelRacing"/>
+        <Class IRI="#Racing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campground"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canion"/>
+        <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Casino"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildrenPark"/>
+        <Class IRI="#AmusementPark"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Church"/>
+        <Class IRI="#PlaceOfWorship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cinema"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#City"/>
@@ -349,6 +604,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasPlace"/>
             <Class IRI="#Place"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQualifier"/>
+            <Class IRI="#Qualifier"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -395,11 +657,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DesertReserve"/>
-        <Class IRI="#NaturalArea"/>
+        <Class IRI="#Reserve"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DesertSafari"/>
-        <Class IRI="#Adventure"/>
+        <Class IRI="#Safari"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DesignatedArea"/>
@@ -430,7 +692,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Facility"/>
-        <Class IRI="#Artifacts"/>
+        <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Feature"/>
@@ -441,16 +703,52 @@
         <Class IRI="#DesignatedArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Fishing"/>
+        <Class IRI="#LeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ForestReserve"/>
-        <Class IRI="#NaturalArea"/>
+        <Class IRI="#Reserve"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Fountain"/>
-        <Class IRI="#ArchitecturalArtifacct"/>
+        <Class IRI="#ArchitecturalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <Class IRI="#Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garden"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GardenTour"/>
         <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoKarting"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Golf"/>
+        <Class IRI="#LeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GolfCourse"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ground"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gym"/>
+        <Class IRI="#SportsComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harbor"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hiking"/>
@@ -466,7 +764,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HistoricalArtifact"/>
-        <Class IRI="#Artifacts"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HorseRacing"/>
+        <Class IRI="#Racing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HorseRiding"/>
+        <Class IRI="#LeasureActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HotelFacility"/>
@@ -477,6 +783,14 @@
         <Class IRI="#NaturalArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Kayaking"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kovil"/>
+        <Class IRI="#PlaceOfWorship"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Lake"/>
         <Class IRI="#ScenicNaturalFeature"/>
     </SubClassOf>
@@ -485,12 +799,32 @@
         <Class IRI="#Excursion"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Lighthouse"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mall"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mansion"/>
+        <Class IRI="#CulturalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Monument"/>
         <Class IRI="#HistoricalArtifact"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Mosque"/>
+        <Class IRI="#PlaceOfWorship"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Mountain"/>
         <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Museum"/>
+        <Class IRI="#CulturalFacility"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MuseumTour"/>
@@ -513,15 +847,40 @@
         <Class IRI="#Trail"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Place"/>
-        <Class IRI="#Region"/>
+        <Class IRI="#NewYear"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NightClub"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OstrichRacing"/>
+        <Class IRI="#Racing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Palace"/>
+        <Class IRI="#CulturalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parachuting"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parody"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Party"/>
+        <Class IRI="#Function"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Place"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasQualifier"/>
-            <Class IRI="#Qualifier"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="#Region"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Place"/>
@@ -529,6 +888,18 @@
             <DataProperty IRI="#hasTrendValue"/>
             <Datatype abbreviatedIRI="xsd:int"/>
         </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfWorship"/>
+        <Class IRI="#CulturalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pool"/>
+        <Class IRI="#SportsComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Port"/>
+        <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Province"/>
@@ -542,7 +913,19 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Pyramid"/>
+        <Class IRI="#ArchitecturalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Racecourse"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Racing"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rafting"/>
         <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
@@ -550,7 +933,15 @@
         <Class IRI="#Facility"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#River_Part"/>
+        <Class IRI="#Reenactments"/>
+        <Class IRI="#CulturalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reserve"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiverPoint"/>
         <Class IRI="#NaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
@@ -570,6 +961,10 @@
         <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Sailing"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SandyShoreline"/>
         <Class IRI="#Beach"/>
     </SubClassOf>
@@ -582,8 +977,16 @@
         <Class IRI="#NaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Shrine"/>
+        <Class IRI="#PlaceOfWorship"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SiteSeeing"/>
         <Class IRI="#Excursion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skating"/>
+        <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SkiSloper"/>
@@ -594,12 +997,56 @@
         <Class IRI="#Adventure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Skyscraper"/>
-        <Class IRI="#ArchitecturalArtifacct"/>
+        <Class IRI="#SkiingFacility"/>
+        <Class IRI="#SportsComplex"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sport"/>
-        <Class IRI="#Qualifier"/>
+        <Class IRI="#Skydiving"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skyscraper"/>
+        <Class IRI="#ArchitecturalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snorkeling"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snowboarding"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spa"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportsComplex"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stadium"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surfing"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swimming"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temple"/>
+        <Class IRI="#PlaceOfWorship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theatre"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThemePark"/>
+        <Class IRI="#AmusementPark"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Trail"/>
@@ -610,20 +1057,28 @@
         <Class IRI="#LeasureActivity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#WaterPark"/>
+        <Class IRI="#AmusementPark"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Waterfall"/>
         <Class IRI="#ScenicNaturalFeature"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WetlandReserve"/>
-        <Class IRI="#NaturalArea"/>
+        <Class IRI="#Reserve"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WhiteWaterRafting"/>
-        <Class IRI="#Adventure"/>
+        <Class IRI="#Rafting"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WorldHeritageSite"/>
         <Class IRI="#CulturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZoologicalGarden"/>
+        <Class IRI="#Garden"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ZoologicalGardenTour"/>
@@ -689,7 +1144,7 @@
         <NamedIndividual IRI="#North_America_Continent"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#River_Part"/>
+        <Class IRI="#RiverPoint"/>
         <NamedIndividual IRI="#Raassa_Ellla"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -729,11 +1184,6 @@
         <NamedIndividual IRI="#Wattegama"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasQualifier"/>
-        <NamedIndividual IRI="#Raassa_Ellla"/>
-        <NamedIndividual IRI="#Rassalla_Diving"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasProvince"/>
         <NamedIndividual IRI="#Sri_Lanka"/>
         <NamedIndividual IRI="#Central_Province"/>
@@ -742,6 +1192,11 @@
         <ObjectProperty IRI="#hasPlace"/>
         <NamedIndividual IRI="#Wattegama"/>
         <NamedIndividual IRI="#Raassa_Ellla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQualifier"/>
+        <NamedIndividual IRI="#Wattegama"/>
+        <NamedIndividual IRI="#Rassalla_Diving"/>
     </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCity"/>
@@ -838,7 +1293,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasQualifier"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#City"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasRegion"/>
