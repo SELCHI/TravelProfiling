@@ -607,13 +607,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#City"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasQualifier"/>
-            <Class IRI="#Qualifier"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#CityTour"/>
         <Class IRI="#SiteSeeing"/>
     </SubClassOf>
@@ -1184,6 +1177,11 @@
         <NamedIndividual IRI="#Wattegama"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQualifier"/>
+        <NamedIndividual IRI="#Raassa_Ellla"/>
+        <NamedIndividual IRI="#Rassalla_Diving"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasProvince"/>
         <NamedIndividual IRI="#Sri_Lanka"/>
         <NamedIndividual IRI="#Central_Province"/>
@@ -1192,11 +1190,6 @@
         <ObjectProperty IRI="#hasPlace"/>
         <NamedIndividual IRI="#Wattegama"/>
         <NamedIndividual IRI="#Raassa_Ellla"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasQualifier"/>
-        <NamedIndividual IRI="#Wattegama"/>
-        <NamedIndividual IRI="#Rassalla_Diving"/>
     </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCity"/>
@@ -1293,7 +1286,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasQualifier"/>
-        <Class IRI="#City"/>
+        <Class IRI="#Place"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasRegion"/>
