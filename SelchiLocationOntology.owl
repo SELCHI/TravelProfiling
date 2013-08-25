@@ -877,6 +877,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Place"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQualifier"/>
+            <Class IRI="#Qualifier"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="#hasTrendValue"/>
             <Datatype abbreviatedIRI="xsd:int"/>
