@@ -1,0 +1,2088 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Accomodation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcheologyTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adventure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgeQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmbienceQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Americas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmusementPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aquarium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchitecturalArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AudienceQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Birdwatching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BotanicalGarden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Budget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Business"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessDistrict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CalmAmbience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CamelRacing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Campground"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Casino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CentralAmerica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Children"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChildrenFrom0To3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChildrenFrom4To6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChildrenFrom7To9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChildrenFrom9To12"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cinema"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityInSouthernHemisphere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClimaticRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClimbingWall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToBusinessDistrict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToCamelRaceCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToDesert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToDivingSea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToGolfCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToMountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToMuseum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToNationalPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToNightClub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToSkiingFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToTrail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToWaterPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseToZoologicalGarden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Couples"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creek"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesertRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesertReserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesertSafari"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesignatedArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#District"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DivingSea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DynamicAmbience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EuropeanCity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Excursion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Facility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FarAway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FarEastAsia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForestReserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GardenTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeoPoliticalQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeographicalQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GetAway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlobalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GolfCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotBeach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotBusinessCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotClimbingWall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotDivingSea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotGym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotLake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotMountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotNaturalFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotPool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotReceptionHall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotSandyShoreline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotSpa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GotWaterfall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Happening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hiking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HikingTrail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HistoricalArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HistoricalArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Island"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kayaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kovil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeasureActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Luxury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MarketQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoodQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mosque"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Museum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MuseumTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NatureTrail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NearALake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NearAMonument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NightClub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NorthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Palace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Party"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceOfWorship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlayGround"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Racecourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Racing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rafting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReceptionHall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecreationalFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reenactments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegionQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reservoir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rockclimbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Romantic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ruins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SacredArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Safari"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sailing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SandyShoreline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scenic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScenicMountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScenicNaturalFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Secluded"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seniors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shrine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SiteSeeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkiSlope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skiing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkiingFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skyscraper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snorkeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Souq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SouthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SouthAsia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SouthEastAsia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecializedHotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportsComplex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubUrb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubjectiveQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuitableForAudience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuitableForChildren"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuitableForChildrenFrom0To3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuitableForChildrenFrom4To6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuitableForChildrenFrom7To9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuitableForChildrenFrom9To12"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuitableForCouples"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuitableForTeenagers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuportsLeasureActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportDesertSafari"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportWaterActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportZoologicalGradenTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsAdventure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsBusiness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsCamelRacing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsClubbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsDiving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsGolf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsHiking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsMuseumTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsPoolSwimming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsRockClimbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsSafari"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsSeaSwimming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsShopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsSkiing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsSport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsSwimming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsTrekking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsWedding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportsWhiteWaterRafting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swimming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TargetQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teenager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theatre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThemePark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Town"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trekking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TropicalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waterfall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wedding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WetlandReserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteWaterRafting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorldHeritageSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZoologicalGarden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZoologicalGardenTour"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInCountry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tbxCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wsLocationId"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Africa_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antarctica_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asia_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europe_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kandy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MTBeach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MountLavinia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#North_America_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NurawaEliya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Singapor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#South_America_Continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trinco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USA"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#City"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPlace"/>
+            <Class IRI="#Place"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ClimaticRegion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCountry"/>
+            <Class IRI="#Country"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Continent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCountry"/>
+            <Class IRI="#Country"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCity"/>
+            <Class IRI="#City"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#District"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCity"/>
+            <Class IRI="#City"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GetAway"/>
+        <ObjectUnionOf>
+            <Class IRI="#CalmAmbience"/>
+            <Class IRI="#DynamicAmbience"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GotBusinessCenter"/>
+        <Class IRI="#SupportsBusiness"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GotClimbingWall"/>
+        <Class IRI="#SupportsRockClimbing"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GotReceptionHall"/>
+        <Class IRI="#SupportsWedding"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Place"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isInCity"/>
+            <Class IRI="#City"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Romantic"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#FarAway"/>
+            <Class IRI="#Scenic"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.codegen.net/ontologies/savareeAnnot.owl#displayName"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">If swimming is available, it is suitable for children from 7 to 9.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.codegen.net/ontologies/savareeAnnot.owl#verbose"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">true</Literal>
+        </Annotation>
+        <Class IRI="#SuitableForChildrenFrom7To9"/>
+        <Class IRI="#SupportsSwimming"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.codegen.net/ontologies/savareeAnnot.owl#displayName"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">A place that supports hiking or safari is suitable for teenagers.</Literal>
+        </Annotation>
+        <Class IRI="#SuitableForTeenagers"/>
+        <ObjectUnionOf>
+            <Class IRI="#SupportsHiking"/>
+            <Class IRI="#SupportsSafari"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportDesertSafari"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToDesert"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportWaterActivity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToWaterPark"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportZoologicalGradenTour"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToZoologicalGarden"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsCamelRacing"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToCamelRaceCourse"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsClubbing"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToNightClub"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsDiving"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToDivingSea"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsGolf"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToGolfCourse"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsHiking"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Hotel"/>
+            <ObjectUnionOf>
+                <Class IRI="#CloseToMountain"/>
+                <Class IRI="#CloseToTrail"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsMuseumTour"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToMuseum"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsPoolSwimming"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#GotPool"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsSafari"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToNationalPark"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsSeaSwimming"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToDivingSea"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.codegen.net/ontologies/savareeAnnot.owl#displayName"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">If a hotel is close to a business district it supports shopping.</Literal>
+        </Annotation>
+        <Class IRI="#SupportsShopping"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToBusinessDistrict"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsSkiing"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToSkiingFacility"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupportsTrekking"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CloseToTrail"/>
+            <Class IRI="#Hotel"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Accomodation"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcheologyTour"/>
+        <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivityQualifier"/>
+        <Class IRI="#Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adventure"/>
+        <Class IRI="#ActivityQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgeQualifier"/>
+        <Class IRI="#AudienceQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmbienceQualifier"/>
+        <Class IRI="#SubjectiveQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Americas"/>
+        <Class IRI="#RegionQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmusementPark"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aquarium"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchitecturalArtifact"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artifact"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asia"/>
+        <Class IRI="#RegionQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AudienceQualifier"/>
+        <Class IRI="#TargetQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beach"/>
+        <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Birdwatching"/>
+        <Class IRI="#LeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BotanicalGarden"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowling"/>
+        <Class IRI="#LeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Budget"/>
+        <Class IRI="#MarketQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Business"/>
+        <Class IRI="#ActivityQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessCenter"/>
+        <Class IRI="#HotelFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessDistrict"/>
+        <Class IRI="#FinancialArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CalmAmbience"/>
+        <Class IRI="#AmbienceQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CamelRacing"/>
+        <Class IRI="#Racing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campground"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Casino"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CentralAmerica"/>
+        <Class IRI="#Americas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Children"/>
+        <Class IRI="#AgeQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildrenFrom0To3"/>
+        <Class IRI="#Children"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildrenFrom4To6"/>
+        <Class IRI="#Children"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildrenFrom7To9"/>
+        <Class IRI="#Children"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildrenFrom9To12"/>
+        <Class IRI="#Children"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cinema"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityInSouthernHemisphere"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityTour"/>
+        <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClimaticRegion"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClimbingWall"/>
+        <Class IRI="#HotelFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToBusinessDistrict"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToCamelRaceCourse"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToDesert"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToDivingSea"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToGolfCourse"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToMountain"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToMuseum"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToNationalPark"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToNightClub"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToSkiingFacility"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToTrail"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToWaterPark"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseToZoologicalGarden"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conference"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Couples"/>
+        <Class IRI="#AudienceQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creek"/>
+        <Class IRI="#ScenicNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalArea"/>
+        <Class IRI="#DesignatedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalFacility"/>
+        <Class IRI="#Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desert"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesertRegion"/>
+        <Class IRI="#ClimaticRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesertReserve"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesertSafari"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesignatedArea"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#District"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diving"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DivingSea"/>
+        <Class IRI="#Beach"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DynamicAmbience"/>
+        <Class IRI="#AmbienceQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EuropeanCity"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Excursion"/>
+        <Class IRI="#ActivityQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Facility"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family"/>
+        <Class IRI="#AudienceQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FarAway"/>
+        <Class IRI="#Secluded"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FarEastAsia"/>
+        <Class IRI="#Asia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinancialArea"/>
+        <Class IRI="#DesignatedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fishing"/>
+        <Class IRI="#LeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForestReserve"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fountain"/>
+        <Class IRI="#ArchitecturalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <Class IRI="#ActivityQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GardenTour"/>
+        <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeoPoliticalQualifier"/>
+        <Class IRI="#GeographicalQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeographicalQualifier"/>
+        <Class IRI="#Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GetAway"/>
+        <Class IRI="#MoodQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalRegion"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GolfCourse"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotBeach"/>
+        <Class IRI="#GotNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotBusinessCenter"/>
+        <Class IRI="#GotFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotClimbingWall"/>
+        <Class IRI="#GotFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotDivingSea"/>
+        <Class IRI="#GotBeach"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotFacility"/>
+        <Class IRI="#SpecializedHotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotGym"/>
+        <Class IRI="#GotFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotLake"/>
+        <Class IRI="#GotNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotMountain"/>
+        <Class IRI="#GotNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotNaturalFeature"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotPool"/>
+        <Class IRI="#GotFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotReceptionHall"/>
+        <Class IRI="#GotFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotSandyShoreline"/>
+        <Class IRI="#GotBeach"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotService"/>
+        <Class IRI="#SpecializedHotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotSpa"/>
+        <Class IRI="#GotService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GotWaterfall"/>
+        <Class IRI="#GotNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gym"/>
+        <Class IRI="#HotelFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Happening"/>
+        <Class IRI="#DynamicAmbience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hiking"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HikingTrail"/>
+        <Class IRI="#Trail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HistoricalArea"/>
+        <Class IRI="#DesignatedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HistoricalArtifact"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Accomodation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotelFacility"/>
+        <Class IRI="#Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Island"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kayaking"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kovil"/>
+        <Class IRI="#PlaceOfWorship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lake"/>
+        <Class IRI="#ScenicNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeasureActivity"/>
+        <Class IRI="#Excursion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Luxury"/>
+        <Class IRI="#MarketQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mall"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarketQualifier"/>
+        <Class IRI="#TargetQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monument"/>
+        <Class IRI="#HistoricalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoodQualifier"/>
+        <Class IRI="#SubjectiveQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mosque"/>
+        <Class IRI="#PlaceOfWorship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motel"/>
+        <Class IRI="#Accomodation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mountain"/>
+        <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Museum"/>
+        <Class IRI="#CulturalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Museum"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MuseumTour"/>
+        <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalPark"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalArea"/>
+        <Class IRI="#DesignatedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalFeature"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NatureTrail"/>
+        <Class IRI="#Trail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NearALake"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NearAMonument"/>
+        <Class IRI="#PlaceCloseToPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NightClub"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NorthAmerica"/>
+        <Class IRI="#Americas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Palace"/>
+        <Class IRI="#CulturalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Party"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceCloseToPlace"/>
+        <Class IRI="#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfWorship"/>
+        <Class IRI="#CulturalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayGround"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pool"/>
+        <Class IRI="#HotelFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Racecourse"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Racing"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rafting"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReceptionHall"/>
+        <Class IRI="#HotelFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecreationalFacility"/>
+        <Class IRI="#Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reenactments"/>
+        <Class IRI="#CulturalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegionQualifier"/>
+        <Class IRI="#GeoPoliticalQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reservoir"/>
+        <Class IRI="#CulturalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rockclimbing"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Romantic"/>
+        <Class IRI="#MoodQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ruins"/>
+        <Class IRI="#HistoricalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SacredArea"/>
+        <Class IRI="#CulturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safari"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sailing"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SandyShoreline"/>
+        <Class IRI="#Beach"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SandyShoreline"/>
+        <Class IRI="#ScenicNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scenic"/>
+        <Class IRI="#AmbienceQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScenicMountain"/>
+        <Class IRI="#Mountain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScenicNaturalFeature"/>
+        <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Secluded"/>
+        <Class IRI="#AmbienceQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Secluded"/>
+        <Class IRI="#CalmAmbience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seniors"/>
+        <Class IRI="#AgeQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shrine"/>
+        <Class IRI="#PlaceOfWorship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SiteSeeing"/>
+        <Class IRI="#Excursion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skating"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkiSlope"/>
+        <Class IRI="#Mountain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skiing"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkiingFacility"/>
+        <Class IRI="#SportsComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skyscraper"/>
+        <Class IRI="#ArchitecturalArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snorkeling"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Souq"/>
+        <Class IRI="#FinancialArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SouthAmerica"/>
+        <Class IRI="#Americas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SouthAsia"/>
+        <Class IRI="#Asia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SouthEastAsia"/>
+        <Class IRI="#Asia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spa"/>
+        <Class IRI="#HotelFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecializedHotel"/>
+        <Class IRI="#Hotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sport"/>
+        <Class IRI="#ActivityQualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportsComplex"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubUrb"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubjectiveQualifier"/>
+        <Class IRI="#Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuitableForAudience"/>
+        <Class IRI="#SpecializedHotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuitableForChildren"/>
+        <Class IRI="#SuitableForAudience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuitableForChildrenFrom0To3"/>
+        <Class IRI="#SuitableForChildren"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuitableForChildrenFrom4To6"/>
+        <Class IRI="#SuitableForChildren"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuitableForChildrenFrom7To9"/>
+        <Class IRI="#SuitableForChildren"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuitableForChildrenFrom9To12"/>
+        <Class IRI="#SuitableForChildren"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuitableForCouples"/>
+        <Class IRI="#SuitableForAudience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuitableForTeenagers"/>
+        <Class IRI="#SuitableForChildren"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuportsLeasureActivity"/>
+        <Class IRI="#SupportsActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportDesertSafari"/>
+        <Class IRI="#CloseToDesert"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportWaterActivity"/>
+        <Class IRI="#CloseToWaterPark"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportZoologicalGradenTour"/>
+        <Class IRI="#CloseToZoologicalGarden"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsActivity"/>
+        <Class IRI="#SpecializedHotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsAdventure"/>
+        <Class IRI="#SupportsActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsBusiness"/>
+        <Class IRI="#SupportsActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsCamelRacing"/>
+        <Class IRI="#CloseToCamelRaceCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsClubbing"/>
+        <Class IRI="#SuportsLeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsDiving"/>
+        <Class IRI="#SupportsSport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsGolf"/>
+        <Class IRI="#SupportsSport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsHiking"/>
+        <Class IRI="#SupportsAdventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsMuseumTour"/>
+        <Class IRI="#CloseToMuseum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsPoolSwimming"/>
+        <Class IRI="#SupportsSwimming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsRockClimbing"/>
+        <Class IRI="#SupportsAdventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsSafari"/>
+        <Class IRI="#SupportsAdventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsSeaSwimming"/>
+        <Class IRI="#SupportsSwimming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsShopping"/>
+        <Class IRI="#SupportsActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsSkiing"/>
+        <Class IRI="#CloseToSkiingFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsSport"/>
+        <Class IRI="#SupportsActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsSwimming"/>
+        <Class IRI="#SupportsSport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsTrekking"/>
+        <Class IRI="#SupportsAdventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsWedding"/>
+        <Class IRI="#SupportsActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportsWhiteWaterRafting"/>
+        <Class IRI="#SupportsAdventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swimming"/>
+        <Class IRI="#Sport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TargetQualifier"/>
+        <Class IRI="#Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teenager"/>
+        <Class IRI="#Children"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temple"/>
+        <Class IRI="#PlaceOfWorship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theatre"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThemePark"/>
+        <Class IRI="#AmusementPark"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Town"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trail"/>
+        <Class IRI="#NaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trekking"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trekking"/>
+        <Class IRI="#LeasureActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TropicalRegion"/>
+        <Class IRI="#ClimaticRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterPark"/>
+        <Class IRI="#AmusementPark"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waterfall"/>
+        <Class IRI="#ScenicNaturalFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wedding"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WetlandReserve"/>
+        <Class IRI="#NaturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteWaterRafting"/>
+        <Class IRI="#Adventure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorldHeritageSite"/>
+        <Class IRI="#CulturalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZoologicalGarden"/>
+        <Class IRI="#RecreationalFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZoologicalGardenTour"/>
+        <Class IRI="#SiteSeeing"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Africa_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Antarctica_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Asia_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Australia_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#England"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Europe_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Kandy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#MTBeach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#MountLavinia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#North_America_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#NurawaEliya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Singapor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#South_America_Continent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Trinco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#USA"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInCity"/>
+        <NamedIndividual IRI="#MTBeach"/>
+        <NamedIndividual IRI="#MountLavinia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlace"/>
+        <NamedIndividual IRI="#MountLavinia"/>
+        <NamedIndividual IRI="#MountLavinia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#MountLavinia"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+        <NamedIndividual IRI="#MountLavinia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+        <NamedIndividual IRI="#Trinco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+        <NamedIndividual IRI="#Kandy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+        <NamedIndividual IRI="#NurawaEliya"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPlace"/>
+        <ObjectProperty IRI="#isInCity"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isInCity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isInCountry"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCity"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#ClimaticRegion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlace"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInCity"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInCountry"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#ActivityQualifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlace"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInCity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInCountry"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ClimaticRegion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This is regarding the part of world. Eventhough there are climate regions within an country we are only consider about the regions which countries are belonging to. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Description</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The classes of some &quot;description&quot; such as a place close to something, hotel suitable for something etc. The qualifiers will query these classes to find individuals that match their criteria.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
