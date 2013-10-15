@@ -1,0 +1,8 @@
+ Belize	*	Belmopan
+ Costa Rica	*	San José
+ El Salvador	*	San Salvador
+ Guatemala	*	Guatemala City
+ Honduras	*	Tegucigalpa
+ Nicaragua	*	Managua
+ Panama	*	Panama City
+

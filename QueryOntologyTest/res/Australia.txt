@@ -1,0 +1,15 @@
+Australia	*	Canberra
+Papua New Guinea	*	Port Moresby
+New Zealand	*	Wellington
+Solomon Islands	*	Honiara
+Fiji	*	Suva
+Vanuatu	*	Port Villa
+Samoa	*	Apia
+Kiribati	*	Tarawa
+Tonga	*	Nuku'alofa
+Federated States of Micronesia	*	Palikir
+Palau	*	Melekeok
+Marshall Islands	*	Majuro
+Tuvalu	*	Funafuti
+Nauru	*	
+

@@ -1,0 +1,21 @@
+ Burundi	*	Bujumbura
+ Comoros	*	Moroni
+ Djibouti	*	Djibouti
+ Eritrea	*	Asmara
+ Ethiopia	*	Addis Ababa
+ Kenya	*	Nairobi
+ Madagascar	*	Antananarivo
+ Malawi	*	Lilongwe
+ Mauritius	*	Port Louis
+ Mayotte	*	Mamoudzou
+ Mozambique	*	Maputo
+ Réunion	*	Saint-Denis
+ Rwanda	*	Kigali
+ Seychelles	*	Victoria
+ Somalia	*	Mogadishu
+ South Sudan	*	Juba
+ Tanzania	*	Dodoma
+ Uganda	*	Kampala
+ Zambia	*	Lusaka
+ Zimbabwe	*	Harare
+

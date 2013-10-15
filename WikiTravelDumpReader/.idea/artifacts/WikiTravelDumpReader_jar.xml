@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="WikiTravelDumpReader:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WikiTravelDumpReader_jar</output-path>
+    <root id="archive" name="WikiTravelDumpReader.jar">
+      <element id="module-output" name="WikiTravelDumpReader" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Libraries/HermiT/org.semanticweb.HermiT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Libraries/owlapi-3.4.5/owlapi-distribution-3.4.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Libraries/junit-4.11.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

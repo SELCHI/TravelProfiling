@@ -1,0 +1,13 @@
+ Algeria	*	Algiers
+ Canary Islands	*	Las Palmas de Gran Canaria,
+Santa Cruz de Tenerife	*	
+ Ceuta	*	
+ Egypt	*	Cairo
+ Libya	*	Tripoli
+ Madeira	*	Funchal
+ Melilla	*	
+ Morocco	*	Rabat
+ Sudan	*	Khartoum
+ Tunisia	*	Tunis
+  Western Sahara	*	El Aaiún
+

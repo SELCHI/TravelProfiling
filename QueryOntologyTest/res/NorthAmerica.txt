@@ -1,0 +1,7 @@
+ Bermuda	*	Hamilton
+ Canada	*	Ottawa
+ Greenland	*	Nuuk
+ Mexico	*	Mexico City
+Saint Pierre and Miquelon	*	Saint-Pierre
+ United States	*	Washington D.C.
+

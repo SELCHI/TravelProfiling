@@ -15,6 +15,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxOntologyFormat;
 import org.coode.owlapi.turtle.TurtleOntologyFormat;
@@ -107,9 +109,62 @@ public class Main {
 
     public static void main(String[] args) throws OWLOntologyCreationException, IOException {
 
+       //Main mani = new Main();
+       //mani.ontologyTest();
+       /*OntoReader reader = new OntoReader();
+       List<String> reada = reader.read();*/
+       String test = "London |Musium";
+       System.out.println(test.replaceAll("[()|/]"," "));
+
+
+
+
+
+    }
+
+    public static String formatString(String data){
+        String formatted = "";
+        String temp = data.replace("_"," ").replaceAll("(\\s+)"," ");
+        String[] splitted = temp.split(" ");
+
+        for(String str:splitted){
+
+            str = str.toLowerCase();
+            char[] chars = str.toCharArray();
+            chars[0] = Character.toUpperCase(chars[0]);
+            formatted +=" "+new String(chars);
+        }
+
+        return formatted.trim().replace(" ","_");
+    }
+
+    public static boolean sentenceValidator(String text){
+
+
+        Pattern pattern1 = Pattern.compile("[^a-zA-Z _]");
+        Matcher match1  = pattern1.matcher(text);
+
+        if(match1.find())
+            return false;
+
+
+        Pattern pattern2 = Pattern.compile("^\\w");
+        Matcher match2 = pattern2.matcher(text);
+
+        if(match2.find())
+             return true;
+
+        return false;
+
+    }
+
+
+
+    public void ontologyTest() throws OWLOntologyCreationException, IOException {
+
         manager = OWLManager.createOWLOntologyManager();
 
-        File file = new File("Ontology/travelProfilingLocationOntology.owl");
+        File file = new File("Ontology/SelchiLocationOntology_New.owl");
         OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
 
         System.out.println("Loaded ontology: " + ontology);
@@ -141,10 +196,11 @@ public class Main {
         // animals or parts of animals.
         OWLDataFactory fac = manager.getOWLDataFactory();
 
-        OWLClass country = fac.getOWLClass(IRI.create("https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Country"));
+        OWLClass country = fac.getOWLClass(IRI.create("https://raw.github.com/SELCHI/TravelProfiling/master/SelchiLocationOntology_New.owl#Country"));
 
         // Ask the reasoner for the instances of pet
         NodeSet<OWLNamedIndividual> individualsNodeSet = reasoner.getInstances(country, true);
+
 
         Set<OWLNamedIndividual> individuals = individualsNodeSet.getFlattened();
         System.out.println("Instances of Country: ");
@@ -153,23 +209,7 @@ public class Main {
         }
         System.out.println("\n");
 
-        //Get the Country instance for SriLanka
-        OWLNamedIndividual SriLanka = fac.getOWLNamedIndividual(IRI.create("https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#Sri_Lanka"));
 
-
-        //Get property hasCity
-        OWLObjectProperty hasCity = fac.getOWLObjectProperty(IRI.create("https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl#hasCity"));
-
-        //Get the individuals which relate through hasCity property to Country Sri Lanka
-        NodeSet<OWLNamedIndividual> cityValuesNodeSet = reasoner.getObjectPropertyValues(SriLanka, hasCity);
-        Set<OWLNamedIndividual> values = cityValuesNodeSet.getFlattened();
-
-        System.out.println("The hasCity property values for SriLanka are: ");
-
-
-        for (OWLNamedIndividual ind : values) {
-            System.out.println("    " + ind);
-        }
 
         dlQueryTest();
 
@@ -192,6 +232,7 @@ public class Main {
 
         Set<OWLNamedIndividual> entities = dlQueryInstances.getInstances(classExpression.trim());
 
+
         for(OWLEntity enti:entities)
         {
             System.out.println(shortFormProvider.getShortForm(enti));
@@ -201,6 +242,7 @@ public class Main {
         System.out.println();
 
     }
+
 
     private static String readInput() throws IOException {
         InputStream is = System.in;

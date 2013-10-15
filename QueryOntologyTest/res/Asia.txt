@@ -1,0 +1,50 @@
+Afghanistan	*	Kabul
+Armenia	*	Yerevan
+Azerbaijan	*	Baku
+Bahrain	*	Manama
+Bangladesh	*	Dhaka
+Bhutan	*	Thimphu
+Brunei	*	Bandar Seri Begawan
+Burma	*	Naypyidaw
+Cambodia	*	Phnom Penh
+China	*	Beijing
+Cyprus	*	Nicosia
+East Timor	*	Dili
+Georgia	*	Tbilisi
+India	*	New Delhi
+Indonesia	*	Jakarta
+Iran	*	Tehran
+Iraq	*	Baghdad
+Israel	*	Jerusalem
+Japan	*	Tokyo
+Jordan	*	Amman
+Kazakhstan	*	Astana
+Kuwait	*	Kuwait City
+Kyrgyzstan	*	Bishkek
+Laos	*	Vientiane
+Lebanon	*	Beirut
+Malaysia	*	Kuala Lumpur
+Maldives	*	Malé
+Mongolia	*	Ulaanbaatar
+Nepal	*	Kathmandu
+North Korea	*	Pyongyang
+Oman	*	Muscat
+Pakistan	*	Islamabad
+Palestinian territories	*	Gaza,Ramallah
+Philippines	*	Manila
+Qatar	*	Doha
+Russia	*	Moscow
+Saudi Arabia	*	Riyadh
+Singapore	*	Singapore
+Sri Lanka	*	Colombo
+South Korea	*	Seoul
+Syria	*	Damascus
+Taiwan	*	Taipei
+Tajikistan	*	Dushanbe
+Thailand	*	Bangkok
+Turkey	*	Ankara
+Turkmenistan	*	Ashgabat
+United Arab Emirates	*	Abu Dhabi
+Uzbekistan	*	Tashkent
+Vietnam	*	Hanoi
+Yemen	*	Sana'a

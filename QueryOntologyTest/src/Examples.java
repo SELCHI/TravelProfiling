@@ -198,6 +198,7 @@ public class Examples {
         // searched for mappings
     }
 
+
     /** This example shows how an ontology can be saved in various formats to
      * various locations and streams
      * 
@@ -250,6 +251,7 @@ public class Examples {
         file.delete();
     }
 
+
     /** This example shows how to get access to objects that represent entities.
      * 
      * @throws OWLOntologyCreationException */
@@ -301,6 +303,7 @@ public class Examples {
         // Manchester Syntax), declarations will automatically be added in the
         // saved version of the ontology.
     }
+
 
     /** This example shows how to create dataranges
      * 
@@ -382,6 +385,7 @@ public class Examples {
         manager.saveOntology(ontology, new StreamDocumentTarget(
                 new ByteArrayOutputStream()));
     }
+
 
     /** This example shows how to work with dataranges. OWL 1.1 allows data
      * ranges to be created by taking a base datatype e.g. int, string etc. and

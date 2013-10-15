@@ -1,0 +1,5 @@
+ Botswana	Gaborone
+ Lesotho	Maseru
+ Namibia	Windhoek
+ South Africa	Bloemfontein, Cape Town, Pretoria
+ Swaziland	Mbabane

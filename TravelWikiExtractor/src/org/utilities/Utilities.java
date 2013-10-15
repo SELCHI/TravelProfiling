@@ -26,6 +26,7 @@ public class Utilities {
 	}
 	
 	public static ArrayList<String> citiesList() throws IOException{
+
 		BufferedReader in = new BufferedReader(new FileReader("res/maincities.txt"));
 		ArrayList<String> al = new ArrayList<String>();
 		while (in.ready()) {

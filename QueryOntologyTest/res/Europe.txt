@@ -1,0 +1,63 @@
+Albania	*	Tirana
+Andorra	*	Andorra la Vella
+Armenia	*	Yerevan
+Austria	*	Vienna
+Azerbaijan	*	Baku
+Belarus	*	Minsk
+Belgium	*	Brussels
+Bosnia and Herzegovina	*	Sarajevo
+Bulgaria	*	Sofia
+Croatia	*	Zagreb
+Cyprus	*	Nicosia
+Czech Republic	*	Prague
+Denmark	*	Copenhagen
+Estonia	*	Tallinn
+Finland	*	Helsinki
+France	*	Paris
+Georgia	*	Tbilisi
+Germany	*	Berlin
+Greece	*	Athens
+Hungary	*	Budapest
+Iceland	*	Reykjavík
+Ireland	*	Dublin
+Italy	*	Rome
+Kazakhstan	*	Astana
+Latvia	*	Riga
+Liechtenstein	*	Vaduz
+Lithuania	*	Vilnius
+Luxembourg	*	Luxembourg
+Republic of Macedonia	*	Skopje
+Malta	*	Valletta
+Moldova	*	Chișinău
+Monaco	*	Monaco
+Montenegro	*	Podgorica
+Netherlands	*	Amsterdam
+Norway	*	Oslo
+Poland	*	Warsaw
+Portugal	*	Lisbon
+Romania	*	Bucharest
+Russia	*	Moscow
+San Marino	*	San Marino
+Serbia	*	Belgrade
+Slovakia	*	Bratislava
+Slovenia	*	Ljubljana
+Spain	*	Madrid
+Sweden	*	Stockholm
+Switzerland	*	Bern
+Turkey	*	Ankara
+Ukraine	*	Kiev
+United Kingdom	*	London
+Vatican City	*	Vatican City
+Abkhazia	*	Sukhumi
+Kosovo 	*	Pristina
+Nagorno-Karabakh	*	Stepanakert
+Northern Cyprus	*	Nicosia
+South Ossetia	*	Tskhinvali
+Transnistria	*	Tiraspol
+Åland	*	Mariehamn
+Faroe Islands	*	Tórshavn
+Gibraltar	*	Gibraltar
+Guernsey	*	St. Peter Port
+Isle of Man	*	Douglas
+Jersey	*	Saint Helier
+Svalbard and Jan Mayen	*	Longyearbyen

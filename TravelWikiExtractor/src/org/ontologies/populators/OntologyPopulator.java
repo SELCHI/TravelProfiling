@@ -44,6 +44,7 @@ public class OntologyPopulator {
 	ArrayList<String> classNames;
 	String[] topClasses = {"Description","Location", "Place", "Qualifier"};
 	public String curLocation = "";
+
 	public OntologyPopulator(String fileName, String baseIRI) {
 		try {
 			f = new File("res/ontologies/" + fileName + ".owl");
@@ -168,7 +169,9 @@ public class OntologyPopulator {
 			e.printStackTrace();
 		}
 	}
-	
+
+
+
 	public boolean isIndividual(String individualName, String className){
 		String[] indiParts = individualName.split("\\s");
 		String[] classParts = Utilities.camelToSentence(className).split("\\s");

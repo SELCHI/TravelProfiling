@@ -1,0 +1,10 @@
+ Angola	*	Luanda
+ Cameroon	*	Yaoundé
+ Central African Republic	*	Bangui
+ Chad	*	N'Djamena
+ Republic of the Congo	*	Brazzaville
+ Democratic Republic of the Congo	*	Kinshasa
+ Equatorial Guinea	*	Malabo
+ Gabon	*	Libreville
+ São Tomé and Príncipe	*	São Tomé
+

@@ -1,0 +1,18 @@
+ Benin	*	Porto-Novo
+ Burkina Faso	*	Ouagadougou
+ Cape Verde	*	Praia
+ Côte d'Ivoire	*	Abidjan, Yamoussoukro
+ Gambia	*	Banjul
+ Ghana	*	Accra
+ Guinea	*	Conakry
+ Guinea-Bissau	*	Bissau
+ Liberia	*	Monrovia
+ Mali	*	Bamako
+ Mauritania	*	Nouakchott
+ Niger	*	Niamey
+ Nigeria	*	Abuja
+ Saint Helena	*	Jamestown
+ Senegal	*	Dakar
+ Sierra Leone	*	Freetown
+ Togo	*	Lomé
+
