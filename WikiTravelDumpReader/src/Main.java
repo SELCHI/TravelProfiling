@@ -16,9 +16,7 @@ public class Main {
     public static void main(String[] args)  {
 
         WikiTravelParser parser =  new WikiTravelParser();
-        parser.readWikiWriteOnto("res/wikitravel-en-20090302.xml");
-
-
+        parser.readWikiWriteOnto("res/wikitravelorg_wiki_en-20110605-current.xml");
 
     }
 

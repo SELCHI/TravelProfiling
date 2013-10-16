@@ -303,7 +303,7 @@ public class WikiTravelParser {
                         if(k==510){
                             break;
                         }*/
-                        manager.saveOntology(ontology);
+
 
                     }
                 }
@@ -314,13 +314,21 @@ public class WikiTravelParser {
 
 
 
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         } catch (XMLStreamException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        } catch (OWLOntologyStorageException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }catch(Exception e){
+
+        }finally {
+            try {
+                manager.saveOntology(ontology);
+            } catch (OWLOntologyStorageException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
         }
+
 
     }
 
