@@ -46,7 +46,7 @@ class Classifier(object):
             norm_sad_value = (sad_count * self.emo_factor) / sum
         return (norm_happy_value , norm_sad_value)
     
-    def combine_senti_classifies(self, results):
+    def combine_senti_classifications(self, results):
         pos_count = 0
         neg_count = 0
         hard_count = 0
