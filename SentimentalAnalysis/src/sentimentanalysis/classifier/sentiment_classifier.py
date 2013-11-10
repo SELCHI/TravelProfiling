@@ -8,7 +8,7 @@ import re, os
 import cPickle as pickle
 from classifier_helper import ClassifierHelper
 from wsd_helper import WSDHelper
-from sentimentalanalysis.config import HARD_TO_CLASSIFY, POSITIVE, NEGATIVE, SUBJECTIVE,\
+from sentimentanalysis.config import HARD_TO_CLASSIFY, POSITIVE, NEGATIVE, SUBJECTIVE,\
     OBJECTIVE
 
 class SentimentClassifier():
@@ -23,9 +23,10 @@ class SentimentClassifier():
         '''
         self.cl_helper = ClassifierHelper()
         self.wsd_helper = WSDHelper()
+        self.ab_path = os.path.dirname(os.path.abspath(__file__))
         
     def subjective_and_objective_classification(self ,sentence ):
-        classifier = pickle.load(open('Data/Pickles/subjective/classifier-MaxentClassifier.rotten.pickle', 'r'))
+        classifier = pickle.load(open(self.ab_path+'/Data/Pickles/subjective/classifier-MaxentClassifier.rotten.pickle', 'r'))
         tokens = self.cl_helper.bag_of_words(self.cl_helper.extract_words(sentence ,is_stem = True))
         decision = classifier.classify(tokens)
         subj = classifier.prob_classify(tokens).prob('subjective')
@@ -54,7 +55,7 @@ class SentimentClassifier():
         for classifier_name in req_classifiers:
             if not classifier_name == "WSD-SentiWordNet" :
                 pickled_classifier = 'classifier-%s.%s.pickle' % (classifier_name, domain)
-                pickle_dir = 'Data/Pickles/%s/%s' % (domain ,pickled_classifier)
+                pickle_dir = self.ab_path +'/'+'Data/Pickles/%s/%s' % (domain ,pickled_classifier)
                 if not os.path.exists(pickle_dir): 
                     continue
                 classifier = pickle.load(open(pickle_dir, 'r'))

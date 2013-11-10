@@ -3,9 +3,9 @@ Created on Nov 10, 2013
 
 @author: samith
 '''
-from sentimentalanalysis.classifier.sentiment_classifier import SentimentClassifier
-from sentimentalanalysis.classifier.emoticon_classifier import EmoticonClassifier
-from sentimentalanalysis.config import POSITIVE, NEGATIVE, SUBJECTIVE,\
+from sentimentanalysis.classifier.sentiment_classifier import SentimentClassifier
+from sentimentanalysis.classifier.emoticon_classifier import EmoticonClassifier
+from sentimentanalysis.config import POSITIVE, NEGATIVE, SUBJECTIVE,\
     HARD_TO_CLASSIFY, DECISION_LIST
 
 class Classifier(object):
@@ -77,7 +77,7 @@ class Classifier(object):
                 
 if __name__ == "__main__":
     test = Classifier()
-    sentence = "Had a awesome fun at Hikkaduwa :) :)"
+    sentence = "This is a Positive sentence. :)"
     test.classify(sentence)       
         
         

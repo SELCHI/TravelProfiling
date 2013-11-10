@@ -4,7 +4,7 @@ Created on Nov 9, 2013
 @author: samith
 '''
 import re, os
-from sentimentalanalysis.config import POSITIVE, NEGATIVE, HARD_TO_CLASSIFY,DECISION_LIST
+from sentimentanalysis.config import POSITIVE, NEGATIVE, HARD_TO_CLASSIFY,DECISION_LIST
 class EmoticonClassifier():
     '''
     classdocs
