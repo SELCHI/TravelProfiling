@@ -8,7 +8,7 @@ import re, os
 import cPickle as pickle
 from classifier_helper import ClassifierHelper
 from wsd_helper import WSDHelper
-from sentimentalanalysis import HARD_TO_CLASSIFY, POSITIVE, NEGATIVE, SUBJECTIVE,\
+from sentimentalanalysis.config import HARD_TO_CLASSIFY, POSITIVE, NEGATIVE, SUBJECTIVE,\
     OBJECTIVE
 
 class SentimentClassifier():
