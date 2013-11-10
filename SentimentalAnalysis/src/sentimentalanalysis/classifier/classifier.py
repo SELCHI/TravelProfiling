@@ -3,8 +3,8 @@ Created on Nov 10, 2013
 
 @author: samith
 '''
-from sentimentalanalysis.classifer.sentiment_classifier import SentimentClassifier
-from sentimentalanalysis.classifer.emoticon_classifier import EmoticonClassifier
+from sentimentalanalysis.classifier.sentiment_classifier import SentimentClassifier
+from sentimentalanalysis.classifier.emoticon_classifier import EmoticonClassifier
 from sentimentalanalysis.config import POSITIVE, NEGATIVE, SUBJECTIVE,\
     HARD_TO_CLASSIFY, DECISION_LIST
 
@@ -32,7 +32,7 @@ class Classifier(object):
         
     def combine_results(self , senti_results , happy_count , sad_count ):
         (norm_happy_value , norm_sad_value) = self.normalized_emo_counts(happy_count, sad_count)
-        (hard_count , pos_count , neg_count) = self.combine_senti_classyfies(senti_results)
+        (hard_count , pos_count , neg_count) = self.combine_senti_classifications(senti_results)
         pos_count = pos_count + norm_happy_value
         neg_count = neg_count + norm_sad_value
         return (hard_count , pos_count , neg_count)
