@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1381582250859" name="https://raw.github.com/SELCHI/TravelProfiling/master/SelchiLocationOntology_New.owl" uri="SelchiLocationOntology_New.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1381582250859" name="https://raw.github.com/wattale/TravelProfiling/master/travelProfilingLocationOntology.owl" uri="travelProfilingLocationOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1381582250859" name="shadowed:https://raw.github.com/SELCHI/TravelProfiling/master/SelchiLocationOntology_New.owl" uri="backup/SelchiLocationOntology_New.owl"/>
-    </group>
-</catalog>

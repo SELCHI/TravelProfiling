@@ -457,6 +457,12 @@
         <ObjectProperty IRI="#isSubContinentOf"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasLatitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLongitude"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasTrendValue"/>
     </Declaration>
     <Declaration>
@@ -918,6 +924,13 @@
         <Class IRI="#ArchitecturalArtifact"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Qualifier"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasTrendValue"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Racecourse"/>
         <Class IRI="#RecreationalFacility"/>
     </SubClassOf>
@@ -961,6 +974,20 @@
             <ObjectProperty IRI="#hasRegion"/>
             <Class IRI="#Region"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasLatitude"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasLongitude"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Reserve"/>
@@ -3227,12 +3254,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Asia_Continent"/>
-        <NamedIndividual IRI="#Philippines"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Asia_Continent"/>
-        <NamedIndividual IRI="#Sri_Lanka"/>
+        <NamedIndividual IRI="#Philippines"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
@@ -3612,11 +3639,6 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Carribian"/>
-        <NamedIndividual IRI="#Aruba_(Neth.)"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasCountry"/>
-        <NamedIndividual IRI="#Carribian"/>
         <NamedIndividual IRI="#Saint_Vincent_and_the_Grenadines"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -3628,6 +3650,11 @@
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Carribian"/>
         <NamedIndividual IRI="#Saint_Martin_(Fr.)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Carribian"/>
+        <NamedIndividual IRI="#Aruba_(Neth.)"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
@@ -3867,11 +3894,6 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Eastern_Africa"/>
-        <NamedIndividual IRI="#Madagascar"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasCountry"/>
-        <NamedIndividual IRI="#Eastern_Africa"/>
         <NamedIndividual IRI="#Ethiopia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -3887,17 +3909,22 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Eastern_Africa"/>
+        <NamedIndividual IRI="#Madagascar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Eastern_Africa"/>
+        <NamedIndividual IRI="#Djibouti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Eastern_Africa"/>
         <NamedIndividual IRI="#Seychelles"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Eastern_Africa"/>
         <NamedIndividual IRI="#Mozambique"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasCountry"/>
-        <NamedIndividual IRI="#Eastern_Africa"/>
-        <NamedIndividual IRI="#Djibouti"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
@@ -3937,11 +3964,6 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Eastern_Africa"/>
-        <NamedIndividual IRI="#Zambia"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasCountry"/>
-        <NamedIndividual IRI="#Eastern_Africa"/>
         <NamedIndividual IRI="#Réunion"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -3958,6 +3980,11 @@
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Eastern_Africa"/>
         <NamedIndividual IRI="#South_Sudan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Eastern_Africa"/>
+        <NamedIndividual IRI="#Zambia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRegion"/>
@@ -4067,6 +4094,11 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Europe_Continent"/>
+        <NamedIndividual IRI="#Cyprus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Europe_Continent"/>
         <NamedIndividual IRI="#Latvia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -4088,11 +4120,6 @@
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Europe_Continent"/>
         <NamedIndividual IRI="#Åland"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasCountry"/>
-        <NamedIndividual IRI="#Europe_Continent"/>
-        <NamedIndividual IRI="#Cyprus"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
@@ -4147,7 +4174,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Europe_Continent"/>
-        <NamedIndividual IRI="#Kosovo"/>
+        <NamedIndividual IRI="#Sweden"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
@@ -4222,7 +4249,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Europe_Continent"/>
-        <NamedIndividual IRI="#Sweden"/>
+        <NamedIndividual IRI="#Kosovo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
@@ -4237,12 +4264,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Europe_Continent"/>
-        <NamedIndividual IRI="#Finland"/>
+        <NamedIndividual IRI="#Malta"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Europe_Continent"/>
-        <NamedIndividual IRI="#Malta"/>
+        <NamedIndividual IRI="#Finland"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
@@ -5237,12 +5264,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Western_Africa"/>
-        <NamedIndividual IRI="#Mauritania"/>
+        <NamedIndividual IRI="#Niger"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Western_Africa"/>
-        <NamedIndividual IRI="#Niger"/>
+        <NamedIndividual IRI="#Mauritania"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
@@ -5287,12 +5314,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Western_Africa"/>
-        <NamedIndividual IRI="#Togo"/>
+        <NamedIndividual IRI="#Senegal"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
         <NamedIndividual IRI="#Western_Africa"/>
-        <NamedIndividual IRI="#Senegal"/>
+        <NamedIndividual IRI="#Togo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCountry"/>
@@ -5489,9 +5516,29 @@
         <Class IRI="#Continent"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasLatitude"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLongitude"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasTrendValue"/>
         <Class IRI="#Place"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTrendValue"/>
+        <Class IRI="#Qualifier"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLatitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLongitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasTrendValue"/>
         <Datatype abbreviatedIRI="xsd:integer"/>

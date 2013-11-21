@@ -4,13 +4,13 @@
     <list default="true" id="e3fe07c0-89d3-4b0a-a35e-e68d04425842" name="Default" comment="" />
     <ignored path="WikiTravelDumpReader.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381821297708" ignored="false" />
+    <file path="/Main.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1382979446672" ignored="false" />
     <file path="/Page.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381465954389" ignored="false" />
     <file path="/StaXParser.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381464616543" ignored="false" />
     <file path="/Revision.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381647378336" ignored="false" />
-    <file path="/WikiTravelParser.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381824884117" ignored="false" />
+    <file path="/WikiTravelParser.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1382941918217" ignored="false" />
     <file path="/wikiTest.xml" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381467527780" ignored="false" />
-    <file path="$PROJECT_DIR$/../QueryOntologyTest/src/Main.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381821416623" ignored="false" />
+    <file path="$PROJECT_DIR$/../QueryOntologyTest/src/Main.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1384161821342" ignored="false" />
     <file path="$PROJECT_DIR$/../QueryOntologyTest/src/OntoReader.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381690664756" ignored="false" />
     <file path="/Dummy.txt" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381675593375" ignored="false" />
     <file path="$PROJECT_DIR$/../../StringTesting/.idea/workspace.xml" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381678182003" ignored="false" />
@@ -24,6 +24,14 @@
     <file path="/OntoWriter.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381825421964" ignored="false" />
     <file path="/SelchiLocationOntology_New.owl" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381817636236" ignored="false" />
     <file path="$PROJECT_DIR$/../TravelWikiExtractor/src/org/ontologies/populators/OntologyPopulator.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1381773260943" ignored="false" />
+    <file path="/RestAccess.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1382980823751" ignored="false" />
+    <file path="/GeoData.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1382979113153" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/scalaTest/.idea/workspace.xml" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1382939335994" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/scalaTest/src/TestMe.scala" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1382939059928" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/JenaTest/src/OntologyDataExtractor.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1382979428825" ignored="false" />
+    <file path="/OntologyDataExtractor.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1382979427822" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/JenaTest/src/Main.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1382979447249" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/JenaTest/src/GeoData.java" changelist="e3fe07c0-89d3-4b0a-a35e-e68d04425842" time="1382979127435" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +49,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -77,7 +86,23 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/xml/WikiTravelParser.java" line="409" class="xml.WikiTravelParser" package="xml">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -87,37 +112,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file leaf-file-name="RestAccess.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GeoLoc/RestAccess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="52" selection-start="444" selection-end="444" vertical-scroll-proportion="0.7653061">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="66" column="22" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WikiTravelParser.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WikiTravelParser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xml/WikiTravelParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="322" column="54" selection-start="11987" selection-end="11987" vertical-scroll-proportion="0.0">
+            <state line="92" column="50" selection-start="2749" selection-end="2749" vertical-scroll-proportion="0.7358491">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#12901#12909#0" expanded="true" />
-                <element signature="method#getInsidePlaces#0;class#WikiTravelParser#0" expanded="false" />
-                <element signature="e#14100#14108#0" expanded="true" />
-                <element signature="method#sentenceValidator#0;class#WikiTravelParser#0" expanded="false" />
+                <element signature="e#15949#15965#0" expanded="true" />
+                <element signature="e#16721#16729#0" expanded="true" />
+                <element signature="e#17920#17928#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wikiTest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/wikiTest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="132" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -141,16 +153,19 @@
         <option value="$PROJECT_DIR$/src/OntoWriter.java" />
         <option value="$PROJECT_DIR$/src/WikiTravelParser.java" />
         <option value="$PROJECT_DIR$/Ontology/SelchiLocationOntology_New.owl" />
+        <option value="$PROJECT_DIR$/src/data/GeoData.java" />
         <option value="$PROJECT_DIR$/src/Onto/OntoReader.java" />
+        <option value="$PROJECT_DIR$/src/Onto/OntoWriter.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/xml/WikiTravelParser.java" />
+        <option value="$PROJECT_DIR$/src/GeoLoc/RestAccess.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="1368" />
-    <option name="height" value="743" />
+    <option name="x" value="-3" />
+    <option name="width" value="1372" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -176,6 +191,8 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
@@ -195,8 +212,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,18 +248,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikiTravelDumpReader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikiTravelDumpReader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="http.proxy" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -254,7 +289,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.details.proportions" value="0.29291716" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -421,30 +456,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="743" extended-state="7" />
-    <editor active="true" />
+    <frame x="-3" y="0" width="1372" height="745" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.297479" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42040184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58114374" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14090909" sideWeight="0.46554622" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14064915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16818182" sideWeight="0.702521" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5663866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16742425" sideWeight="0.94991654" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.050083473" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5176471" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -518,35 +553,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/data/Page.java">
+    <entry file="file://$PROJECT_DIR$/src/GeoLoc/RestAccess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="39" selection-start="253" selection-end="253" vertical-scroll-proportion="0.28998244">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/Revision.java">
+    <entry file="file://$PROJECT_DIR$/src/xml/WikiTravelParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Onto/OntoWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="34" selection-start="4476" selection-end="4484" vertical-scroll-proportion="1.971223">
-          <folding />
+        <state line="33" column="42" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#15949#15965#0" expanded="true" />
+            <element signature="e#16721#16729#0" expanded="true" />
+            <element signature="e#17920#17928#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Documents/Libraries/owlapi-3.4.5/owlapi-distribution-3.4.5.jar!/org/semanticweb/owlapi/model/OWLOntologyManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="9" selection-start="6521" selection-end="6521" vertical-scroll-proportion="-4.08" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.7.0-sun-amd64/src.zip!/java/util/ComparableTimSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="713" column="0" selection-start="26627" selection-end="26627" vertical-scroll-proportion="2.2676055" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Documents/Libraries/owlapi-3.4.5/owlapi-distribution-3.4.5.jar!/uk/ac/manchester/cs/owl/owlapi/OWLOntologyManagerImpl.class">
@@ -569,56 +596,59 @@
         <state line="18" column="0" selection-start="885" selection-end="885" vertical-scroll-proportion="0.778157" />
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.7.0-sun-amd64/src.zip!/java/util/Arrays.java">
+    <entry file="file://$PROJECT_DIR$/WikiTravelDumpReader.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="471" column="0" selection-start="20994" selection-end="20994" vertical-scroll-proportion="2.2356496" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/wikiTest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="132" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.0">
+        <state line="80" column="55" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.03836317" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/GeoData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="36" selection-start="414" selection-end="414" vertical-scroll-proportion="0.54702497">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Ontology/SelchiLocationOntology_New.owl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Onto/OntoWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="53" selection-start="4114" selection-end="4114" vertical-scroll-proportion="0.8852773" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Onto/OntoReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="6" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.6481481">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#OntoReader#0;class#OntoReader#0" expanded="false" />
-            <element signature="method#readSubClasses#0;class#OntoReader#0" expanded="false" />
-            <element signature="method#readIndividuals#0;class#OntoReader#0" expanded="false" />
-            <element signature="e#3283#3291#0" expanded="true" />
-          </folding>
+        <state line="39" column="87" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.2581262" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="84" selection-start="493" selection-end="493" vertical-scroll-proportion="0.2173913">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GeoLoc/RestAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="22" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xml/WikiTravelParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="322" column="54" selection-start="11987" selection-end="11987" vertical-scroll-proportion="0.0">
+        <state line="92" column="50" selection-start="2749" selection-end="2749" vertical-scroll-proportion="0.7358491">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#12901#12909#0" expanded="true" />
-            <element signature="method#getInsidePlaces#0;class#WikiTravelParser#0" expanded="false" />
-            <element signature="e#14100#14108#0" expanded="true" />
-            <element signature="method#sentenceValidator#0;class#WikiTravelParser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WikiTravelDumpReader.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="52" selection-start="444" selection-end="444" vertical-scroll-proportion="0.7653061">
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#15949#15965#0" expanded="true" />
+            <element signature="e#16721#16729#0" expanded="true" />
+            <element signature="e#17920#17928#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -665,7 +695,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7 (1)</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

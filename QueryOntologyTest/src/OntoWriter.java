@@ -64,6 +64,7 @@ public class OntoWriter {
             OWLClass continent = dataFactory.getOWLClass(":Continent",pm);
             OWLClass region = dataFactory.getOWLClass(":Region",pm);
 
+
             List<String[]> data = fileRead();
 
             //Get the continent

@@ -6,12 +6,13 @@ package xml; /**
  * To change this template use File | Settings | File Templates.
  */
 
+import GeoLoc.RestAccess;
 import Onto.OntoReader;
 import data.*;
-import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.*;
+import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.util.DefaultPrefixManager;
 
 import java.io.File;
@@ -48,6 +49,7 @@ public class WikiTravelParser {
     OWLOntology ontology;
 
     OWLClass region;
+    OWLClass country;
 
     OWLObjectProperty hasRegion;
 
@@ -55,12 +57,23 @@ public class WikiTravelParser {
 
     OWLObjectProperty hasQualifier;
 
+    OWLDataProperty hasTrendValue;
+    OWLDataProperty hasLatitude;
+    OWLDataProperty hasLongitude;
+
+
+
+
+    RestAccess geoLocAccess;
+
     public WikiTravelParser(){
 
+        geoLocAccess = new RestAccess();
+
         OntoReader ontoReader = new OntoReader();
-        countryList = ontoReader.readIndividuals();
         placeTypesList = ontoReader.readSubClasses("Place");
         qualifierTypeList = ontoReader.readSubClasses("Qualifier");
+        countryList = ontoReader.readIndividuals();
 
         manager = OWLManager.createOWLOntologyManager();
         try{
@@ -68,7 +81,7 @@ public class WikiTravelParser {
             ontology = manager.loadOntologyFromOntologyDocument(file);
             System.out.println("Loaded ontology: " + ontology);
 
-            OWLReasonerFactory reasonerFactory = new Reasoner.ReasonerFactory();
+            OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
 
             ConsoleProgressMonitor progressMonitor = new ConsoleProgressMonitor();
 
@@ -92,6 +105,7 @@ public class WikiTravelParser {
 
 
             region = dataFactory.getOWLClass(":Region",pm);
+            country = dataFactory.getOWLClass(":Country",pm);
 
             hasRegion = dataFactory.getOWLObjectProperty(":hasRegion",pm);
 
@@ -99,6 +113,9 @@ public class WikiTravelParser {
 
             hasQualifier = dataFactory.getOWLObjectProperty(":hasQualifier",pm);
 
+            hasTrendValue = dataFactory.getOWLDataProperty(":hasTrendValue",pm);
+            hasLatitude = dataFactory.getOWLDataProperty(":hasLatitude",pm);
+            hasLongitude = dataFactory.getOWLDataProperty(":hasLongitude",pm);
 
         }catch(OWLOntologyCreationException e){
             e.printStackTrace();
@@ -118,6 +135,7 @@ public class WikiTravelParser {
             InputStream in = new FileInputStream(fileName);
 
             XMLEventReader eventReader = inputFactory.createXMLEventReader(in);
+
             // readSubClasses the XML document
             Page page = null;
             Revision revision = null;
@@ -213,50 +231,100 @@ public class WikiTravelParser {
                         if(countryList.contains(page.title))
                             continue;
 
-                        if(locations.size() !=0){
+                        OWLNamedIndividual titleLoc = dataFactory.getOWLNamedIndividual(":"+page.title,pm);
+                        OWLClassAssertionAxiom titleClassAss = dataFactory.getOWLClassAssertionAxiom(region,titleLoc);
+                        manager.addAxiom(ontology,titleClassAss);
 
-                            int countryIndex = locations.size()-1;
-                            boolean hasCountry = false;
+                        GeoData data = geoLocAccess.getGeoData(page.title.replace("_"," "));
 
-                            for(int i=0;i<locations.size();i++){
+                        boolean eligi = false;
 
-                                if(countryList.contains(locations.get(i))){
-                                    hasCountry = true;
-                                    countryIndex = i;
-                                    break;
-                                }
-
-                            }
-
-
-                            for(int i=countryIndex;i>=0;i--){
-
-                                OWLNamedIndividual loc = dataFactory.getOWLNamedIndividual(":"+locations.get(i),pm);
-
-                                if(!hasCountry){
-                                    OWLClassAssertionAxiom assertion = dataFactory.getOWLClassAssertionAxiom(region,loc);
-                                    manager.addAxiom(ontology, assertion);
-
-                                }
-
-                                if(i!=countryIndex){
-                                    OWLObjectPropertyAssertionAxiom propAssertion = dataFactory.getOWLObjectPropertyAssertionAxiom(hasRegion,previous,loc);
-                                    manager.addAxiom(ontology,propAssertion);
-
-                                }
-
-                                previous = loc;
-
-                            }
-
+                        if(data==null){
+                            eligi = false;
+                        }else if(formatString(data.getRegionName()).equals(page.title)){
+                            eligi = true;
                         }
 
 
+                        if(!eligi)
+                        {
 
-                        OWLNamedIndividual titleLoc = dataFactory.getOWLNamedIndividual(":"+page.title,pm);
+                            if(locations.size() !=0){
 
-                        OWLClassAssertionAxiom titleClassAss = dataFactory.getOWLClassAssertionAxiom(region,titleLoc);
-                        manager.addAxiom(ontology,titleClassAss);
+                                int countryIndex = locations.size()-1;
+                                boolean hasCountry = false;
+
+                                for(int i=0;i<locations.size();i++){
+
+                                    if(countryList.contains(locations.get(i))){
+                                        hasCountry = true;
+                                        countryIndex = i;
+                                        break;
+                                    }
+
+                                }
+
+
+                                for(int i=countryIndex;i>=0;i--){
+
+                                    OWLNamedIndividual loc = dataFactory.getOWLNamedIndividual(":"+locations.get(i),pm);
+
+                                    if(!hasCountry){
+
+                                        OWLClassAssertionAxiom assertion = dataFactory.getOWLClassAssertionAxiom(region,loc);
+                                        manager.addAxiom(ontology, assertion);
+
+                                    }
+
+                                    if(i!=countryIndex){
+                                        OWLObjectPropertyAssertionAxiom propAssertion = dataFactory.getOWLObjectPropertyAssertionAxiom(hasRegion,previous,loc);
+                                        manager.addAxiom(ontology,propAssertion);
+
+                                    }
+
+                                    previous = loc;
+
+                                }
+
+                            }
+                        }else{
+
+                              if(data.getRegionHierarchy().size()>0){
+
+
+                                  for(int i=0;i<data.getRegionHierarchy().size();i++){
+
+                                      OWLNamedIndividual loc = dataFactory.getOWLNamedIndividual(":"+formatString(data.getRegionHierarchy().get(i)),pm);
+
+                                      if(i!=0){
+
+                                          OWLClassAssertionAxiom assertion = dataFactory.getOWLClassAssertionAxiom(region,loc);
+                                          manager.addAxiom(ontology, assertion);
+
+                                          OWLObjectPropertyAssertionAxiom propAssertion = dataFactory.getOWLObjectPropertyAssertionAxiom(hasRegion,previous,loc);
+                                          manager.addAxiom(ontology,propAssertion);
+
+
+                                      }else{
+
+                                          OWLClassAssertionAxiom assertion = dataFactory.getOWLClassAssertionAxiom(country,loc);
+                                          manager.addAxiom(ontology, assertion);
+                                      }
+
+                                      previous = loc;
+
+
+                                  }
+
+
+                                  OWLDataPropertyAssertionAxiom latituAxi = dataFactory.getOWLDataPropertyAssertionAxiom(hasLatitude,titleLoc,data.getLatitude());
+                                  manager.addAxiom(ontology,latituAxi);
+                                  OWLDataPropertyAssertionAxiom longiAxi = dataFactory.getOWLDataPropertyAssertionAxiom(hasLongitude,titleLoc,data.getLongitude());
+                                  manager.addAxiom(ontology,longiAxi);
+                              }
+
+                        }
+
 
 
                         if(previous!=null){
@@ -272,7 +340,7 @@ public class WikiTravelParser {
 
                         for(String thing:insideThings){
 
-                            OWLNamedIndividual locPlace = dataFactory.getOWLNamedIndividual(":"+thing,pm);
+                            OWLNamedIndividual locPlace;
                             OWLClass thingType;
                             OWLClassAssertionAxiom placeTypeAsser;
                             OWLObjectPropertyAssertionAxiom placeProp;
@@ -281,11 +349,25 @@ public class WikiTravelParser {
 
                             if(!getQualifierType(thing).equals("Not")){
 
+                                String indiName = thing;
+                                if(indiName.equals(getQualifierType(thing))){
+                                    indiName = page.title+"_"+indiName;
+                                }
+
+                                locPlace = dataFactory.getOWLNamedIndividual(":"+indiName,pm);
+
                                 thingType = dataFactory.getOWLClass(":" + getQualifierType(thing), pm);
                                 placeTypeAsser = dataFactory.getOWLClassAssertionAxiom(thingType,locPlace);
                                 placeProp = dataFactory.getOWLObjectPropertyAssertionAxiom(hasQualifier,titleLoc,locPlace);
 
                             }else{
+
+                                String indiName = thing;
+                                if(indiName.equals(getPlaceType(thing))){
+                                    indiName = page.title+"_"+indiName;
+                                }
+
+                                locPlace = dataFactory.getOWLNamedIndividual(":"+indiName,pm);
 
                                 thingType = dataFactory.getOWLClass(":" + getPlaceType(thing), pm);
                                 placeTypeAsser = dataFactory.getOWLClassAssertionAxiom(thingType,locPlace);
@@ -293,8 +375,12 @@ public class WikiTravelParser {
 
                             }
 
+
                             manager.addAxiom(ontology,placeTypeAsser);
                             manager.addAxiom(ontology,placeProp);
+
+                            OWLDataPropertyAssertionAxiom trendaxi = dataFactory.getOWLDataPropertyAssertionAxiom(hasTrendValue,locPlace,0);
+                            manager.addAxiom(ontology,trendaxi);
 
                         }
 
@@ -313,13 +399,13 @@ public class WikiTravelParser {
             }
 
 
-
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         } catch (XMLStreamException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }catch(Exception e){
+
+            e.printStackTrace();
 
         }finally {
             try {

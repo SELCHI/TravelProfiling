@@ -1,9 +1,8 @@
 package Onto;
-
-import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.*;
+import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.util.DefaultPrefixManager;
 
 import java.io.File;
@@ -34,7 +33,7 @@ public class OntoReader {
             OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
             System.out.println("Loaded ontology: " + ontology);
 
-            OWLReasonerFactory reasonerFactory = new Reasoner.ReasonerFactory();
+            OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
 
             ConsoleProgressMonitor progressMonitor = new ConsoleProgressMonitor();
 

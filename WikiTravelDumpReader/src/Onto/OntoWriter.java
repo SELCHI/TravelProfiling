@@ -1,9 +1,8 @@
 package Onto;
-
-import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.*;
+import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.util.DefaultPrefixManager;
 
 import java.io.*;
@@ -37,7 +36,7 @@ public class OntoWriter {
             IRI documentIRI = manager.getOntologyDocumentIRI(ontology);
             System.out.println("    from: " + documentIRI);
 
-            OWLReasonerFactory reasonerFactory = new Reasoner.ReasonerFactory();
+            OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
 
             ConsoleProgressMonitor progressMonitor = new ConsoleProgressMonitor();
 

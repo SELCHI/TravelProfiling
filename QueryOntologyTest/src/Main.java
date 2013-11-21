@@ -109,14 +109,6 @@ public class Main {
 
     public static void main(String[] args) throws OWLOntologyCreationException, IOException {
 
-       //Main mani = new Main();
-       //mani.ontologyTest();
-       /*OntoReader reader = new OntoReader();
-       List<String> reada = reader.read();*/
-       String test = "London |Musium";
-       System.out.println(test.replaceAll("[()|/]"," "));
-
-
 
 
 
@@ -179,6 +171,7 @@ public class Main {
 
         OWLReasonerConfiguration config = new SimpleConfiguration(progressMonitor);
 
+
         reasoner = reasonerFactory.createReasoner(ontology,config);
 
         // Ask the reasoner to do all the necessary work now
@@ -211,7 +204,7 @@ public class Main {
 
 
 
-        dlQueryTest();
+       // dlQueryTest();
 
     }
 

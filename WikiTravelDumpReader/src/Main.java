@@ -6,7 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 
+import GeoLoc.RestAccess;
 import Onto.OntoReader;
+import data.GeoData;
 import xml.WikiTravelParser;
 
 import java.util.List;

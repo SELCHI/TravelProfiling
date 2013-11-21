@@ -8,6 +8,10 @@
       <param-name>com.sun.jersey.config.property.packages</param-name>
       <param-value>com.selchi</param-value>
     </init-param>
+    <init-param>
+    	<param-name>ontoPath</param-name>
+      	<param-value>/home/lasitha/Programing/FYP/TravelProfiling/TravelDataWebService/res/SelchiLocationOntology_New2.owl</param-value>
+    </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
   
@@ -15,5 +19,6 @@
     <servlet-name>Travel Data WebService</servlet-name>
     <url-pattern>/rest/*</url-pattern>
   </servlet-mapping>
+
   
 </web-app>
