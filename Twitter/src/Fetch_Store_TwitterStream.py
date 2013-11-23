@@ -1,5 +1,10 @@
+'''
+Created on Oct 26, 2013
 
-    
+@author: chiran
+'''
+
+  
 import time
 import pycurl
 import urllib
@@ -11,24 +16,22 @@ from nltk.corpus import stopwords
 from nltk import wordpunct_tokenize
 from sys import stdin
 from pymongo import Connection
-from sharedCleaner import Cleaner
-from datetime import datetime
-
-
+import sharedCleaner 
+from dateutil import parser
+import isoweek
 API_ENDPOINT_URL = 'https://stream.twitter.com/1.1/statuses/filter.json'
-USER_AGENT = 'TwitterStream 1.0' # This can be anything really
+USER_AGENT = 'TwitterStream 1.0' 
 
-# You need to replace these with your own values
+
 OAUTH_KEYS = {'consumer_key': 'ur3no3lNZsFOS0PsOmJkQ',
               'consumer_secret': 'tzvPt7GKfrjQSzGapHLdYvcD8QLgUtjKsZhadXtFknc',
               'access_token_key': '324169079-qWzpwhyffnlTncbc0dID2I4qDx6Ao2BBS4QOJnnJ',
               'access_token_secret': 'lzJHEQ7r0OW7UHW351BZF71UxJYfQucd2aJonzspNaY'}
 
-# These values are posted when setting up the connection
+
 POST_PARAMS = {'include_entities': 0,
                'stall_warning': 'true',
-               'track': 'Acting, running, Party, Golf, Museum Tour, Kayaking, Skiing, Desert Safari, Rafting, Bird Watching, Racing, Horse Riding, Site Seeing, Picnic, Archeology Tour, City Tour, Surfing, Ostrich Racing, Rock Climbing, Swimming, Trekking, Hiking, Function, Aerodium, White Water Rafting, Adventure, New Year, Go Karting, Fishing, Garden Tour, Camel Racing, Sailing, Leasure Activity, Parachuting, Skydiving, Zoological Garden Tour, Horse Racing, Bowling, Safari, Snorkeling, Diving, Excursion, Snowboarding, Skating, Parody, Pool, Monument, Reserve, Artifact, Shrine, Skyscraper, Cultural Area, Waterfall, Historical Artifact, Fountain, Island, Temple, Financial Area, Place Of Worship, River Point, Spa, Recreational Facility, Facility, Campground, Mansion, Church, Desert Reserve, Desert, Amusement Park, Palace, Park, Lake, Hiking Trail, Scenic Natural Feature, Ground, Kovil, Creek, Lighthouse, Trail, National Park, Designated Area, Pyramid, Historical Area, Harbor, Gym, Reenactments, Skiing Facility, Mountain, Canion, Mosque, Beach, Natural Feature, Ruins, Botanical Garden, Zoological Garden, Cinema, Water Park, Animal Park, Diving Sea, Night Club, Sandy Shoreline, Theatre, Golf Course, Wetland Reserve, Sacred Area, Aquarium, Cultural Facility, Port, Natural Area, Architectural Artifact, Hotel Facility, World Heritage Site, Feature, Nature Trail, Stadium, Garden, Forest Reserve, Airport, Museum, Theme Park, Bird Park, Arena, Mall, Racecourse, Ski Sloper, Casino, Sports Complex, Scenic Mountain, Children Park'}
-
+               'track': 'Acting, running, Party, Golf, Museum Tour, Kayaking, Skiing, Desert Safari, Rafting, Bird Watching, Racing, Horse Riding, Site Seeing, Picnic, Archeology Tour, City Tour, Surfing, Ostrich Racing, Rock Climbing, Swimming, Trekking, Hiking, Function, Aerodium, White Water Rafting, Adventure, New Year, Go Karting, Fishing, Garden Tour, Camel Racing, Sailing, Leasure Activity, Parachuting, Skydiving, Zoological Garden Tour, Horse Racing, Bowling, Safari, Snorkeling, Diving, Excursion, Snowboarding, Skating, Parody, Pool, Monument, Reserve, Artifact, Shrine, Skyscraper, Cultural Area, Waterfall, Historical Artifact, Fountain, Island, Temple, Financial Area, Place Of Worship, River Point, Spa, Recreational Facility, Facility, Campground, Mansion, Church, Desert Reserve, Desert, Amusement Park, Palace, Park, Lake, Hiking Trail, Scenic Natural Feature, Ground, Kovil, Creek, Lighthouse, Trail, National Park, Designated Area, Pyramid, Historical Area, Harbor, Gym, Reenactments, Skiing Facility, Mountain, Canion, Mosque, Beach, Natural Feature, Ruins, Botanical Garden, Zoological Garden, Cinema, Water Park, Animal Park, Diving Sea, Night Club, Sandy Shoreline, Theatre, Golf Course, Wetland Reserve, Sacred Area, Aquarium, Cultural Facility, Port, Natural Area, Architectural Artifact, Hotel Facility, World Heritage Site, Feature, Nature Trail, Stadium, Garden, Forest Reserve, Airport, Museum, Theme Park, Bird Park, Arena, Mall, Race course, Ski Sloper, Casino, Sports Complex, Scenic Mountain, Children Park'}
 
 class TwitterStream:
     def __init__(self, timeout=False):
@@ -39,7 +42,8 @@ class TwitterStream:
         self.buffer = ''
         self.timeout = timeout
         self.setup_connection()
-        self.cleaner = Cleaner()
+        self.cleaner = sharedCleaner.Cleaner()
+        self.weekNo = isoweek.Week
         
         
     def setup_connection(self):
@@ -106,22 +110,11 @@ class TwitterStream:
                 print 'Waiting %s seconds' % backoff_http_error
                 time.sleep(backoff_http_error)
                 backoff_http_error = min(backoff_http_error * 2, 320)
-                
-    def convert(self,jsonData):
-        
-        if isinstance(jsonData, dict):
-            return dict([(self.convert(key), self.convert(value)) for key, value in jsonData.iteritems()])
-        elif isinstance(jsonData, list):
-            return [self.convert(element) for element in jsonData]
-        elif isinstance(jsonData, unicode):
-            return jsonData.encode('utf-8')
-        else:
-            return jsonData
 
     def handle_tweet(self, data):
         """ This method is called when data is received through Streaming endpoint.
         """
-	
+    
         self.buffer += data
         if data.endswith('\r\n') and self.buffer.strip():
             # complete message received
@@ -141,36 +134,42 @@ class TwitterStream:
             elif message.get('warning'):
                 print 'Got warning: %s' % message['warning'].get('message')
             elif get_language(message.get('text')) == "english":
-            
-                #print 'the message '+str(message)
-                tweet = {"user": message.get('user').get('name'),
-                        "text": self.cleaner.clean(message.get('text')),
-                        "geotag": message.get('geo'),
-                        "time": message.get('user').get('created_at'),
-                        "lang": message.get('user').get('lang')}    
-          
-                
-                tweets = tweetbase.tweets
-                tweet = self.convert(tweet)
-                
-                ts = time.strftime('%Y-%m-%d', time.strptime(tweet['time'],'%a %b %d %H:%M:%S +0000 %Y'))
-                tp = datetime.strptime(ts,'%Y-%m-%d')
-                myt = datetime.strptime('2013-01-01','%Y-%m-%d')
+                dt = parser.parse(message.get('user').get('created_at'))
+                yr = int(dt.strftime("%Y "))
+                mo = int(dt.strftime("%m "))
+                dy = int(dt.strftime("%d "))
+                week = ((datetime.date(yr, mo, dy).isocalendar()[1]))
+                if( yr >= 2012 and mo >= 10 ):
+                    monday = str( self.weekNo( yr, week ).monday() )
+                    tweet = {"user": message.get( 'user' ).get( 'name' ),
+                        "text": self.cleaner.clean( message.get( 'text' ) ),
+                        "time": monday,
+                        "lang": message.get( 'user' ).get( 'lang' )}
 
-                if myt<tp:
-                    print tweet
-                #print tweet
-                tweets.insert(tweet)  
-                #print tweets.count()
-                for tweet in tweets.find():
-                          # print  tweet.get('lang')               
-                           continue
-                   # print  'User:%s' % message.get('user').get('name')
-                   # print  'Location:%s' % message.get('user').get('location')
-                   # print  'Time Stamp:%s' % message.get('user').get('created_at')
-                    #print  'Language:%s' % message.get('user').get('lang')
-                    
+
+
+                    tweets = tweetbase.tweets
+                    tweets.insert( tweet )
+                    time = [tweet[k] for k in tweet if k == 'time'][0]
+                    print time
+
             
+            
+#                 print  yr              
+               # p.preprocess(tweet)
+                
+               # p.preprocess(tweetMessage)
+                #===============================================================
+                # tweets.insert(tweet)  
+                # print tweets.count()
+                # for tweet in tweets.find():
+                #            print  tweet.get('lang')               
+                #            continue
+                #    print  'User:%s' % message.get('user').get('name')
+                #    print  'Location:%s' % message.get('user').get('location')
+                #    print  'Time Stamp:%s' % message.get('user').get('created_at')
+                #     print  'Language:%s' % message.get('user').get('lang')
+                #===============================================================
         
 def get_language_likelihood(input_text):
         """Return a dictionary of languages and their likelihood of being the
@@ -181,16 +180,12 @@ def get_language_likelihood(input_text):
         input_words = wordpunct_tokenize(input_text)
      
         language_likelihood = {}
-        total_matches = 0
+      
         for language in stopwords._fileids:
-            language_likelihood[language] = len(set(input_words) &
+            language_likelihood[language] = len(set(input_words) & 
                     set(stopwords.words(language)))
      
         return language_likelihood
-  
-  
-
-
      
 def get_language(input_text):
         """Return the most likely language of the given text
@@ -202,8 +197,10 @@ def get_language(input_text):
 
  
 if __name__ == '__main__':
-    
+  #  p = my.Preprocessor()
     ts = TwitterStream()
     ts.setup_connection()
     ts.start()
+    
+   
 
