@@ -1,0 +1,85 @@
+Pool
+Monument
+Reserve
+Artifact
+Shrine
+Skyscraper
+Cultural Area
+Waterfall
+Historical Artifact
+Fountain
+Island
+Temple
+Financial Area
+Place Of Worship
+River Point
+Spa
+Recreational Facility
+Facility
+Campground
+Mansion
+Church
+Desert Reserve
+Desert
+Amusement Park
+Palace
+Park
+Lake
+Hiking Trail
+Scenic Natural Feature
+Ground
+Kovil
+Creek
+Lighthouse
+Trail
+National Park
+Designated Area
+Pyramid
+Historical Area
+Harbor
+Gym
+Reenactments
+Skiing Facility
+Mountain
+Canion
+Mosque
+Beach
+Natural Feature
+Ruins
+Botanical Garden
+Zoological Garden
+Cinema
+Water Park
+Animal Park
+Diving Sea
+Night Club
+Sandy Shoreline
+Theatre
+Golf Course
+Wetland Reserve
+Sacred Area
+Aquarium
+Cultural Facility
+Port
+Natural Area
+Architectural Artifact
+Hotel Facility
+World Heritage Site
+Feature
+Nature Trail
+Stadium
+[owl: Nothing]
+Garden
+Forest Reserve
+Airport
+Museum
+Theme Park
+Bird Park
+Arena
+Mall
+Racecourse
+Ski Sloper
+Casino
+Sports Complex
+Scenic Mountain
+Children Park
