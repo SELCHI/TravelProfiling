@@ -1,8 +1,9 @@
 package trendanalysis.forecast;
 
-import java.util.Collection;
 import java.util.HashMap;
-import com.google.common.collect.Multimap;
+import java.util.List;
+
+import com.google.common.collect.ListMultimap;
 
 import trendanalysis.iohandle.IFInputReader;
 import trendanalysis.iohandle.Messages;
@@ -28,17 +29,18 @@ public class TrendAnalyzer {
     										.setTimeStampField("Date")			// Attribute name of the time stamp field
     										.setForecastLength(12)
     										.setPeriodicity(Periodicity.WEEKLY)
+    										.setClassifier(ForecastParamBuilder.EnumClassifier.MultilayerPerceptron)
     										.buildParams();
 		
-    	Multimap<Integer, String> resultsMultimap  = forecaster.forecast(retrieveInstances ,params);
+    	ListMultimap<Integer, String> resultsMultimap  = forecaster.forecast(retrieveInstances ,params);
     	printResults(resultsMultimap);
 
 	}
 	
-	private static void printResults(Multimap<Integer, String> resultsMultimap) {
+	public static void printResults(ListMultimap<Integer, String> resultsMultimap) {
 		
 		for (int i = 0; i < resultsMultimap.keySet().size(); i++) {
-			Collection<String> result = resultsMultimap.get(i);
+			List<String> result = resultsMultimap.get(i);
 			System.out.println(result);
 		}
 		

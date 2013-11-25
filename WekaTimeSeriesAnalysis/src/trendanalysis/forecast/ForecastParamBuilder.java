@@ -2,6 +2,11 @@ package trendanalysis.forecast;
 
 import java.util.HashMap;
 
+import weka.classifiers.Classifier;
+import weka.classifiers.functions.GaussianProcesses;
+import weka.classifiers.functions.LinearRegression;
+import weka.classifiers.functions.MultilayerPerceptron;
+import weka.classifiers.functions.SMOreg;
 import weka.classifiers.timeseries.core.TSLagMaker;
 import weka.classifiers.timeseries.core.TSLagMaker.Periodicity;
 
@@ -16,6 +21,10 @@ public class ForecastParamBuilder {
     private int minLag = 1;
     private int maxLag = 12;
     private int forecastLength = 1;
+    private Classifier classifier = new SMOreg();
+    public static enum EnumClassifier {
+    	SMOreg, MultilayerPerceptron, LinearRegression, GaussianProcesses 
+    };
     
     /**
      * Builds the parameter key and value pairs
@@ -30,6 +39,7 @@ public class ForecastParamBuilder {
     	params.put("MinLag", minLag);
     	params.put("MaxLag", maxLag);
     	params.put("ForecastLength", forecastLength);
+    	params.put("Classifier", classifier);
         return params;
     }
 
@@ -93,5 +103,31 @@ public class ForecastParamBuilder {
 		this.forecastLength = forecastLength;
 		return this;
 	}
+	
+	public ForecastParamBuilder setClassifier(EnumClassifier classifier) {
+
+		switch (classifier) {
+			case SMOreg: {
+				this.classifier = new SMOreg();
+				break;
+			}
+			case MultilayerPerceptron: {
+				this.classifier = new MultilayerPerceptron();
+				break;
+			}
+			case LinearRegression: {
+				this.classifier = new LinearRegression();
+				break;
+			}
+			case GaussianProcesses: {
+				this.classifier = new GaussianProcesses();
+				break;
+			}
+
+		}
+		return this;
+	}
+	
+	
 
 }

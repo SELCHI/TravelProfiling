@@ -17,9 +17,15 @@ class WekaManager(object):
         self.gateway = JavaGateway()
         self.weka_forecaster =  self.gateway.entry_point.getWekaTSForecaster()
         
-    def getWekaResults(self):
-        weka_weekly = self.weka_forecaster.getNextWeeklyForecast()
-        weka_monthly = self.weka_forecaster.getNextMonthlyForecast()
+    def getWekaResults(self ,weekly_arff_path =None , monthly_arff_path =None):
+        if weekly_arff_path is None:
+            weka_weekly = self.weka_forecaster.getNextWeeklyForecast()
+        else:
+            weka_weekly = self.weka_forecaster.getNextWeeklyForecast(weekly_arff_path)
+        if monthly_arff_path is None:
+            weka_monthly = self.weka_forecaster.getNextMonthlyForecast()
+        else:
+            weka_monthly = self.weka_forecaster.getNextMonthlyForecast(monthly_arff_path)
         return (weka_weekly , weka_monthly)
         
 if __name__ == "__main__":   

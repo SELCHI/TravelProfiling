@@ -28,8 +28,22 @@ public class WekaTSForecaster {
 		return value;		
 	}
 	
+	public float getNextWeeklyForecast(String arrfPath){
+		Instances dataInstances = this.arff.readArffFile(arrfPath);
+		float value = this.forecaster.getNextWeeklyForecast(dataInstances);
+		System.out.println(value);
+		return value;		
+	}
+	
 	public float getNextMonthlyForecast(){
 		Instances dataInstances = this.arff.readArffFile(Messages.getString("TrendForecastFacade.monthlyArff"));
+		float value = this.forecaster.getNextMonthlyForecast(dataInstances);
+		System.out.println(value);
+		return value;		
+	}
+	
+	public float getNextMonthlyForecast(String arrfPath){
+		Instances dataInstances = this.arff.readArffFile(arrfPath);
 		float value = this.forecaster.getNextMonthlyForecast(dataInstances);
 		System.out.println(value);
 		return value;		

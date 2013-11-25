@@ -1,5 +1,6 @@
 package trendanalysis.main;
 import py4j.GatewayServer;
+import trendanalysis.main.WekaTSForecaster;
 public class WekaTSEntryPoint {
 	
 	private WekaTSForecaster wekaTSForcaster;
@@ -9,7 +10,7 @@ public class WekaTSEntryPoint {
 	}
 	
 	public WekaTSForecaster getWekaTSForecaster() {
-        return wekaTSForcaster;
+        return new WekaTSForecaster();
     }
 
     public static void main(String[] args) {
