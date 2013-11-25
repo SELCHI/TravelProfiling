@@ -8,6 +8,7 @@ from pymongo import MongoClient
 
 
 class MongoReader:
+    
     '''
     classdocs
     '''
@@ -17,15 +18,15 @@ class MongoReader:
         self.db = self.client.test_tweetbase
         self.tweetset = self.db.tweets
         self.mycursor = self.tweetset.find()
-        self.length = self.mycursor.count()
-
         
     def getData(self):
         
-        if self.length>0:
+        try:
             toReturn = self.mycursor.next()
-            self.length -=1
-        else:
+            self.tweetset.remove({'_id':toReturn['_id']})
+
+        except Exception:
+            self.mycursor.rewind()
             return None
          
         return self.convert(toReturn)
@@ -41,6 +42,16 @@ class MongoReader:
             return jsonData.encode('utf-8')
         else:
             return jsonData
+        
+        
+if __name__ == '__main__':
+    
+    myMongo = MongoReader()
+    while(True):
+        
+        print myMongo.getData()
+        
+    
         
     
         

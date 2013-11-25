@@ -152,9 +152,7 @@ class TwitterStream:
                     tweets.insert( tweet )
                     time = [tweet[k] for k in tweet if k == 'time'][0]
                     print time
-
-            
-            
+       
 #                 print  yr              
                # p.preprocess(tweet)
                 

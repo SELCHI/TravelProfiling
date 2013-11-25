@@ -9,7 +9,8 @@ from EntityExtractor import EntityExtractor
 from pymongo import Connection
 from sentimentanalysis.classifier.classifier import Classifier
 from sentimentanalysis.classifier.config import POSITIVE, NEGATIVE, HARD_TO_CLASSIFY
-   
+from time import sleep
+  
 reader = MongoReader()
 
 entityExtractor = EntityExtractor()
@@ -19,10 +20,13 @@ entityExtractor = EntityExtractor()
 while True:
    
     data = reader.getData()
+    
     if data != None:
         tweetText = data['text']
     else:
-        break
+        print 'Programs is sleeping'
+        sleep(20)
+        continue
     
     enti = entityExtractor.tagEntity(tweetText)
     filters = FilteredTweetWriter('a', 'b', 'c', 'd')
