@@ -7,7 +7,15 @@ public class Item {
 	
 	private String name;
 	private boolean isTrending;
+	private int trend;
 	
+	
+	public int getTrend() {
+		return trend;
+	}
+	public void setTrend(int trend) {
+		this.trend = trend;
+	}
 	public String getName() {
 		return name;
 	}

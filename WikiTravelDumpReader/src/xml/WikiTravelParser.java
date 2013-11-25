@@ -215,11 +215,13 @@ public class WikiTravelParser {
                         if(!sentenceValidator(page.title)){
                            continue;
                         }
+
+
                         page.title = formatString(page.title);
                         revision.data = formatData(revision.text);
                         page.revision = revision;
 
-//                        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+//                      System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
                         //Consider only locations in the first sentense describint the city
                         List<String> locations = getLocations(revision.data.get("text").split("\\.")[0]);
 //                        System.out.println("Locations " +locations);
@@ -287,6 +289,7 @@ public class WikiTravelParser {
                                 }
 
                             }
+
                         }else{
 
                               if(data.getRegionHierarchy().size()>0){
