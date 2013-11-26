@@ -58,9 +58,9 @@ class EmoticonClassifier():
         return (decision, happy_count , sad_count)
     
     def print_results(self ,decision, happy_count , sad_count):
-        print "\nResults from EmoticonClassifier "
+        print "Results from EmoticonClassifier "
         print " Text is :" + DECISION_LIST[decision]
-        print 'Happy = %s Sad = %s' % (happy_count, sad_count)
+        print ' Happy = %s Sad = %s' % (happy_count, sad_count)
                 
 if __name__ == "__main__":
     emoticon_test = EmoticonClassifier()

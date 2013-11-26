@@ -18,6 +18,9 @@ class WSDHelper():
         '''
         Constructor
         '''
+        self.ab_path = os.path.dirname(os.path.abspath(__file__))+'/'
+        self.synsets_scores = pickle.load(open(self.ab_path+'Data/Pickles/libs/SentiWn.p','rb'))
+        self.bag_of_words = pickle.load(open(self.ab_path+'Data/Pickles/libs/bag_of_words.p','rb'))
     
     def word_similarity(self, word1, word2):
         w1synsets = wn.synsets(word1)
@@ -87,12 +90,10 @@ class WSDHelper():
         return pos, neg
     
     def call_classifier(self, lines_list):
-        results = []
-        synsets_scores = pickle.load(open('Data/Pickles/libs/SentiWn.p','rb'))
-        bag_of_words = pickle.load(open('Data/Pickles/libs/bag_of_words.p','rb'))
-        bag_of_words = self.classify_polarity(bag_of_words)
+        results = []        
+        bag_of_words = self.classify_polarity(self.bag_of_words)
         scorer = defaultdict(list)
-        pos, neg = self.classify(lines_list, synsets_scores, bag_of_words)
+        pos, neg = self.classify(lines_list, self.synsets_scores, bag_of_words)
         return pos, neg
     
     def classify_polarity(self ,bag_of_words):
