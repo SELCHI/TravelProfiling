@@ -7,6 +7,8 @@ import com.sun.jersey.api.core.DefaultResourceConfig;
 import com.sun.jersey.api.core.ResourceConfig;
 
 import java.io.File;
+import java.io.InputStream;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +35,7 @@ public class OntologyDataExtractor {
     @Path("/geolist")
     @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
     public List<GeoData> getGeoDataList(){
-    	  	
+    		
     	String ontoPath = (String) context.getProperty("ontoPath");
     	List<GeoData> geoList = new ArrayList<GeoData>();
     	
@@ -86,10 +88,13 @@ public class OntologyDataExtractor {
   	
     }
     
+      
     @GET
     @Path("/geocodes/{region}")
     @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
     public GeoData getGeoCods(@PathParam("region") String region){
+    	  	
+    	
     	String ontoPath = (String) context.getProperty("ontoPath");
         GeoData geo = null;
 
