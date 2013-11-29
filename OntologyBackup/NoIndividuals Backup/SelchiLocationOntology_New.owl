@@ -445,7 +445,28 @@
         <ObjectProperty IRI="#isRegionOf"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasTrendValue"/>
+        <DataProperty IRI="#hasFMTrendValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFWTrendValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLatitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLongitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTMTrendValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTWTrendValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTotMTrendValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTotWTrendValue"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Africa_Continent"/>
@@ -853,13 +874,6 @@
             <ObjectProperty IRI="#hasQualifier"/>
             <Class IRI="#Qualifier"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Place"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasTrendValue"/>
-            <Datatype abbreviatedIRI="xsd:int"/>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PlaceOfWorship"/>
@@ -1321,11 +1335,91 @@
         <Class IRI="#Location"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasTrendValue"/>
+        <DataProperty IRI="#hasFMTrendValue"/>
         <Class IRI="#Place"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFMTrendValue"/>
+        <Class IRI="#Qualifier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFWTrendValue"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFWTrendValue"/>
+        <Class IRI="#Qualifier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLatitude"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLongitude"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTMTrendValue"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTMTrendValue"/>
+        <Class IRI="#Qualifier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTWTrendValue"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTWTrendValue"/>
+        <Class IRI="#Qualifier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotMTrendValue"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotMTrendValue"/>
+        <Class IRI="#Qualifier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotWTrendValue"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotWTrendValue"/>
+        <Class IRI="#Qualifier"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="#hasTrendValue"/>
+        <DataProperty IRI="#hasFMTrendValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFWTrendValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLatitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLongitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTMTrendValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTWTrendValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTotMTrendValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTotWTrendValue"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
 </Ontology>
