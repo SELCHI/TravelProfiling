@@ -30,8 +30,9 @@ public class OntoSingletonModels {
 			
 			FileManager.get().addLocatorClassLoader(OntoSingletonModels.class.getClassLoader());
 	        InputStream in = FileManager.get().open(ontoPath);
-	        ontModel = ModelFactory.createOntologyModel(OntModelSpec.RDFS_MEM_RDFS_INF);
+	        ontModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_LITE_MEM);
 	        ontModel.read(in,"RDF/XML");
+	       
 		}
 		
 		return ontModel;

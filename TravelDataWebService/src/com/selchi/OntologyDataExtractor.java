@@ -338,7 +338,7 @@ public class OntologyDataExtractor {
     @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
     public DataOb getTypeData(@PathParam("type") String type){
     	String ontoPath = (String) context.getProperty("ontoPath");
-    	
+    	   	
     	DataOb toReturn = new DataOb();
     	List<String> subclasses = new ArrayList<String>();
     	List<Item> individuals = new ArrayList<Item>();
