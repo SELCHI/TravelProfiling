@@ -15,12 +15,16 @@ class PlaceQuery:
         self.TablesList = list()
         self.FinalList = list()
         self.PlacesList = list()
-        self.db = MySQLdb.connect( host="192.248.8.250", port = 3306, user ="selchiuser1", passwd ="selchi456", db="PlacesDB" )
+        print "FF"
+        self.db = MySQLdb.connect( host="192.248.8.251", port = 3306, user ="root", passwd ="selchi123", db="PlacesDB" )
+        print "GG"
         self.cursor = self.db.cursor()
         self.cursor.execute( "SELECT table_name FROM information_schema.tables     WHERE table_type = 'BASE TABLE' AND table_schema='PlacesDB'AND `TABLE_ROWS` >0 \
                          ORDER BY table_name ASC" )
+        print "GGG"
         result = self.cursor.fetchall()
         for t in result:
+            print t
             self.TablesList.append( ( t[0] ) )
 
 
@@ -50,6 +54,7 @@ class PlaceQuery:
                 orderedList['region'] = self.TablesList[index]
                 orderedList['place'] = a[0]
                 orderedList['Data'] = df
+                print orderedList['Data']
                 self.FinalList.append( orderedList )
 
 
