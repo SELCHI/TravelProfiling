@@ -34,10 +34,11 @@ class DataAnalyzeProcess(Process):
         self.weka_manager = WekaManager()
         
     def analyze_data(self):
-        pd_df_object = self.input_queue.get()
+        input_data = self.input_queue.get()
         
-        while(type(pd_df_object) is not str): # if input queue is not reach the end of data, loop
+        while(type(input_data) is not str): # if input queue is not reach the end of data, loop
             
+            pd_df_object = input_data["pd_df_object"]
             # get weekly and monthly forecast from holt-winters arima model
             (python_week , python_month,wk_resampled_df , month_resampled_df) = \
             self.forecast_facade.get_next_wk_month_forecast(pd_df_object, data_col_name = self.data_col_name )
@@ -55,13 +56,17 @@ class DataAnalyzeProcess(Process):
             # combine results
             (final_weekly , final_montly) = self.forecast_facade.prepare_final_results(weka_weekly, weka_monthly, python_week, python_month)
             
-            resutls = {"weekly":final_weekly, 
-                       "monthly":final_montly}
+            resutls = {"is_twitter": input_data["is_twitter"],
+                       "region": input_data["region"],
+                       "is_activity": input_data["is_activity"],
+                       "type":input_data["type"],
+                       "weekly_forecast":final_weekly, 
+                       "monthly_forecast":final_montly}
             # Add forecasted values to output queue
             self.output_queue.put(resutls)
             
             # get next dataframe
-            pd_df_object = self.input_queue.get()
+            input_data = self.input_queue.get()
         
         # quiting from the process    
         print "Data Analysis Process %d with pid %d completed..." %((self.identifier+1) ,os.getpid() )

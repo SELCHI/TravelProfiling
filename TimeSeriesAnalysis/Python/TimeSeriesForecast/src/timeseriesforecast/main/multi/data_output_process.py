@@ -4,37 +4,81 @@ Created on Nov 24, 2013
 @author: samith
 '''
 from multiprocessing import Process, Queue ,Value
-import urllib2
+import urllib2,os
+from timeseriesforecast.main.config import FINALIZE_COUNT, UPDATE_URL,\
+    FINALIZE_URL
 class DataOutputProcess(Process):
     '''
     classdocs
     '''
 
 
-    def __init__(self , output_queue = None):
+    def __init__(self , output_queue,identifier =0):
         '''
         Constructor
         '''
+        super(DataOutputProcess, self).__init__()
         self.output_queue =  output_queue
-        self.update_url =  'http://10.8.108.163/TravelDataWebService/rest/updatetrends/%s/%s/%s/%s/%d/%d'
-        self.finalize_url = 'http://10.8.108.163/TravelDataWebService/rest/updatetrends/finalize'
+        self.update_url =  UPDATE_URL
+        self.finalize_url = FINALIZE_URL
+        self.finalize_count = FINALIZE_COUNT
+        self.headers = {'Accept': 'application/json; charset=utf8'}
+        self.identifier = identifier 
         
     def send_data_to_ontolog(self):
         
-        
+        count = 0
+        processed_data = self.output_queue.get()
         # Add your headers
-        headers = {'Accept': 'application/json; charset=utf8'}
         
+        while(type(processed_data) is not str):
+            self.print_final_results(processed_data)
+            self.send_update_request(processed_data)
+            count = count +1
+            if self.finalize_count == count:
+                self.send_save_request()
+                count = 0
+            
+            processed_data = self.output_queue.get()
+            
+        print "Data Output Process %d with pid %d completed..." %((self.identifier+1) ,os.getpid() )
+                
+    def send_update_request(self,processed_data):
+        print "Send update signal"
+        (is_twitter,region ,is_activity , type, monthly_forecast, weekly_forecast) = self.get_params(processed_data)
         update = self.update_url  %(is_twitter,region ,is_activity , type, monthly_forecast, weekly_forecast)
+        #self.send_request(update)
+     
+    def send_save_request(self):
+        print "Send finalize signal..."
+        #self.send_request(self.finalize_url)
         
-        # Create the Request. 
-        request = urllib2.Request(self.finalize_url, None, headers)
-        
+    def send_request(self, url):
+        request = urllib2.Request(url, None, self.headers)
         # Getting the response
         response = urllib2.urlopen(request)
-        
         # Print the headers
         print response.read()
+        
+    def print_final_results(self ,resutls):
+        print "Results for Region: ' %s '  Activity/Place: ' %s '" %(resutls["region"] ,resutls["type"])
+        print "Weekly Forecast %d" %(resutls["weekly_forecast"])
+        print "Monthly Forecast %d" %(resutls["monthly_forecast"])
+       
+    def get_params(self , processed_data):
+        is_twitter = processed_data["is_twitter"]
+        region = processed_data["region"]
+        is_activity = processed_data["is_activity"]
+        type = processed_data["type"]
+        monthly_forecast = processed_data["monthly_forecast"]
+        weekly_forecast = processed_data["weekly_forecast"]
+        
+        return (is_twitter,region ,is_activity , type, monthly_forecast, weekly_forecast)
+    
+    def run(self):
+        print "Data Output Process %d with pid %d started..." %((self.identifier+1) , os.getpid() )
+        self.send_data_to_ontolog()
+        
 
 if __name__ == '__main__':
     ff = DataOutputProcess()

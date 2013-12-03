@@ -43,6 +43,17 @@ class MysqlDataFetcher():
         con.close()    
         df.index = pd.to_datetime(df.index)
         return df
+    
+    def get_connection(self,
+                       host='localhost',port=8080,
+                       user='root',passwd='123',
+                       db='test_weka'):
+        con = MySQLdb.connect(host= self.host,
+                      port= self.port,
+                      user=self.user,
+                      passwd=self.passwd,
+                      db=self.db)
+        
 
 if __name__ == "__main__":
     db = MysqlDataFetcher()
