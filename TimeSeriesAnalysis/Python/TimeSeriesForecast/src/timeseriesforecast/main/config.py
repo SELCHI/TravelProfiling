@@ -31,8 +31,7 @@ MYSQL_PW = "selchi123"
 MYSQL_DB_PLACES = "PlacesDB"
 MYSQL_DB_ACTIVITY = "ActivityDB"
 
-
-
+# Ontology
 ONTOLOGY_URL = "http://192.248.8.252/"
 UPDATE_URL =  ONTOLOGY_URL+ 'TravelDataWebService/rest/updatetrends/%s/%s/%s/%s/%d/%d'
 FINALIZE_URL = ONTOLOGY_URL+ 'TravelDataWebService/rest/updatetrends/finalize'

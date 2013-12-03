@@ -2,6 +2,15 @@ Python Time Series Forecast
 ================================
 
 ## How to use
+First set the MYSQL_HOST_IP and ONTOLOGY_URL values of [config file](https://github.com/SELCHI/TravelProfiling/blob/master/TimeSeriesAnalysis/Python/TimeSeriesForecast/src/timeseriesforecast/main/config.py) accordingly.
+Then run WekaTimeSeriesAnalysis/wekaserver/wekaserver.jar
+
+    java -jar wekaserver.jar 
+    
+finally run run_timeseries_analysis.py
+
+	python run_timeseries_analysis.py
+    
 look at timeseriesforecast.main.MainForecast class
 
 ## Dependencies
