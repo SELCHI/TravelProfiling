@@ -4,15 +4,24 @@
   <servlet>
     <servlet-name>Travel Data WebService</servlet-name>
     <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    
     <init-param>
       <param-name>com.sun.jersey.config.property.packages</param-name>
       <param-value>com.selchi</param-value>
     </init-param>
+    
     <init-param>
     	<param-name>ontoPath</param-name>
       	<!--<param-value>/var/lib/openshift/528f1e1c500446064b00002f/app-root/repo/onto/SelchiLocationOntology_New2.owl</param-value> -->
-      	<param-value>/home/lasitha/Programing/FYP/TravelProfiling/TravelDataWebService/res/SelchiLocationOntology_New2.owl</param-value>  
+      	<param-value>/home/lasitha/Programing/FYP/TravelProfiling/TravelDataWebService/res/SelchiLocationOntology_New2.owl</param-value> 
     </init-param>
+   
+	<init-param>
+    	<param-name>dbConnection</param-name>
+    	<!-- replace the - in the code with & -->
+    	<param-value>jdbc:mysql://localhost/FourSquareData?user=root-password=LetMeIn</param-value>
+	</init-param>
+    
     <load-on-startup>1</load-on-startup>
   </servlet>
   
@@ -21,5 +30,4 @@
     <url-pattern>/rest/*</url-pattern>
   </servlet-mapping>
 
-  
 </web-app>

@@ -99,7 +99,7 @@
       <file leaf-file-name="RestAccess.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GeoLoc/RestAccess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="22" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0">
+            <state line="108" column="53" selection-start="3812" selection-end="3812" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,11 +108,8 @@
       <file leaf-file-name="WikiTravelParser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xml/WikiTravelParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="415" column="98" selection-start="15671" selection-end="15671" vertical-scroll-proportion="0.5871886">
-              <folding>
-                <element signature="e#16722#16730#0" expanded="true" />
-                <element signature="e#17921#17929#0" expanded="true" />
-              </folding>
+            <state line="577" column="25" selection-start="18960" selection-end="19355" vertical-scroll-proportion="0.54626334">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,7 +117,7 @@
       <file leaf-file-name="OntoReader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Onto/OntoReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="77" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.0">
+            <state line="23" column="49" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,7 +201,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -278,8 +274,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikiTravelDumpReader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikiTravelDumpReader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeoLoc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikiTravelDumpReader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikiTravelDumpReader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,9 +330,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.29291716" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.29291716" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -346,19 +379,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -385,6 +405,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -566,10 +599,7 @@
     <entry file="file://$PROJECT_DIR$/src/xml/WikiTravelParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="410" column="31" selection-start="15530" selection-end="15530" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#16722#16730#0" expanded="true" />
-            <element signature="e#17921#17929#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -583,10 +613,7 @@
     <entry file="file://$PROJECT_DIR$/src/xml/WikiTravelParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="42" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#16722#16730#0" expanded="true" />
-            <element signature="e#17921#17929#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -625,13 +652,6 @@
         <state line="80" column="55" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.03836317" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/GeoData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="414" selection-end="414" vertical-scroll-proportion="0.54702497">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Onto/OntoWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="53" selection-start="4114" selection-end="4114" vertical-scroll-proportion="0.8852773" />
@@ -644,27 +664,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GeoLoc/RestAccess.java">
+    <entry file="file://$PROJECT_DIR$/src/Onto/OntoReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="22" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0">
+        <state line="23" column="49" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Onto/OntoReader.java">
+    <entry file="file://$PROJECT_DIR$/src/data/GeoData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="77" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.0">
+        <state line="15" column="48" selection-start="320" selection-end="320" vertical-scroll-proportion="0.39267015">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GeoLoc/RestAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="53" selection-start="3812" selection-end="3812" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xml/WikiTravelParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="415" column="98" selection-start="15671" selection-end="15671" vertical-scroll-proportion="0.5871886">
-          <folding>
-            <element signature="e#16722#16730#0" expanded="true" />
-            <element signature="e#17921#17929#0" expanded="true" />
-          </folding>
+        <state line="577" column="25" selection-start="18960" selection-end="19355" vertical-scroll-proportion="0.54626334">
+          <folding />
         </state>
       </provider>
     </entry>
