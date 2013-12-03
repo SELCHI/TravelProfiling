@@ -7,6 +7,7 @@ from multiprocessing import Process, Queue ,Value
 import urllib2,os
 from timeseriesforecast.main.config import FINALIZE_COUNT, UPDATE_URL,\
     FINALIZE_URL
+import traceback
 class DataOutputProcess(Process):
     '''
     classdocs
@@ -32,14 +33,20 @@ class DataOutputProcess(Process):
         # Add your headers
         
         while(type(processed_data) is not str):
-            self.print_final_results(processed_data)
-            self.send_update_request(processed_data)
-            count = count +1
-            if self.finalize_count == count:
-                self.send_save_request()
-                count = 0
-            
-            processed_data = self.output_queue.get()
+            try:
+                self.print_final_results(processed_data)
+                self.send_update_request(processed_data)
+                count = count +1
+                if self.finalize_count == count:
+                    self.send_save_request()
+                    count = 0
+                
+                processed_data = self.output_queue.get()
+            except urllib2.HTTPError:
+                var = traceback.format_exc()
+                print var
+                processed_data = self.output_queue.get()
+                continue
             
         print "Data Output Process %d with pid %d completed..." %((self.identifier+1) ,os.getpid() )
                 
@@ -68,9 +75,9 @@ class DataOutputProcess(Process):
        
     def get_params(self , processed_data):
         is_twitter = processed_data["is_twitter"]
-        region = processed_data["region"]
+        region = str(processed_data["region"]).title().replace(" ", "_")
         is_activity = processed_data["is_activity"]
-        type = processed_data["type"]
+        type = str(processed_data["type"]).title().replace(" ", "_")
         monthly_forecast = processed_data["monthly_forecast"]
         weekly_forecast = processed_data["weekly_forecast"]
         
