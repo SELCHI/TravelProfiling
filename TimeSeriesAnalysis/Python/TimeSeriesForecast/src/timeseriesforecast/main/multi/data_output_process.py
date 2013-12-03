@@ -47,11 +47,11 @@ class DataOutputProcess(Process):
         print "Send update signal"
         (is_twitter,region ,is_activity , type, monthly_forecast, weekly_forecast) = self.get_params(processed_data)
         update = self.update_url  %(is_twitter,region ,is_activity , type, monthly_forecast, weekly_forecast)
-        #self.send_request(update)
+        self.send_request(update)
      
     def send_save_request(self):
         print "Send finalize signal..."
-        #self.send_request(self.finalize_url)
+        self.send_request(self.finalize_url)
         
     def send_request(self, url):
         request = urllib2.Request(url, None, self.headers)
@@ -59,6 +59,7 @@ class DataOutputProcess(Process):
         response = urllib2.urlopen(request)
         # Print the headers
         print response.read()
+        print "Successfully sent..."
         
     def print_final_results(self ,resutls):
         print "Results for Region: ' %s '  Activity/Place: ' %s '" %(resutls["region"] ,resutls["type"])
