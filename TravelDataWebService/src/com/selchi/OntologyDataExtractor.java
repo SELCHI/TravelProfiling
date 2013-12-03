@@ -171,7 +171,7 @@ public class OntologyDataExtractor {
                 "SELECT DISTINCT ?data ?trend WHERE { " +
                 "?data rdf:type ?type ." +
                 "?type rdfs:subClassOf* travel:"+activitytype+ " ."+
-                "travel:"+regionName+ " travel:hasQualifier ?data ."+
+                "travel:"+regionName+ " travel:"+relation+" ?data ."+
                 "OPTIONAL {?data travel:hasTotWTrendValue ?trend }"+
                 "}" +
                 "ORDER BY DESC (?trend)"+
@@ -209,7 +209,9 @@ public class OntologyDataExtractor {
                 String qdata = clean(solution.getResource("data").toString());
                 int trend;
                 try{
-                	trend = Integer.parseInt(solution.getLiteral("trend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").trim());
+                	String rdata = solution.getLiteral("trend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+                	rdata = rdata.replace("eger", "").trim();
+                	trend = Integer.parseInt(rdata);
                 }catch(Exception e){
                 	trend = 0;
                 }
@@ -217,6 +219,7 @@ public class OntologyDataExtractor {
                 Item toAdd = new Item();
                 toAdd.setName(qdata);
                 toAdd.setTrending(trend>30?true:false);
+                toAdd.setTrend(trend);
                 data.add(toAdd);
             }
             
@@ -235,7 +238,9 @@ public class OntologyDataExtractor {
             		String qdata = clean(solution.getResource("data").toString());
             		int trend;
                     try{
-                    	trend = Integer.parseInt(solution.getLiteral("trend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").trim());
+                    	String rdata = solution.getLiteral("trend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+                    	rdata = rdata.replace("eger", "").trim();
+                    	trend = Integer.parseInt(rdata);
                     }catch(Exception e){
                     	trend = 0;
                     }
@@ -308,8 +313,10 @@ public class OntologyDataExtractor {
                 
                 int trend;
                 try{
-                	trend = Integer.parseInt(solution.getLiteral("totwtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").trim());
-                }catch(Exception e){
+                	String rdata = solution.getLiteral("totwtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+                	rdata = rdata.replace("eger", "").trim();
+                	trend = Integer.parseInt(rdata);
+                }catch(Exception e){                	
                 	trend = 0;
                 }
                 
@@ -394,7 +401,9 @@ public class OntologyDataExtractor {
                 
                 int trend;
                 try{
-                	trend = Integer.parseInt(solution.getLiteral("trend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").trim());
+                	String rdata = solution.getLiteral("trend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+                	rdata = rdata.replace("eger", "").trim();
+                	trend = Integer.parseInt(rdata);
                 }catch(Exception e){
                 	trend = 0;
                 }
