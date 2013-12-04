@@ -153,7 +153,8 @@ public class OntologyDataExtractor {
     	int count = 0;
     	
     	List<Item> data = new ArrayList<Item>();
-
+    	activitytype = activitytype.replace("_","");
+    	
         String relation = "hasPlace";
 
         if(isActivity){
@@ -275,9 +276,11 @@ public class OntologyDataExtractor {
     @Path("/trendingregionsfor/{type}/{isActivity}")
     @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
     public List<Item> getTrends(@PathParam("type") String type, @PathParam("isActivity") boolean isActivity){
+    	
     	String ontoPath = (String) context.getProperty("ontoPath");
     	    	
     	List<Item> data = new ArrayList<Item>();
+    	type = type.replace("_", "");
     	String relation = "hasPlace";
 
         if(isActivity){
@@ -344,8 +347,9 @@ public class OntologyDataExtractor {
     @Path("/typedata/{type}")
     @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
     public DataOb getTypeData(@PathParam("type") String type){
+    	
     	String ontoPath = (String) context.getProperty("ontoPath");
-    	   	
+    	type = type.replace("_","");   	
     	DataOb toReturn = new DataOb();
     	List<String> subclasses = new ArrayList<String>();
     	List<Item> individuals = new ArrayList<Item>();

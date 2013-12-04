@@ -8,6 +8,13 @@ public class FourSquareDataItem {
 	private String name;
 	private String ontotag;
 	private int checkins;
+	private String region;
+	public String getRegion() {
+		return region;
+	}
+	public void setRegion(String region) {
+		this.region = region;
+	}
 	public String getName() {
 		return name;
 	}

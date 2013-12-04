@@ -3,8 +3,6 @@ Created on Oct 26, 2013
 
 @author: chiran
 '''
-
-  
 import time
 import pycurl
 import urllib
@@ -16,7 +14,7 @@ from nltk.corpus import stopwords
 from nltk import wordpunct_tokenize
 from sys import stdin
 from pymongo import Connection
-import sharedCleaner 
+from sharedCleaner import Cleaner
 from dateutil import parser
 import isoweek
 API_ENDPOINT_URL = 'https://stream.twitter.com/1.1/statuses/filter.json'
@@ -42,7 +40,7 @@ class TwitterStream:
         self.buffer = ''
         self.timeout = timeout
         self.setup_connection()
-        self.cleaner = sharedCleaner.Cleaner()
+        self.dataCleaner = Cleaner() 
         self.weekNo = isoweek.Week
         
         
@@ -142,7 +140,7 @@ class TwitterStream:
                 if( yr >= 2012 and mo >= 10 ):
                     monday = str( self.weekNo( yr, week ).monday() )
                     tweet = {"user": message.get( 'user' ).get( 'name' ),
-                        "text": self.cleaner.clean( message.get( 'text' ) ),
+                        "text": self.dataCleaner.clean( message.get( 'text' ) ),
                         "time": monday,
                         "lang": message.get( 'user' ).get( 'lang' )}
 

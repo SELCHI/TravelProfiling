@@ -62,6 +62,8 @@ public class FourSquareDataReader {
 				FourSquareDataItem toAdd = new FourSquareDataItem();
 				String name = resultSet.getString(5);
 				toAdd.setName(name);
+				String region = resultSet.getString(4);
+				toAdd.setRegion(region);
 				String ontotag = resultSet.getString(6);
 				toAdd.setOntotag(ontotag);
 				int checkins = resultSet.getInt(11);

@@ -13,7 +13,6 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
-
 import com.hp.hpl.jena.ontology.Individual;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
@@ -48,7 +47,8 @@ public class OntologyUpdater {
     @Path("/{istwitter}/{region}/{isActivity}/{type}/{mvalue}/{wvalue}")
     @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
 	public String updateOntology(@PathParam("istwitter") boolean istwitter, @PathParam("region") String regionName,@PathParam("isActivity") boolean isActivity, @PathParam("type") String type, @PathParam("wvalue") int wtrend, @PathParam("mvalue") int mtrend){
-				
+			
+		type = type.replace("_", "");
 		String toReturn = "Done";		
 		String ontoPath = (String) context.getProperty("ontoPath");
 		String relation = "hasPlace";
@@ -160,22 +160,32 @@ public class OntologyUpdater {
             String activity = solution.getResource("data").toString();  
             
             Individual individual = OntoSingletonModels.getOntModel(ontoPath).getIndividual(activity);
+            if(individual.toString().equals("https://raw.github.com/SELCHI/TravelProfiling/master/SelchiLocationOntology_New.owl#Booker_Gym")){
+            	System.out.println("hey");
+            }
+            
             System.out.println(individual.toString());
             toAdd.setIndividual(individual);
             
             //Removing Twitter weekly trend value
+            
             try{
             	
-            	int twtrendOld = Integer.parseInt(solution.getLiteral("twtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());             
+            	String rdata = solution.getLiteral("twtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	int twtrendOld = Integer.parseInt(rdata);             
                 toAdd.setTwtrendOld(twtrendOld);
+                
             }catch(Exception e){
             	 toAdd.setTwtrendOld(-1);
             }
             
             //Removing Twitter monthly trend value
+            
             try{
-            	
-            	int tmtrendOld = Integer.parseInt(solution.getLiteral("tmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());
+            	String rdata = solution.getLiteral("tmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	int tmtrendOld = Integer.parseInt(rdata);
             	toAdd.setTmtrendOld(tmtrendOld);
             	
             }catch(Exception e){
@@ -183,9 +193,11 @@ public class OntologyUpdater {
             }
             
             //Removing Total weekly trend value
+            
             try{
-            	
-            	int totwtrendOld = Integer.parseInt(solution.getLiteral("totwtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());
+            	String rdata = solution.getLiteral("totwtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	int totwtrendOld = Integer.parseInt(rdata);
             	toAdd.setTotwtrendOld(totwtrendOld);
             	
             }catch(Exception e){
@@ -195,8 +207,9 @@ public class OntologyUpdater {
             
             //Removing Total Monthly trend value
             try{
-            	
-            	int totmtrendOld = Integer.parseInt(solution.getLiteral("totmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());
+            	String rdata = solution.getLiteral("totmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	int totmtrendOld = Integer.parseInt(rdata);
             	toAdd.setTotmtrendOld(totmtrendOld);
             	
             }catch(Exception e){
@@ -208,8 +221,9 @@ public class OntologyUpdater {
             int fwtrend;
             
             try{
-            	
-            	fwtrend = Integer.parseInt(solution.getLiteral("fwtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());
+            	String rdata = solution.getLiteral("fwtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	fwtrend = Integer.parseInt(rdata);
             	
             }catch(Exception e){
             	
@@ -222,8 +236,9 @@ public class OntologyUpdater {
             int fmtrend;
             
             try{
-            	
-            	fmtrend = Integer.parseInt(solution.getLiteral("fmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());
+            	String rdata = solution.getLiteral("fmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	fmtrend = Integer.parseInt(rdata);
             	
             }catch(Exception e){
             	
@@ -255,7 +270,7 @@ public class OntologyUpdater {
             //Remove old Twitter monthly value
 			if(itemData.getTmtrendOld()!=1){
 				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTMTrend, itemData.getTmtrendOld());
-            	OntoSingletonModels.getOntModel(ontoPath).remove(stm);
+            	OntoSingletonModels.getOntModel(ontoPath).remove(stm); 
 			}
 			
 			//Adding Twitter monthly trend value
@@ -264,7 +279,7 @@ public class OntologyUpdater {
 			
             //Removing Total weekly trend value
 			if(itemData.getTotwtrendOld()!=-1){
-				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTotWTrend, itemData.getTotwtrendOld());
+				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTotWTrend, new Integer(itemData.getTotwtrendOld()));
             	OntoSingletonModels.getOntModel(ontoPath).remove(stm);
 			}
 			
@@ -322,8 +337,9 @@ public class OntologyUpdater {
             toAdd.setIndividual(individual);
             //Removing Four Square weekly trend value
             try{
-            	
-            	int fwtrendOld = Integer.parseInt(solution.getLiteral("fwtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());             
+            	String rdata = solution.getLiteral("fwtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	int fwtrendOld = Integer.parseInt(rdata);             
             	toAdd.setFwtrendOld(fwtrendOld);
                 
             }catch(Exception e){
@@ -333,8 +349,9 @@ public class OntologyUpdater {
             
             //Removing Four Square monthly trend value
             try{
-            	
-            	int fmtrendOld = Integer.parseInt(solution.getLiteral("fmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());
+            	String rdata = solution.getLiteral("fmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	int fmtrendOld = Integer.parseInt(rdata);
             	toAdd.setFmtrendOld(fmtrendOld);
             	
             }catch(Exception e){
@@ -344,8 +361,9 @@ public class OntologyUpdater {
                      
             //Removing Total weekly trend value
             try{
-            	
-            	int totwtrendOld = Integer.parseInt(solution.getLiteral("totwtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());
+            	String rdata = solution.getLiteral("totwtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	int totwtrendOld = Integer.parseInt(rdata);
             	toAdd.setTotwtrendOld(totwtrendOld);
             	
             }catch(Exception e){
@@ -355,8 +373,9 @@ public class OntologyUpdater {
             
             //Removing Total Monthly trend value
             try{
-            	
-            	int totmtrendOld = Integer.parseInt(solution.getLiteral("totmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());
+            	String rdata = solution.getLiteral("totmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	int totmtrendOld = Integer.parseInt(rdata);
             	toAdd.setTotmtrendOld(totmtrendOld);
             	
             }catch(Exception e){
@@ -368,8 +387,9 @@ public class OntologyUpdater {
             int twtrend;
             
             try{
-            	
-            	twtrend = Integer.parseInt(solution.getLiteral("twtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());
+            	String rdata = solution.getLiteral("twtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	twtrend = Integer.parseInt(rdata);
             	
             }catch(Exception e){
             	
@@ -381,8 +401,9 @@ public class OntologyUpdater {
             int tmtrend;
             
             try{
-            	
-            	tmtrend = Integer.parseInt(solution.getLiteral("tmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","").replace("eger","").trim());
+            	String rdata = solution.getLiteral("tmtrend").toString().replace("^^http://www.w3.org/2001/XMLSchema#int","");
+            	rdata = rdata.replace("eger","").trim();
+            	tmtrend = Integer.parseInt(rdata);
             	
             }catch(Exception e){
             	
