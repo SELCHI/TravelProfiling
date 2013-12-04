@@ -3,7 +3,8 @@ Created on Nov 20, 2013
 
 @author: samith
 '''
-from py4j.java_gateway import JavaGateway
+from py4j.java_gateway import JavaGateway, GatewayClient
+from timeseriesforecast.main.config import GATEWAY_SERVER_PORT
 class WekaManager(object):
     '''
     classdocs
@@ -14,7 +15,7 @@ class WekaManager(object):
         '''
         Constructor
         '''
-        self.gateway = JavaGateway()
+        self.gateway = JavaGateway(GatewayClient(port=GATEWAY_SERVER_PORT))
         self.weka_forecaster =  self.gateway.entry_point.getWekaTSForecaster()
         
     def getWekaResults(self ,weekly_arff_path =None , monthly_arff_path =None):

@@ -7,6 +7,7 @@ from multiprocessing import Process, Queue ,Value
 import urllib2,os
 from timeseriesforecast.main.config import FINALIZE_COUNT, UPDATE_URL,\
     FINALIZE_URL
+import traceback
 class DataOutputProcess(Process):
     '''
     classdocs
@@ -32,14 +33,20 @@ class DataOutputProcess(Process):
         # Add your headers
         
         while(type(processed_data) is not str):
-            self.print_final_results(processed_data)
-            self.send_update_request(processed_data)
-            count = count +1
-            if self.finalize_count == count:
-                self.send_save_request()
-                count = 0
-            
-            processed_data = self.output_queue.get()
+            try:
+                self.print_final_results(processed_data)
+                self.send_update_request(processed_data)
+                count = count +1
+                if self.finalize_count == count:
+                    self.send_save_request()
+                    count = 0
+                
+                processed_data = self.output_queue.get()
+            except urllib2.HTTPError:
+                var = traceback.format_exc()
+                print var
+                processed_data = self.output_queue.get()
+                continue
             
         print "Data Output Process %d with pid %d completed..." %((self.identifier+1) ,os.getpid() )
                 
@@ -47,11 +54,11 @@ class DataOutputProcess(Process):
         print "Send update signal"
         (is_twitter,region ,is_activity , type, monthly_forecast, weekly_forecast) = self.get_params(processed_data)
         update = self.update_url  %(is_twitter,region ,is_activity , type, monthly_forecast, weekly_forecast)
-        #self.send_request(update)
+        self.send_request(update)
      
     def send_save_request(self):
         print "Send finalize signal..."
-        #self.send_request(self.finalize_url)
+        self.send_request(self.finalize_url)
         
     def send_request(self, url):
         request = urllib2.Request(url, None, self.headers)
@@ -59,6 +66,7 @@ class DataOutputProcess(Process):
         response = urllib2.urlopen(request)
         # Print the headers
         print response.read()
+        print "Successfully sent..."
         
     def print_final_results(self ,resutls):
         print "Results for Region: ' %s '  Activity/Place: ' %s '" %(resutls["region"] ,resutls["type"])
@@ -67,9 +75,9 @@ class DataOutputProcess(Process):
        
     def get_params(self , processed_data):
         is_twitter = processed_data["is_twitter"]
-        region = processed_data["region"]
+        region = str(processed_data["region"]).title().replace(" ", "_")
         is_activity = processed_data["is_activity"]
-        type = processed_data["type"]
+        type = str(processed_data["type"]).title().replace(" ", "_")
         monthly_forecast = processed_data["monthly_forecast"]
         weekly_forecast = processed_data["weekly_forecast"]
         
