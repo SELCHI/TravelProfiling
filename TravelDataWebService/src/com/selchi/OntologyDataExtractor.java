@@ -34,10 +34,10 @@ public class OntologyDataExtractor {
     @GET
     @Path("/geolist")
     @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
-    public List<GeoData> getGeoDataList(){
+    public List<GeoDataBo> getGeoDataList(){
     		
     	String ontoPath = (String) context.getProperty("ontoPath");
-    	List<GeoData> geoList = new ArrayList<GeoData>();
+    	List<GeoDataBo> geoList = new ArrayList<GeoDataBo>();
     	
     	String queryString1 = "" +
                 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
@@ -55,7 +55,7 @@ public class OntologyDataExtractor {
     	Query query1 = QueryFactory.create(queryString1);
     	
 
-        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoSingletonModels.getOntModel(ontoPath));
+        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoModelSingleton.getOntModel(ontoPath));
 
         try{
         	
@@ -63,7 +63,7 @@ public class OntologyDataExtractor {
             
             while(results1.hasNext()){
             	
-            	GeoData geo = new GeoData();
+            	GeoDataBo geo = new GeoDataBo();
                 QuerySolution solution = results1.nextSolution();
                 String region = clean(solution.getResource("region").toString());
                 geo.setRegion(region);
@@ -92,11 +92,11 @@ public class OntologyDataExtractor {
     @GET
     @Path("/geocodes/{region}")
     @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
-    public GeoData getGeoCods(@PathParam("region") String region){
+    public GeoDataBo getGeoCods(@PathParam("region") String region){
     	  	
     	
     	String ontoPath = (String) context.getProperty("ontoPath");
-        GeoData geo = null;
+        GeoDataBo geo = null;
 
         String queryString1 = "" +
                 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
@@ -112,7 +112,7 @@ public class OntologyDataExtractor {
                 "}";
 
         Query query1 = QueryFactory.create(queryString1);
-        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoSingletonModels.getOntModel(ontoPath));
+        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoModelSingleton.getOntModel(ontoPath));
 
 
         try{
@@ -120,7 +120,7 @@ public class OntologyDataExtractor {
 
             if(results1.hasNext()){
             	
-                geo = new GeoData();
+                geo = new GeoDataBo();
                 
                 QuerySolution solution = results1.nextSolution();
                 
@@ -139,8 +139,8 @@ public class OntologyDataExtractor {
         }finally {
             qexecu1.close();
         }
-
-
+        
+        
         return geo;
 
     }
@@ -198,7 +198,7 @@ public class OntologyDataExtractor {
         Query query1 = QueryFactory.create(queryString1);
 
 
-        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoSingletonModels.getOntModel(ontoPath));
+        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoModelSingleton.getOntModel(ontoPath));
 
         try{
             ResultSet results1 = qexecu1.execSelect();
@@ -228,7 +228,7 @@ public class OntologyDataExtractor {
             	qexecu1.close();
             	
             	query1 = QueryFactory.create(queryString2);
-            	qexecu1 = QueryExecutionFactory.create(query1, OntoSingletonModels.getOntModel(ontoPath));
+            	qexecu1 = QueryExecutionFactory.create(query1, OntoModelSingleton.getOntModel(ontoPath));
             	
             	results1 = qexecu1.execSelect();
             	
@@ -304,7 +304,7 @@ public class OntologyDataExtractor {
         
         
         Query query1 = QueryFactory.create(queryString);	
-        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoSingletonModels.getOntModel(ontoPath));
+        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoModelSingleton.getOntModel(ontoPath));
 
         try{
         	
@@ -346,11 +346,11 @@ public class OntologyDataExtractor {
     @GET
     @Path("/typedata/{type}")
     @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
-    public DataOb getTypeData(@PathParam("type") String type){
+    public TypeDataBo getTypeData(@PathParam("type") String type){
     	
     	String ontoPath = (String) context.getProperty("ontoPath");
     	type = type.replace("_","");   	
-    	DataOb toReturn = new DataOb();
+    	TypeDataBo toReturn = new TypeDataBo();
     	List<String> subclasses = new ArrayList<String>();
     	List<Item> individuals = new ArrayList<Item>();
     	  	
@@ -378,7 +378,7 @@ public class OntologyDataExtractor {
                 "LIMIT 7";
     	
     	Query query1 = QueryFactory.create(subclassQuery);	
-        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoSingletonModels.getOntModel(ontoPath));
+        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoModelSingleton.getOntModel(ontoPath));
        	
         try{
         	
@@ -394,7 +394,7 @@ public class OntologyDataExtractor {
         	
         	qexecu1.close();
         	query1 = QueryFactory.create(individualQuery);
-        	qexecu1 = QueryExecutionFactory.create(query1, OntoSingletonModels.getOntModel(ontoPath));
+        	qexecu1 = QueryExecutionFactory.create(query1, OntoModelSingleton.getOntModel(ontoPath));
         	
         	results1 = qexecu1.execSelect();
         	

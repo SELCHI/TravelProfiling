@@ -96,7 +96,7 @@ public class OntologyUpdater {
                 "}";
 
 		Query query1 = QueryFactory.create(queryString);	
-        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoSingletonModels.getOntModel(ontoPath));
+        QueryExecution qexecu1 = QueryExecutionFactory.create(query1, OntoModelSingleton.getOntModel(ontoPath));
         
         
         try{
@@ -111,7 +111,7 @@ public class OntologyUpdater {
             
             qexecu1.close();
             query1 = QueryFactory.create(queryString2);
-            qexecu1 = QueryExecutionFactory.create(query1, OntoSingletonModels.getOntModel(ontoPath));
+            qexecu1 = QueryExecutionFactory.create(query1, OntoModelSingleton.getOntModel(ontoPath));
             results1 = qexecu1.execSelect();
             
             if(istwitter){          	
@@ -138,7 +138,7 @@ public class OntologyUpdater {
 	public String finalizeUpdate(){		
 		String ontoPath = (String) context.getProperty("ontoPath");
 		
-		return OntoSingletonModels.writeOntoModel(ontoPath);
+		return OntoModelSingleton.writeOntoModel(ontoPath);
 		
 	}
 	
@@ -146,10 +146,10 @@ public class OntologyUpdater {
 	public void updateTwitter(ResultSet r,int twtrend,int tmtrend){
 		
 		String ontoPath = (String) context.getProperty("ontoPath");
-		Property hasTWTrend = OntoSingletonModels.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTWTrendValue");
-		Property hasTMTrend = OntoSingletonModels.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTMTrendValue");
-		Property hasTotWTrend = OntoSingletonModels.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTotWTrendValue");
-		Property hasTotMTrend = OntoSingletonModels.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTotMTrendValue");
+		Property hasTWTrend = OntoModelSingleton.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTWTrendValue");
+		Property hasTMTrend = OntoModelSingleton.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTMTrendValue");
+		Property hasTotWTrend = OntoModelSingleton.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTotWTrendValue");
+		Property hasTotMTrend = OntoModelSingleton.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTotMTrendValue");
 		
 		List<ItemData> itemDataList = new ArrayList<ItemData>();
 				
@@ -159,7 +159,7 @@ public class OntologyUpdater {
             QuerySolution solution = r.nextSolution();
             String activity = solution.getResource("data").toString();  
             
-            Individual individual = OntoSingletonModels.getOntModel(ontoPath).getIndividual(activity);
+            Individual individual = OntoModelSingleton.getOntModel(ontoPath).getIndividual(activity);
             if(individual.toString().equals("https://raw.github.com/SELCHI/TravelProfiling/master/SelchiLocationOntology_New.owl#Booker_Gym")){
             	System.out.println("hey");
             }
@@ -259,34 +259,34 @@ public class OntologyUpdater {
 			
 			//Remove old Twitter weekly value
 			if(itemData.getTwtrendOld()!=-1){
-				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTWTrend,itemData.getTwtrendOld()); 
-				OntoSingletonModels.getOntModel(ontoPath).remove(stm);
+				Statement stm = OntoModelSingleton.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTWTrend,itemData.getTwtrendOld()); 
+				OntoModelSingleton.getOntModel(ontoPath).remove(stm);
 			}
 			
 			//Adding new Twitter Weekly value
             
-            OntoSingletonModels.getOntModel(ontoPath).addLiteral(itemData.getIndividual(),hasTWTrend,twtrend); 
+            OntoModelSingleton.getOntModel(ontoPath).addLiteral(itemData.getIndividual(),hasTWTrend,twtrend); 
 			
             //Remove old Twitter monthly value
 			if(itemData.getTmtrendOld()!=1){
-				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTMTrend, itemData.getTmtrendOld());
-            	OntoSingletonModels.getOntModel(ontoPath).remove(stm); 
+				Statement stm = OntoModelSingleton.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTMTrend, itemData.getTmtrendOld());
+            	OntoModelSingleton.getOntModel(ontoPath).remove(stm); 
 			}
 			
 			//Adding Twitter monthly trend value
             
-            OntoSingletonModels.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasTMTrend, tmtrend);
+            OntoModelSingleton.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasTMTrend, tmtrend);
 			
             //Removing Total weekly trend value
 			if(itemData.getTotwtrendOld()!=-1){
-				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTotWTrend, new Integer(itemData.getTotwtrendOld()));
-            	OntoSingletonModels.getOntModel(ontoPath).remove(stm);
+				Statement stm = OntoModelSingleton.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTotWTrend, new Integer(itemData.getTotwtrendOld()));
+            	OntoModelSingleton.getOntModel(ontoPath).remove(stm);
 			}
 			
 			//Removing Total Monthly trend value
 			if(itemData.getTotmtrendOld()!=-1){
-				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTotMTrend, itemData.getTotmtrendOld());
-            	OntoSingletonModels.getOntModel(ontoPath).remove(stm);
+				Statement stm = OntoModelSingleton.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTotMTrend, itemData.getTotmtrendOld());
+            	OntoModelSingleton.getOntModel(ontoPath).remove(stm);
 			}
 			
 			
@@ -307,10 +307,10 @@ public class OntologyUpdater {
           }
           
           //Updating the Total Weekly Trend Value
-          OntoSingletonModels.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasTotWTrend, totwtrend);
+          OntoModelSingleton.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasTotWTrend, totwtrend);
 
           //Updating the Total Monthly Trend Value
-          OntoSingletonModels.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasTotMTrend, totmtrend);
+          OntoModelSingleton.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasTotMTrend, totmtrend);
 			
 		}
 				
@@ -320,10 +320,10 @@ public class OntologyUpdater {
 	public void updateFourSquare(ResultSet r,int fwtrend,int fmtrend){
 		
 		String ontoPath = (String) context.getProperty("ontoPath");
-		Property hasFWTrend = OntoSingletonModels.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasFWTrendValue");
-		Property hasFMTrend = OntoSingletonModels.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasFMTrendValue");
-		Property hasTotWTrend = OntoSingletonModels.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTotWTrendValue");
-		Property hasTotMTrend = OntoSingletonModels.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTotMTrendValue");
+		Property hasFWTrend = OntoModelSingleton.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasFWTrendValue");
+		Property hasFMTrend = OntoModelSingleton.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasFMTrendValue");
+		Property hasTotWTrend = OntoModelSingleton.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTotWTrendValue");
+		Property hasTotMTrend = OntoModelSingleton.getOntModel(ontoPath).getDatatypeProperty(preFix+"hasTotMTrendValue");
 		
 		List<ItemData> itemDataList = new ArrayList<ItemData>();		
 		while(r.hasNext()){
@@ -332,7 +332,7 @@ public class OntologyUpdater {
 			QuerySolution solution = r.nextSolution();
             String activity = solution.getResource("data").toString();  
             
-            Individual individual = OntoSingletonModels.getOntModel(ontoPath).getIndividual(activity);
+            Individual individual = OntoModelSingleton.getOntModel(ontoPath).getIndividual(activity);
             System.out.println(individual.toString());
             toAdd.setIndividual(individual);
             //Removing Four Square weekly trend value
@@ -422,34 +422,34 @@ public class OntologyUpdater {
 			
 			//Remove old FourSquare weekly value
 			if(itemData.getFwtrendOld()!=-1){
-				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasFWTrend,itemData.getFwtrendOld()); 
-				OntoSingletonModels.getOntModel(ontoPath).remove(stm);
+				Statement stm = OntoModelSingleton.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasFWTrend,itemData.getFwtrendOld()); 
+				OntoModelSingleton.getOntModel(ontoPath).remove(stm);
 			}
 			
 			//Adding new FourSquare Weekly value
             
-            OntoSingletonModels.getOntModel(ontoPath).addLiteral(itemData.getIndividual(),hasFWTrend,fwtrend); 
+            OntoModelSingleton.getOntModel(ontoPath).addLiteral(itemData.getIndividual(),hasFWTrend,fwtrend); 
 			
             //Remove old FourSquare monthly value
 			if(itemData.getFmtrendOld()!=1){
-				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasFMTrend, itemData.getFmtrendOld());
-            	OntoSingletonModels.getOntModel(ontoPath).remove(stm);
+				Statement stm = OntoModelSingleton.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasFMTrend, itemData.getFmtrendOld());
+            	OntoModelSingleton.getOntModel(ontoPath).remove(stm);
 			}
 			
 			//Adding FourSquare monthly trend value
             
-            OntoSingletonModels.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasFMTrend, fmtrend);
+            OntoModelSingleton.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasFMTrend, fmtrend);
 			
             //Removing Total weekly trend value
 			if(itemData.getTotwtrendOld()!=-1){
-				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTotWTrend, itemData.getTotwtrendOld());
-            	OntoSingletonModels.getOntModel(ontoPath).remove(stm);
+				Statement stm = OntoModelSingleton.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTotWTrend, itemData.getTotwtrendOld());
+            	OntoModelSingleton.getOntModel(ontoPath).remove(stm);
 			}
 			
 			//Removing Total Monthly trend value
 			if(itemData.getTotmtrendOld()!=-1){
-				Statement stm = OntoSingletonModels.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTotMTrend, itemData.getTotmtrendOld());
-            	OntoSingletonModels.getOntModel(ontoPath).remove(stm);
+				Statement stm = OntoModelSingleton.getOntModel(ontoPath).createLiteralStatement(itemData.getIndividual(), hasTotMTrend, itemData.getTotmtrendOld());
+            	OntoModelSingleton.getOntModel(ontoPath).remove(stm);
 			}
 			
 			
@@ -471,10 +471,10 @@ public class OntologyUpdater {
 	            }
 	            
 	            //Updating the Total Weekly Trend Value
-	            OntoSingletonModels.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasTotWTrend, totwtrend);
+	            OntoModelSingleton.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasTotWTrend, totwtrend);
 	            
 	            //Updating the Total Monthly Trend Value
-	            OntoSingletonModels.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasTotMTrend, totmtrend);
+	            OntoModelSingleton.getOntModel(ontoPath).addLiteral(itemData.getIndividual(), hasTotMTrend, totmtrend);
 		}
 		
 	}
